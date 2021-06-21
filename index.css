@@ -3,7 +3,7 @@
 html, body {
   font-family: Abel, Arial, Verdana, sans-serif;
   scroll-behavior: smooth;
-  background-image: url("cool-background-4.png") no-repeat fixed; 
+  background-image: url("cool-background-4.png"); 
 }
 *{
 -webkit-tap-highlight-color:none
@@ -70,8 +70,8 @@ a:hover{
 .center {
   position: absolute;
   top:35%;
-  left:50%;
-  -webkit-transform: translate(-50%, -50%);
+  left:56%;
+  -webkit-transform: translate(-48%, -60%);
 }
 
 .card {
@@ -79,7 +79,7 @@ a:hover{
   height: 250px;
   background-color: black;
   background: linear-gradient(#f8f8f8, #fff);
-  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  box-shadow: 0 0 20px -8px rgba(0,0,0,0.4);
   border-radius: 6px;
   overflow: hidden;
   position: relative;
