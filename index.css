@@ -250,10 +250,11 @@ a:hover{
   text-align:left;
 }
 #c {
-  position:fixed;
+  display:flex;
+  position:absolute;
   margin-top:10%;
   background-color:#15151e;
-  height:180%;
+  height:200%;
   width:100%;
   padding-top:5%;
 }
@@ -262,11 +263,12 @@ a:hover{
 }
 .footer-basic .social > a {
   font-size:24px;
-  width:40px;
-  height:40px;
+  width:50px;
+  height:100%;
   display:inline-block;
   text-align:center;
-  margin:0 8px;
+  margin:0 10px;
+  margin-left:10%;
   color:inherit;
   padding:1%;
   transition:0.2s;
