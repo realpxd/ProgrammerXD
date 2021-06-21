@@ -57,15 +57,11 @@ html, body {
 }*/
 a {
   text-decoration:none; 
-  background-color:none;
-  -webkit-tap-highlight-color:none
-  border:none;
+  -webkit-tap-highlight-color:none;
 }
 a:hover{
   text-decoration:none;
-  background-color:none;
-  -webkit-tap-highlight-color:none
-  color:none;
+  -webkit-tap-highlight-color:none;
 }
 .center {
   position: absolute;
@@ -83,7 +79,7 @@ a:hover{
   border-radius: 6px;
   overflow: hidden;
   position: relative;
-  margin: 0.1rem;
+  margin: 0.5rem;
 }
 
 .card h1 {
