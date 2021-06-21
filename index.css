@@ -3,7 +3,11 @@
 html, body {
   font-family: Abel, Arial, Verdana, sans-serif;
   scroll-behavior: smooth;
-  background-image: url("cool-background-4.png");
+  background-image: url("cool-background-4.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 *{
 -webkit-tap-highlight-color:none
@@ -58,10 +62,14 @@ html, body {
 a {
   text-decoration:none; 
   -webkit-tap-highlight-color:none;
+  -moz-tap-highlight-color:none;
+  -o-tap-highlight-color:none;
 }
 a:hover{
   text-decoration:none;
   -webkit-tap-highlight-color:none;
+  -moz-tap-highlight-color:none;
+  -o-tap-highlight-color:none;
 }
 .center {
   position: absolute;
