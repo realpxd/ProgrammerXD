@@ -64,6 +64,7 @@ a {
 a:hover{
   text-decoration:none;
   background-color:none;
+  -webkit-tap-highlight-color:none
   color:none;
 }
 .center {
@@ -82,12 +83,12 @@ a:hover{
   border-radius: 6px;
   overflow: hidden;
   position: relative;
-  margin: 0.5rem;
+  margin: 0.1rem;
 }
 
 .card h1 {
   text-align: center;
-}
+} 
 
 .card .additional {
   position: absolute;
@@ -267,12 +268,12 @@ a:hover{
   display:inline-block;
   text-align:center;
   margin:0 8px;
-  color:inherit;
+  color:#fff;
   padding:1%;
   transition:0.2s;
 }
 .footer-basic .social > a:hover {
-  color:#fff;
+  color:red;
   border-radius:50%;
 }
 .footer-basic .copyright {
