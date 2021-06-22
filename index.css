@@ -3,12 +3,12 @@
 html, body {
   font-family: Abel, Arial, Verdana, sans-serif;
   scroll-behavior: smooth;
-  background-image: url("cool-background-4.png");
-  background-repeat:no-repeat;
 }
 body{
--webkit-tap-highlight-color: rgba(255, 255,255,0
-);}
+background-image: url("cool-background-4.png");
+background-repeat:no-repeat;
+-webkit-tap-highlight-color: rgba(255, 255,255,0);
+}
 /*#mn{
   display:flex;
   text-align:right;
