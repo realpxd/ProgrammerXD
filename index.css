@@ -295,7 +295,7 @@ a:hover{
   margin:0 8px;
   color:#fff;
   padding:1%;
-  transition:0.2s;
+  transition:0.1s;
 }
 .footer-basic .social > a:hover {
   color:red;
