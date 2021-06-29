@@ -10,6 +10,7 @@ background-repeat:no-repeat;
 -moz-tap-highlight-color:none;
 -o-tap-highlight-color:none;
 font-size:17pt;
+overflow:hidden;
 }
 /*#mn{
   display:flex;
@@ -275,13 +276,13 @@ a:hover{
   padding-left:12%;
 }
 #c {
-  display:block;
   position:fixed;
   top:55%;
   background-color:#15151e;
   height:200%;
   width:100%;
   padding-top:5%;
+  overflow:hidden;
 }
 .footer-basic .social {
   text-align:center;
@@ -295,7 +296,7 @@ a:hover{
   margin:0 8px;
   color:#fff;
   padding:1%;
-  transition:0.1s;
+  transition:0.2s;
 }
 .footer-basic .social > a:hover {
   color:red;
