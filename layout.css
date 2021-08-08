@@ -217,7 +217,7 @@
 .header .profile .image {
 	margin-right: 14px;
 	float: left;
-	width: 44px;
+	border-radius:50%;
 	font-size: 0;
 }
 
