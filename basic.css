@@ -1031,3 +1031,40 @@ textarea.error::-webkit-input-placeholder {
 
 }
 
+
+
+#c {
+  position:relative;
+  top:55%;
+
+  height:200%;
+  width:100%;
+  padding-top:5%;
+  overflow:hidden;
+}
+.footer-basic .social {
+  text-align:center;
+}
+.footer-basic .social > a {
+  font-size:20px;
+  width:40px;
+  height:40px;
+  display:inline-block;
+  text-align:center;
+  margin:0 1px;
+  color:#fff;
+  padding:1%;
+  transition:0.2s;
+}
+.footer-basic .social > a:hover {
+  color:red;
+  border-radius:50%;
+}
+.footer-basic .copyright {
+  font-size:13px;
+  color:#aaa;
+  text-align:center;
+  font-family:helvetica;
+  font-weight:300;
+  letter-spacing:2px;
+}
