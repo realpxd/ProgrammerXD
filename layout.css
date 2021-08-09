@@ -217,15 +217,14 @@
 .header .profile .image {
 	margin-right: 13px;
 	float: left;
-	border-radius:50%;
+	
 	font-size: 0;
 }
 
 .header .profile .image img {
 	width: 40px;
 	height:40px;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
+	
 }
 
 .header .profile .title {
