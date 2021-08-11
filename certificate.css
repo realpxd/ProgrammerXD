@@ -15,16 +15,17 @@ a{
     color:white;
     letter-spacing:10px;
     line-height:50px;
+    transition:0.4s;
 }
 a:hover{
     background-color:none;
-    color:silver;
+    color:black;
 }
 #All{
    justify-content:center;
    align-items:center;
    text-align:center;
-   background-color:black;
+   background-color:#6699FF;
    border-radius:20px;
    margin:2%;
    padding:10%;
@@ -57,7 +58,7 @@ a:hover{
   transition:0.2s;
 }
 .footer-basic .social > a:hover {
-  color:red;
+  color:black;
   border-radius:50%;
 }
 .footer-basic .copyright {
