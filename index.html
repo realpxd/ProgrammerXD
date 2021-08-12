@@ -71,7 +71,7 @@ input{
     padding:5% 0 5% 0;
     text-align:center;
     transition:0.3s;
-    z-index:1;
+    z-index:2;
     box-shadow:0 0 10px black;
 
 }
@@ -104,7 +104,8 @@ a:hover{
     position:absolute;
     top:18%;
     left:30%;
-    filter:opacity(0.9);
+    filter:opacity(0.8);
+    z-index:1;
     animation:Cloud 1s ease 0s infinite alternate-reverse;
 }
 #planee{
@@ -119,17 +120,19 @@ a:hover{
     width:150px;
     z-index:5;
     margin-left:90%;
+    position:absolute;
     display:inline-block;
 }
 /* illustration 5 */
 #Smoke{
     height:30px;
     width:30px;
+    position:absolute;
     transform:rotate(-10deg);
     z-index:5;
     display:inline-block;
-    margin-left:1%;
-    margin-top:5%;
+    margin-left:150px;
+    margin-top:20px;
 }
 /* animation */
 @keyframes Cloud {
