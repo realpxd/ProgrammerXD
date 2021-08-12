@@ -3,12 +3,7 @@
 <head>
 <title>Official website for ProgrammerXD</title>
 </head>
-<!-- Anime.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-<!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <!-- Data Aos -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <!-- icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,12 +11,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
 <!-- Meta tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="keywords" content="Landing Page, LandingPage, Naman, Saini, NamanSaini, ProgrammerXD, programmerxd, programmarxd, vcard, resume, personal, card, cards, portfolio" />
+<meta name="author" content="ProgrammerXD / Naman Saini" />
 <meta name="description" content="About Naman Saini/ProgrammerXD" />
 <meta property="og:image" content="https://telegra.ph/file/0fb5f61e16eab133834da.png" />
-<meta name="keywords" content="Naman, Saini, NamanSaini, ProgrammerXD, programmerxd, programmarxd, vcard, resume, personal, card, cards, portfolio" />
-<meta name="author" content="ProgrammerXD / Naman Saini" />
 <!-- styling -->
 <style type="text/css">
+*{
+    scroll-behavior: smooth;
+}
 body{
     background:#6699FF;
 }
@@ -270,8 +268,15 @@ button{
     <a href="Resume.html"><button>Take Tour</button></a>
 </div><br><br><br><br>
 <div class="powr-comments" id="f669812e_1628687908"></div>
-<script src="https://www.powr.io/powr.js?platform=html"></script>
 <!-- SCRIPTS -->
+      <!-- Anime.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+      <!-- Jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <!-- Data Aos -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Comments and Ratings -->
+      <script src="https://www.powr.io/powr.js?platform=html"></script>
 <script>
       /* AOS */
 AOS.init();
@@ -289,13 +294,9 @@ AOS.init();
 anime.timeline({loop:false}) 
     .add({
           targets:"#data",
-          translateY:["-35px","5px"],
+          translateY:["-35px",0],
           opacity:[0,1],
-          duration:2000,
-          easing: 'easeOutQuart',
-          delay:function(element,i) {
-          return i*200;
-          }
+          duration:10000
 });
       /* Icon in Menu Bar */  
 anime.timeline({loop:false}) 
@@ -315,10 +316,9 @@ anime.timeline({loop:false})
 anime.timeline({loop:true}) 
     .add({
           targets:"#planee",
-          translateX:["90px","-500px"],
+          translateX:["90px","-300px"],
           opacity:[0.8,0],
-          duration:10000,
-          easing: 'linear',
+          duration:40000,
           delay:function(element,i) {
           return i*200;
           }
