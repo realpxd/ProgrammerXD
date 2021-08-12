@@ -19,7 +19,8 @@ a{
 }
 a:hover{
     background-color:none;
-    color:black;
+    color:;
+    text-shadow:0 0 50px black;
 }
 #All{
    justify-content:center;
@@ -33,11 +34,9 @@ a:hover{
    font-family: 'Righteous', cursive;
    font-weight:900;
 }
-
 #c {
   position:relative;
   top:55%;
-
   height:200%;
   width:100%;
   padding-top:5%;
@@ -58,14 +57,25 @@ a:hover{
   transition:0.2s;
 }
 .footer-basic .social > a:hover {
-  color:black;
-  border-radius:50%;
+  color:;
+  text-shadow:0 0 25px black;
 }
 .footer-basic .copyright {
   font-size:13px;
-  color:#aaa;
+  font-weight:bold;
+  color:white;
+  border-radius:10px;
+  padding:1%;
   text-align:center;
   font-family:helvetica;
   font-weight:300;
   letter-spacing:2px;
+  backdrop-filter:blur(2px);
+}
+#Cphoto{
+  height:100px;
+  width:100px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
