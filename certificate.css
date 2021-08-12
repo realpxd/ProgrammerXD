@@ -79,3 +79,164 @@ a:hover{
   margin-left:auto;
   margin-right:auto;
 }
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+h1{
+
+    letter-spacing:7px;
+
+    font-weight:900;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:white;
+
+    letter-spacing:10px;
+
+    line-height:50px;
+
+    transition:0.4s;
+
+}
+
+a:hover{
+
+    background-color:none;
+
+    color:;
+
+    text-shadow:0 0 50px black;
+
+}
+
+#All{
+
+   justify-content:center;
+
+   align-items:center;
+
+   text-align:center;
+
+   background-color:#6699FF;
+
+   border-radius:20px;
+
+   margin:2%;
+
+   padding:10%;
+
+   font-size:20pt;
+
+   font-family: 'Righteous', cursive;
+
+   font-weight:900;
+
+}
+
+#c {
+
+  position:relative;
+
+  top:55%;
+
+  height:200%;
+
+  width:100%;
+
+  padding-top:5%;
+
+  overflow:hidden;
+
+}
+
+.footer-basic .social {
+
+  text-align:center;
+
+}
+
+.footer-basic .social > a {
+
+  font-size:20px;
+
+  width:40px;
+
+  height:40px;
+
+  display:inline-block;
+
+  text-align:center;
+
+  margin:0 1px;
+
+  color:#fff;
+
+  padding:1%;
+
+  transition:0.2s;
+
+}
+
+.footer-basic .social > a:hover {
+
+  color:;
+
+  text-shadow:0 0 25px black;
+
+}
+
+.footer-basic .copyright {
+
+  font-size:13px;
+
+  font-weight:bold;
+
+  color:white;
+
+  border-radius:10px;
+
+  padding:1%;
+
+  text-align:center;
+
+  font-family:helvetica;
+
+  font-weight:300;
+
+  letter-spacing:2px;
+
+  backdrop-filter:blur(2px);
+
+}
+
+#Cphoto{
+
+  height:100px;
+
+  width:100px;
+
+  display:block;
+
+  margin-left:auto;
+
+  margin-right:auto;
+
+}
