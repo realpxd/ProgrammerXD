@@ -62,7 +62,7 @@ input{
 #Unav{
     position:absolute;
     background:white;
-    height:34%;
+    height:38.5%;
     width:100%;
     display:block;
     top:-50%;
@@ -212,13 +212,54 @@ button{
         height:4.5%;
     }
     #menu{
-        margin-left:55%;
+        margin-top:1%;
+        margin-left:50%;
+        font-size:30pt;
     }
-    #cloud{
-        top:-50%;
+    #nav{
+        font-size:25pt;
+    }
+    .footer-basic .social > a {
+        font-size:30pt;
+        padding:3%;
+    }
+    .footer-basic .copyright {
+        font-size:15pt;
+    }
+    #Unav{
+        height:25%;
+    }
+    #MBicon{
+        margin:0;
+        margin-top:-5%;
+        height:160px;
+        width:160px;
+    }
+    #MarginTop{
+        margin-top:25%;
+    }
+    #Cloud{
+        top:8%;
+        height:125px;
+        width:180px;
+    }
+    #Plane{
+        height:80px;
+        width:180px;
+    }
+    #Smoke{
+        height:50px;
+        width:50px;
+        margin-left:185px;
     }
     button{
         width:250px;
+        font-size:20pt;
+        padding:4%;
+        
+    }
+    #h5{
+        font-size:22pt;
     }
 }
 </style>
@@ -230,7 +271,7 @@ button{
 </span><br><br>
 
 <!-- Second Menu Bar -->
-<div id="Unav">
+<div id="Unav"><br><br>
     <a href="#" id="nav"> HOME </a><br>
     <a target="_blank" rel="noopener noreferrer" href="Resume.html" id="nav"> MY RESUME </a><br>
     <a target="_blank" rel="noopener noreferrer" href="Certificates.html" id="nav"> CERTIFICATES </a>
@@ -259,6 +300,7 @@ button{
       <img src="Smoke.png" id="Smoke">
 </div>
             <br><br><br>
+<div id="MarginTop">
       <img src="LandingIcon.png" id="LandingIcon"><hr>
 
 <!-- Greetings -->
@@ -267,7 +309,7 @@ button{
     <p id="h5"> I am glad that you visited my webpage. 
                 So, let me take you on a tour where you can know more about me</p>
     <a href="Resume.html"><button>Take Tour</button></a>
-</div><br><br><br><br>
+</div></div><br><br><br><br>
 <div class="powr-comments" id="f669812e_1628687908"></div>
 <!-- SCRIPTS -->
       <!-- Anime.js -->
@@ -283,7 +325,7 @@ button{
 AOS.init();
       /* Menu Bar Toggle */
     function openNav() {
-            document.getElementById("Unav").style.top = "8%";
+            document.getElementById("Unav").style.top = "4%";
     }
     function closeNav() {
             document.getElementById("Unav").style.top = "-100%";
