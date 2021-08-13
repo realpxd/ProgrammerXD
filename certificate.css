@@ -82,3 +82,24 @@ a:hover{
   margin-left:auto;
   margin-right:auto;
 }
+@media screen and (min-width:400px) and (max-width:1500px){
+    #All{
+        margin-left:50%;
+        position:absolute;
+    }
+    #Cphoto{
+        float:left;
+        height:250px;
+        width:250px;
+        margin-top:10%;
+        margin-left:10%;
+    }
+    h1{
+        margin-left:-27%;
+        margin-top:45%;
+        float:left;
+    }
+    a{
+        line-height:40px;
+    }
+}
