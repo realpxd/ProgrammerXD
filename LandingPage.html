@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Official website for ProgrammerXD</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4689412167798339"
+     crossorigin="anonymous"></script>
+<!-- Data Aos -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<!-- icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- fonts  -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+<!-- Meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="keywords" content="Landing Page, LandingPage, Naman, Saini, NamanSaini, ProgrammerXD, programmerxd, programmarxd, vcard, resume, personal, card, cards, portfolio" />
+<meta name="author" content="ProgrammerXD / Naman Saini" />
+<meta name="title" content="Naman Saini" />
+<meta name="description" content="About Naman Saini/ProgrammerXD" />
+<meta property="og:image" content="https://telegra.ph/file/0fb5f61e16eab133834da.png" />
+<!-- styling -->
+<style type="text/css">
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background:#6699FF;
+}
+/* MENU BAR RELATED */
+#MenuBar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:9%;
+    width:100%;
+    box-sizing:border-box;
+    background:white;
+    padding:1%;
+    display:block;
+    z-index:3;
+}
+#MBicon{
+    float:left;
+    display:block;
+    height:140px;
+    width:140px;
+    margin-top:-12%;
+    margin-left:-1%;
+}
+input{
+    text-align:center;
+    position:absolute;
+    display:inline-block;
+    border:none;
+    background:none;
+    outline:none;
+    height:40px;
+    color:black;
+}
+#menu{
+    font-size:23pt;
+    margin-left:2%;
+}
+#Unav{
+    position:absolute;
+    background:white;
+    height:40.5%;
+    width:100%;
+    display:block;
+    top:-120%;
+    left:0;
+    padding:5% 0 5% 0;
+    text-align:center;
+    transition:0.5s;
+    z-index:2;
+    box-shadow:0 0 10px black;
+
+}
+#nav{
+    color:black;
+    display:block;
+    font-size:14pt;
+    text-decoration:none;
+    font-family:righteous;
+}
+a:hover{
+    text-decoration:none;
+    color:black;
+    border-bottom:1px solid black;
+}
+
+/* illustration 1 */
+#LandingIcon{
+    height:250px;
+    width:250px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    z-index:4;
+}
+/* illustration 2 */
+#Cloud{
+    height:70px;
+    width:110px;
+    position:absolute;
+    top:18%;
+    left:30%;
+    filter:opacity(0.8);
+    z-index:1;
+    animation:Cloud 1s ease 0s infinite alternate-reverse;
+}
+#planee{
+    display:flex;
+    position:absolute;
+    margin-left:40%;
+    animation:float 2s ease 0s infinite alternate-reverse;
+}
+/* illustration 4 */
+#Plane{
+    height:50px;
+    width:150px;
+    z-index:5;
+    margin-left:90%;
+    position:absolute;
+    display:inline-block;
+}
+/* illustration 5 */
+#Smoke{
+    height:30px;
+    width:30px;
+    position:absolute;
+    transform:rotate(-10deg);
+    z-index:5;
+    display:inline-block;
+    margin-left:150px;
+    margin-top:20px;
+}
+/* animation */
+@keyframes Cloud {
+    from{}
+    to{margin-top:3px;}
+}
+@keyframes float {
+    from{margin-top:-6%;}
+    to{margin-top:3%;}
+}
+
+/* greetings */
+#data{
+    display:block;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    margin-left:7%;
+    margin-right:7%;
+    z-index:6;
+}
+#h1{
+    font-family:serif;
+    font-size:22pt;
+    font-weight:1100;
+}
+#h5{
+    letter-spacing:1px;
+    font-size:14pt;
+}
+button{
+    border:none;
+    background:#99CC00;
+    padding:5%;
+    font-size:13pt;
+    border-radius:10px;
+    font-weight:bold;
+    color:white;
+    width:150px;
+}
+#c {
+  position:relative;
+  top:5%;
+  height:200%;
+  width:100%;
+  padding-top:5%;
+  overflow:hidden;
+}
+.footer-basic .social {
+  text-align:center;
+}
+.footer-basic .social > a {
+  font-size:20px;
+  width:40px;
+  height:40px;
+  display:inline-block;
+  text-align:center;
+  margin:0 1px;
+  color:black;
+  padding:1%;
+  transition:0.2s;
+}
+.footer-basic .social > a:hover {
+  color:red;
+}
+.footer-basic .copyright {
+  font-size:13px;
+  color:#aaa;
+  text-align:center;
+  font-family:helvetica;
+  font-weight:300;
+  letter-spacing:2px;
+}
+@media screen and (min-width:450px) and (max-width:1500px){
+    #MenuBar{
+        height:4.5%;
+    }
+    #menu{
+        margin-top:1%;
+        margin-left:50%;
+        font-size:30pt;
+    }
+    #nav{
+        font-size:25pt;
+    }
+    .footer-basic .social > a {
+        font-size:30pt;
+        padding:3%;
+    }
+    .footer-basic .copyright {
+        font-size:15pt;
+    }
+    #Unav{
+        height:25%;
+    }
+    #MBicon{
+        margin:0;
+        margin-top:-5%;
+        height:160px;
+        width:160px;
+    }
+    #MarginTop{
+        margin-top:25%;
+    }
+    #Cloud{
+        top:8%;
+        height:125px;
+        width:180px;
+    }
+    #Plane{
+        height:80px;
+        width:180px;
+    }
+    #Smoke{
+        height:50px;
+        width:50px;
+        margin-left:185px;
+    }
+    button{
+        width:250px;
+        font-size:20pt;
+        padding:4%;
+        
+    }
+    #h5{
+        font-size:22pt;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Menu Bar -->
+<span id="MenuBar">
+     <img src="Naman.png" id="MBicon"> <input value="&#9776;" type="text" id="menu" onclick="openNav()" onblur="closeNav()" readonly>
+</span><br><br>
+
+<!-- Second Menu Bar -->
+<div id="Unav"><br><br>
+    <a href="#" id="nav"> HOME </a><br>
+    <a target="_blank" rel="noopener noreferrer" href="Resume.html" id="nav"> MY RESUME </a><br>
+    <a target="_blank" rel="noopener noreferrer" href="Certificates.html" id="nav"> CERTIFICATES </a>
+<div id="c">
+  <div class="footer-basic"><hr><br>
+      <footer>
+          <div class="social">
+            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/programmerxd?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCiKTJ_cHytgUSITeuFGzJmQ"><i class="fa fa-youtube"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:amlittleprogrammer@gmail.com"><i class="fa fa-google"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://t.me/DevelopersAndProgrammers"><i class="fa fa-telegram"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100069078836350"><i class="fa fa-facebook"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/chaosAgent75?s=09"><i class="fa fa-twitter"></i></a>      
+          </div>
+            <p class="copyright">ProgrammerXD © 2021</p>
+      </footer>
+  </div> 
+</div>
+</div>
+            <br><br><br><br><br>
+           
+<!-- illustrations -->
+      <img src="Cloud.png" id="Cloud">
+<div id="planee">
+      <img src="Plane.png" id="Plane">
+      <img src="Smoke.png" id="Smoke">
+</div>
+            <br><br><br>
+<div id="MarginTop">
+      <img src="LandingIcon.png" id="LandingIcon"><hr>
+
+<!-- Greetings -->
+<div id="data" >
+    <h1 id="h1"> Hello, Mr./Ms. Stalker </h1>
+    <p id="h5"> I am glad that you visited my webpage. 
+                So, let me take you on a tour where you can know more about me</p>
+    <a href="Resume.html"><button>Take Tour</button></a>
+</div></div><br><br><br><br>
+<div class="powr-comments" id="f669812e_1628687908"></div>
+<!-- SCRIPTS -->
+      <!-- Anime.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+      <!-- Jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <!-- Data Aos -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Comments and Ratings -->
+      <script src="https://www.powr.io/powr.js?platform=html"></script>
+<script>
+      /* AOS */
+AOS.init();
+      /* Menu Bar Toggle */
+        var uNav = document.getElementById('Unav');
+    function openNav() {
+         if(uNav.style.top <= "-120%"){
+           uNav.style.top = "4.5%";
+         }
+         else{
+           uNav.style.top = "-120%";
+         }
+      
+    };
+    function closeNav() {
+      uNav.style.top = "-120%"
+    }
+</script>
+<script>
+/* Anime.js */
+      /* GREETINGS */
+anime.timeline({loop:false}) 
+    .add({
+          targets:"#data",
+          translateY:["-35px",0],
+          opacity:[0,1],
+          duration:10000
+});
+      /* Icon in Menu Bar */  
+anime.timeline({loop:false}) 
+    .add({
+          targets:"#MBicon",
+          translateX:["-26000px","0"],
+          translateY:["100px","0"],
+          opacity:[0,1],
+          duration:2000,
+          delay: 400,
+          easing: 'easeOutQuart',
+          delay:function(element,i) {
+          return i*200;
+          }
+});
+      /* Plane Animation */
+anime.timeline({loop:true}) 
+    .add({
+          targets:"#planee",
+          translateX:["90px","-300px"],
+          opacity:[0.8,0],
+          duration:40000,
+          delay:function(element,i) {
+          return i*200;
+          }
+});
+</script>
+</body>
+</html>
