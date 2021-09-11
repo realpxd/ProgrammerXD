@@ -326,11 +326,18 @@ button{
       /* AOS */
 AOS.init();
       /* Menu Bar Toggle */
+        var uNav = document.getElementById('Unav');
     function openNav() {
-            document.getElementById("Unav").style.top = "4%";
-    }
+         if(uNav.style.top <= "-120%"){
+           uNav.style.top = "4.5%";
+         }
+         else{
+           uNav.style.top = "-120%";
+         }
+      
+    };
     function closeNav() {
-            document.getElementById("Unav").style.top = "-140%";
+      uNav.style.top = "-120%"
     }
 </script>
 <script>
