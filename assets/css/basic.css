@@ -1040,7 +1040,7 @@ textarea.error::-webkit-input-placeholder {
   height:40px;
   display:inline-block;
   text-align:center;
-  margin:0 1px;
+  margin:0 0.5px;
   color:white;
   padding:1%;
   transition:0.2s;
