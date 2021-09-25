@@ -206,6 +206,7 @@
 	color: #78cc6d;
 }
 
+
 .header .profile {
 	padding: 10px 62px 10px 18px;
 	width: auto;
@@ -627,7 +628,7 @@
 
 @media (max-width: 1072px) {
 	.card-inner {
-		width: 115%;
+		width: 129%;
 	}
 
 }
@@ -1656,7 +1657,7 @@
 }
 
 .skills-list.list ul li .name:before {
-	content: "\f121";
+	content: "\2713";
 	position: absolute;
 	left: 0;
 	top: 0;

@@ -1059,6 +1059,6 @@ textarea.error::-webkit-input-placeholder {
   letter-spacing:2px;
 }
 .blog-frame{
-    outline:none;
     border-radius:20px;
+    width:1000px;
 }
