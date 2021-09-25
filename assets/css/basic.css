@@ -23,6 +23,7 @@
 
 html {
 	margin-right: 0!important;
+        user-select:none;
 }
 
 body {
