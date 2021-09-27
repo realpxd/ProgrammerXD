@@ -575,28 +575,3 @@ function initMap() {
 		title: 'We are here!'
 	});
 }
-
-function sendmail(){
-			var name = $('#name').val();
-			var email = $('#email').val();
-            var message = $('#message').val();
-			var Body='Name: '+name+'<br>Email: '+email+'<br>Message: '+message+'<br>h';
-			//console.log(name, phone, email, message);
-
-			Email.send({
-        SecureToken:"5a5b68a8-f001-4a96-b742-0d2ad7dc4733",
-				To: 'amlittleprogrammer@gmail.com',
-				From: email,
-				Subject: "Website Form",
-				Body: Body
-			}).then(
-				message =>{
-					//console.log (message);
-					if(message=='OK'){
-					alert('Your mail has been send. Thanks for connecting.');
-					}
-					else{
-						console.error (message);
-						alert('There is an error at sending message. ')
-					}}
-			);};
