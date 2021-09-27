@@ -32,12 +32,13 @@
 <style type="text/css">
 *{
     scroll-behavior: smooth;
+    user-select:none;
 }
 body{
     background:#6699FF;
 }
 /* MENU BAR RELATED */
-#MenuBar{
+.MenuBar{
     position:fixed;
     top:0;
     left:0;
@@ -49,29 +50,28 @@ body{
     display:block;
     z-index:3;
 }
-#MBicon{
-    float:left;
-    display:block;
-    height:140px;
-    width:140px;
-    margin-top:-12%;
-    margin-left:-1%;
-}
-input{
-    text-align:center;
-    position:absolute;
-    display:inline-block;
-    border:none;
-    background:none;
-    outline:none;
-    height:40px;
-    color:black;
-}
-#menu{
-    font-size:23pt;
-    margin-left:2%;
-}
-#Unav{
+	.MenuBar .Naman{
+		    float:left;
+		    display:block;
+		    height:140px;
+		    width:140px;
+		    margin-top:-12%;
+		    margin-left:-1%;
+	}
+	.MenuBar .menu{
+		    text-align:center;
+		    position:absolute;
+		    display:inline-block;
+		    border:none;
+		    background:none;
+		    outline:none;
+		    height:40px;
+		    color:black;
+		    font-size:23pt;
+		    margin-left:2%;
+		    transition:0.2s;
+	}
+.Snav{
     position:absolute;
     background:white;
     height:40.5%;
@@ -81,18 +81,18 @@ input{
     left:0;
     padding:5% 0 5% 0;
     text-align:center;
-    transition:0.5s;
+    transition:0.3s;
     z-index:2;
     box-shadow:0 0 10px black;
 
 }
-#nav{
-    color:black;
-    display:block;
-    font-size:14pt;
-    text-decoration:none;
-    font-family:righteous;
-}
+	.Snav .nav{
+		    color:black;
+		    display:block;
+		    font-size:14pt;
+		    text-decoration:none;
+		    font-family:righteous;
+	}
 a:hover{
     text-decoration:none;
     color:black;
@@ -100,7 +100,7 @@ a:hover{
 }
 
 /* illustration 1 */
-#LandingIcon{
+.LandingIcon{
     height:250px;
     width:250px;
     display:block;
@@ -109,7 +109,7 @@ a:hover{
     z-index:4;
 }
 /* illustration 2 */
-#Cloud{
+.Cloud{
     height:70px;
     width:110px;
     position:absolute;
@@ -119,31 +119,31 @@ a:hover{
     z-index:1;
     animation:Cloud 1s ease 0s infinite alternate-reverse;
 }
-#planee{
+.FullPlane{
     display:flex;
     position:absolute;
     margin-left:40%;
     animation:float 2s ease 0s infinite alternate-reverse;
 }
 /* illustration 4 */
-#Plane{
-    height:50px;
-    width:150px;
-    z-index:5;
-    margin-left:90%;
-    position:absolute;
-    display:inline-block;
+	.FullPlane .Plane{
+		    height:50px;
+		    width:150px;
+		    z-index:5;
+		    margin-left:90%;
+		    position:absolute;
+		    display:inline-block;
 }
 /* illustration 5 */
-#Smoke{
-    height:30px;
-    width:30px;
-    position:absolute;
-    transform:rotate(-10deg);
-    z-index:5;
-    display:inline-block;
-    margin-left:150px;
-    margin-top:20px;
+	.FullPlane .Smoke{
+		    height:30px;
+		    width:30px;
+		    position:absolute;
+		    transform:rotate(-10deg);
+		    z-index:5;
+		    display:inline-block;
+		    margin-left:150px;
+		    margin-top:20px;
 }
 /* animation */
 @keyframes Cloud {
@@ -156,7 +156,7 @@ a:hover{
 }
 
 /* greetings */
-#data{
+.data{
     display:block;
     justify-content:center;
     align-items:center;
@@ -167,26 +167,26 @@ a:hover{
     margin-right:7%;
     z-index:6;
 }
-#h1{
-    font-family:serif;
-    font-size:22pt;
-    font-weight:1100;
-}
-#h5{
-    letter-spacing:1px;
-    font-size:14pt;
-}
-button{
-    border:none;
-    background:#99CC00;
-    padding:5%;
-    font-size:13pt;
-    border-radius:10px;
-    font-weight:bold;
-    color:white;
-    width:150px;
-}
-#c {
+	.data .h1{
+		    font-family:serif;
+		    font-size:22pt;
+		    font-weight:1100;
+	}
+	.data .h5{
+		    letter-spacing:1px;
+		    font-size:14pt;
+	}
+	.data .Tour{
+		    border:none;
+		    background:#99CC00;
+		    padding:5%;
+		    font-size:13pt;
+		    border-radius:10px;
+		    font-weight:bold;
+		    color:white;
+		    width:150px;
+	}
+.box {
   position:relative;
   top:5%;
   height:200%;
@@ -194,135 +194,201 @@ button{
   padding-top:5%;
   overflow:hidden;
 }
-.footer-basic .social {
-  text-align:center;
-}
-.footer-basic .social > a {
-  font-size:20px;
-  width:40px;
-  height:40px;
-  display:inline-block;
-  text-align:center;
-  margin:0 1px;
-  color:black;
-  padding:1%;
-  transition:0.2s;
-}
-.footer-basic .social > a:hover {
-  color:red;
-}
-.footer-basic .copyright {
-  font-size:13px;
-  color:#aaa;
-  text-align:center;
-  font-family:helvetica;
-  font-weight:300;
-  letter-spacing:2px;
-}
+	.box .footer .social {
+		  text-align:center;
+	}
+	.box .footer .social > a {
+		  font-size:20px;
+		  width:40px;
+		  height:40px;
+		  display:inline-block;
+		  text-align:center;
+		  margin:0 1px;
+		  color:black;
+		  padding:1%;
+		  transition:0.5s;
+	}
+		.box .footer .social > a:hover {
+			  text-decoration:none;
+			  outline:none;
+			  border:none;
+			  transform:scale(1.2);
+			  text-shadow:0 20px 0.5px grey;
+		}
+	.box .footer .copyright {
+		  font-size:13px;
+		  color:#aaa;
+		  text-align:center;
+		  font-family:helvetica;
+		  font-weight:300;
+		  letter-spacing:2px;
+	}
 @media screen and (min-width:450px) and (max-width:1500px){
-    #MenuBar{
+    .MenuBar{
         height:4.5%;
     }
-    #menu{
-        margin-top:1%;
-        margin-left:50%;
-        font-size:30pt;
-    }
-    #nav{
-        font-size:25pt;
-    }
-    .footer-basic .social > a {
+	    .MenuBar .Naman{
+		        margin:0;
+		        margin-top:-5%;
+		        height:160px;
+		        width:160px;
+	    }
+	    .MenuBar .menu{
+		        margin-top:1%;
+		        margin-left:50%;
+		        font-size:30pt;
+	    }
+	.Snav{
+		height:25%;
+	}
+	    .Snav .nav{
+		        font-size:25pt;
+	    }
+    .footer .social > a {
         font-size:30pt;
         padding:3%;
     }
-    .footer-basic .copyright {
-        font-size:15pt;
-    }
-    #Unav{
-        height:25%;
-    }
-    #MBicon{
-        margin:0;
-        margin-top:-5%;
-        height:160px;
-        width:160px;
-    }
-    #MarginTop{
-        margin-top:25%;
-    }
-    #Cloud{
+	    .footer .copyright {
+		        font-size:15pt;
+	    }
+    .Cloud{
         top:8%;
         height:125px;
         width:180px;
     }
-    #Plane{
+    .FullPlane .Plane{
         height:80px;
         width:180px;
     }
-    #Smoke{
+    .FullPlane .Smoke{
         height:50px;
         width:50px;
         margin-left:185px;
     }
-    button{
+    .data .h5{
+        font-size:22pt;
+    }
+    .data .Tour{
         width:250px;
         font-size:20pt;
         padding:4%;
-        
     }
-    #h5{
-        font-size:22pt;
+    #MarginTop{
+    margin-top:25px;
     }
+}
+.container {
+	margin:10px;
+	margin-top:25%;
+    background:none;
+	padding:10px;
+	color:white;
+	backdrop-filter:blur(2px);
+}
+.container label{
+    font-weight:900;
+    font-size:20pt;
+    text-shadow:0 0 1px black;
+}
+.container .form{
+    width:80%;
+    margin-left:10%;
+}
+.container .form .name::placeholder,
+.container .form .email::placeholder,
+.container .form .message::placeholder{
+    color:silver;
+}
+.container .form .name,
+.container .form .email,
+.container .form .message{
+	height:30px;
+	width:100%;
+	border:none;
+	outline:none;
+	border-bottom:1px solid skyblue;
+	background:none;
+	margin-top:20px;
+	color:white;
+}
+.container .form .message{
+    border:1px solid skyblue;
+    height:120px;
+    padding:15px;
+    width:88%;
+    border-radius:5px;
+}
+.container .form .submit{
+	height:30px;
+    width:100%;
+    background:#99CC00;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    margin-top:10px;
+    color:white;
+    font-weight:500;
+    letter-spacing:1px;
 }
 </style>
 </head>
 <body>
 
 <!-- Menu Bar -->
-<span id="MenuBar">
-     <img src="./assets/img/Naman.png" id="MBicon"> <input value="&#9776;" type="text" id="menu" onclick="openNav()" onblur="closeNav()" readonly>
-</span><br><br>
-
-<!-- Second Menu Bar -->
-<div id="Unav"><br><br>
-    <a href="#" id="nav"> HOME </a><br>
-    <a target="_blank" rel="noopener noreferrer" href="Resume.html" id="nav"> MY RESUME </a><br>
-    <a target="_blank" rel="noopener noreferrer" href="Certificates.html" id="nav"> CERTIFICATES </a>
-<div id="c">
-  <div class="footer-basic"><hr><br>
-      <footer>
-          <div class="social">
-            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/programmerxd?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCiKTJ_cHytgUSITeuFGzJmQ"><i class="fa fa-youtube"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="mailto:amlittleprogrammer@gmail.com"><i class="fa fa-google"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://t.me/DevelopersAndProgrammers"><i class="fa fa-telegram"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100069078836350"><i class="fa fa-facebook"></i></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/chaosAgent75?s=09"><i class="fa fa-twitter"></i></a>      
-          </div>
-            <p class="copyright">ProgrammerXD © 2021</p>
-      </footer>
-  </div> 
-</div>
-</div>
-            <br><br><br><br><br>
+	<span class="MenuBar">
+	     <img src="./assets/img/Naman.png" class="Naman"> 
+	     <input value="&#9776;" type="text" class="menu " id="menu" onclick="openNav()" onblur="closeNav()" readonly>
+	</span><br><br>
+	<!-- Second Menu Bar -->
+	<div class="Snav" id="Snav"><br><br>
+		    <a href="#" class="nav"> HOME </a><br>
+		    <a target="_blank" rel="noopener noreferrer" href="Resume.html" class="nav"> MY RESUME </a><br>
+		    <a target="_blank" rel="noopener noreferrer" href="Certificates.html" class="nav" > CERTIFICATES </a>
+		<div class="box">
+			  <div class="footer"><hr><br>
+			      <footer>
+			          <div class="social">
+				            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/programmerxd?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+				            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCiKTJ_cHytgUSITeuFGzJmQ"><i class="fa fa-youtube"></i></a>
+				            <a target="_blank" rel="noopener noreferrer" href="mailto:amlittleprogrammer@gmail.com"><i class="fa fa-google"></i></a>
+				            <a target="_blank" rel="noopener noreferrer" href="https://t.me/DevelopersAndProgrammers"><i class="fa fa-telegram"></i></a>
+				            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100069078836350"><i class="fa fa-facebook"></i></a>
+				            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/chaosAgent75?s=09"><i class="fa fa-twitter"></i></a>      
+			          </div>
+   		              <p class="copyright">ProgrammerXD © 2021</p>
+			      </footer><br><br><br>
+			  </div>
+		</div>
+	</div><br><br><br><br><br>
            
 <!-- illustrations -->
-      <img src="./assets/img/Cloud.png" id="Cloud">
-<div id="planee">
-      <img src="./assets/img/Plane.png" id="Plane">
-      <img src="./assets/img/Smoke.png" id="Smoke">
-</div>
-            <br><br><br>
-<div id="MarginTop">
-      <img src="./assets/img/LandingIcon.png" id="LandingIcon"><hr>
-
-<!-- Greetings -->
-<div id="data" >
-    <h1 id="h1"> Hello, Mr./Ms. Stalker </h1>
-    <p id="h5"> I am glad that you visited my webpage. 
-                So, let me take you on a tour where you can know more about me</p>
-    <a href="Resume.html"><button>Take Tour</button></a>
-</div></div>
+      <img src="./assets/img/Cloud.png" class="Cloud">
+	<div class="FullPlane">
+	      <img src="./assets/img/Plane.png" class="Plane">
+	      <img src="./assets/img/Smoke.png" class="Smoke">
+	</div><br><br><br>
+	
+<!-- Main Section -->
+	<div id="MarginTop">
+	      <img src="./assets/img/LandingIcon.png" class="LandingIcon" alt="waiting queen"><hr>
+	<!-- Greetings -->
+		<div class="data">
+		    <h1 class="h1"> Hello, Mr./Ms. Stalker </h1>
+		    <p  class="h5"> I am glad that you visited my webpage. 
+		                So, let me take you on a tour where you can know more about me</p>
+		    <a href="Resume.html"><button class="Tour">Take Tour</button></a>
+		</div>
+	</div>
+<!--<!-- Contact Me ->
+	<div class="container contact"><hr><br>
+		<label for="ContactForm">Contact me :-</label>
+		<form class="form" action="" name="ContactForm">
+			<input class="name" type="name" placeholder="Full Name" name="Contact" required><br>
+			<input class="email" type="email" placeholder="Your Email" name="Contact" required><br>
+			<textarea class="message" name="Contact" placeholder="Type your message...." required></textarea><br>
+			<button class="submit" type="submit" name="Contact">SUBMIT</button>
+		</form>
+	</div>-->
 <!-- SCRIPTS -->
       <!-- Anime.js -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -334,34 +400,37 @@ button{
       /* AOS */
 AOS.init();
       /* Menu Bar Toggle */
-        var uNav = document.getElementById('Unav');
-    function openNav() {
-         if(uNav.style.top <= "-120%"){
-           uNav.style.top = "4.5%";
-         }
-         else{
-           uNav.style.top = "-120%";
-         }
-      
-    };
-    function closeNav() {
-      uNav.style.top = "-120%"
-    }
+	      var sNav = document.getElementById('Snav');
+	      var menuIcon = document.getElementById('menu');
+		    function openNav() {
+		         if(sNav.style.top <= "-120%"){
+		            sNav.style.top = "4.5%";
+		            menuIcon.style.transform = "rotate(270deg)";
+		         }
+		         else{
+		            sNav.style.top = "-120%";
+	   		        menuIcon.style.transform = "rotate(0deg)";
+		         }     
+    		};
+		    function closeNav() {
+				    sNav.style.top = "-120%"
+	       		    menuIcon.style.transform = "rotate(0deg)";
+		    }
 </script>
 <script>
 /* Anime.js */
-      /* GREETINGS */
+    /* GREETINGS */
 anime.timeline({loop:false}) 
     .add({
-          targets:"#data",
+          targets:".data",
           translateY:["-35px",0],
           opacity:[0,1],
           duration:10000
 });
-      /* Icon in Menu Bar */  
+	/* Icon in Menu Bar */  
 anime.timeline({loop:false}) 
     .add({
-          targets:"#MBicon",
+          targets:".Naman",
           translateX:["-26000px","0"],
           translateY:["100px","0"],
           opacity:[0,1],
@@ -372,10 +441,10 @@ anime.timeline({loop:false})
           return i*200;
           }
 });
-      /* Plane Animation */
+    /* Plane Animation */
 anime.timeline({loop:true}) 
     .add({
-          targets:"#planee",
+          targets:".FullPlane",
           translateX:["90px","-300px"],
           opacity:[0.8,0],
           duration:40000,
