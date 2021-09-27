@@ -142,7 +142,9 @@
 						<a  target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCiKTJ_cHytgUSITeuFGzJmQ"><i class="fa fa-youtube"></i></a>
 						<a target="_blank" rel="noopener noreferrer" href="mailto:amlittleprogrammer@gmail.com"><i class="fa fa-envelope"></i></a>
 						<a target="_blank" rel="noopener noreferrer" href="https://t.me/DevelopersAndProgrammers"><i class="fa fa-telegram"></i></a>
-						<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/chaosAgent75?s=09"><i class="fa fa-twitter"></i></a>      
+						<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/chaosAgent75?s=09"><i class="fa fa-twitter"></i></a>    
+						<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/programmerxd"><i class="fa fa-linkedin"></i></a>
+						<a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/u/Alive_Orange_834?utm_medium=android_app&utm_source=share"><i class="fa fa-reddit"></i></a>      
 					</div>
 					<div class="lnks">
 						<a href="Certificates.html" class="lnk">
@@ -489,8 +491,8 @@
 						</div>
 					</div>
 					<div class="align-left">
-						<a href="#" class="button" onclick="$('#cform').submit(); return false;">
-							<span class="text">Send Message</span>
+						<a href="#cform" class="button" onclick="$('#cform').submit(); return true;">
+							<button type="submit" class="text" style="border:none;">Send Message</button>
 							<span class="arrow"></span>
 						</a>
 					</div>
@@ -519,7 +521,7 @@
 		</div>
 
 	</div>
-	<script src="./assets/js/jquery.min.js"></script>
+	<script id="jquery" src="./assets/js/jquery.min.js"></script>
 	<script src="./assets/js/jquery.validate.js"></script>
 	<script src="./assets/js/jquery.magnific-popup.js"></script>
 	<script src="./assets/js/imagesloaded.pkgd.js"></script>
@@ -527,9 +529,48 @@
 	<script src="./assets/js/jquery.slimscroll.js"></script>
 	<script src="./assets/js/owl.carousel.js"></script>
 	<script src="./assets/js/typed.js"></script>
-
 	<script src="https://use.fontawesome.com/8da76d029b.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz2w7HUaWudHwd7AWQpCL48Qs050WOn9s"></script>
 	<script src="./assets/js/scripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+function sendmail(){
+
+var jqueryy = document.getElementById('jquery');
+  var node = document.createElement("script");
+ if(jqueryy.getAtrribute('src','./assets/js/jquery.min.js')){
+    jqueryy.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js');
+    node.setAttribute('src','https://code.jquery.com/jquery-2.2.4.min.js');
+ }else{
+     jqueryy.setAtrribute('src','./assets/js/jquery.min.js');
+     node.setAttribute('src','');
+ }
+
+			var name = $('#name').val();
+			var email = $('#email').val();
+            var message = $('#message').val();
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Message: '+message+'<br>h';
+			//console.log(name, phone, email, message);
+
+			Email.send({
+        SecureToken:"5a5b68a8-f001-4a96-b742-0d2ad7dc4733",
+				To: 'amlittleprogrammer@gmail.com',
+				From: email,
+				Subject: "Website Form",
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thanks for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is an error at sending message. ')
+					}}
+			);};
+</script>
 </body>
 </html>
