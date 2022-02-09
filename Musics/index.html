@@ -175,13 +175,15 @@ html{
 	text-align:center;
 	height:20%;
 	width:20%;
+	margin-left:40%;
 	border-right:10px solid white;
 	border-radius:50%;
-	animation:loaderSpin 0.3s ease-in 0.1s infinite alternate-reverse;
+	animation:loaderSpin 1s ease-in 0.1s infinite alternate-reverse;
+	backdrop-filter:brightness(80%);
 }
 @keyframes loaderSpin{
 	from{transform:rotate(0);}
-	to{transform:rotate(360deg);}
+	to{transform:rotate(3600deg);}
 }
 </style>
 <body>
@@ -318,6 +320,7 @@ html{
 	<h2> Site under contruction and may have bugs! </h2>
 	<h1> ⚠ </h1>
 	<div class="loader">.</div>
+	<p>processing playlists...</p>
 </div>
 <script>
 	var i = 0;
