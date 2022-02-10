@@ -126,13 +126,6 @@ html{
 	width:55vw;
 	border-radius:5px;
 }
-.blocks .controls .pp{
-	display:flex;
-	justify-content:space-around;
-	width:80px;
-	margin-left:auto;
-	margin-right:auto;
-}
 .blocks .controls p{
 	font-size:8pt;
 	font-weight:1000;
@@ -141,18 +134,30 @@ html{
 	text-shadow:0 0 10px red;
 	margin-bottom:-1%;
 }
-.blocks .controls .pp .start{
-	background:none;
-	outline:none;
-	border:none;
-	color:white;
-	margin-right:2%;
+.blocks .controls .pp{
+	display:flex;
+	justify-content:space-around;
+	width:80px;
+	margin-left:auto;
+	margin-right:auto;
 }
-.blocks .controls .pp .pause{
+.blocks .controls .pp .fa-play{
+	background:none;
+	outline:none;
+	border:none;
+	color:white;	
+}
+.blocks .controls .pp .fa-pause{
 	background:none;
 	outline:none;
 	border:none;
 	color:white;
+}
+.blocks .controls .pp .fa-play:hover{
+	text-shadow:0 0 10px black;
+}
+.blocks .controls .pp .fa-pause:hover{
+	text-shadow:0 0 10px black;
 }
 .blank{
 	padding:10%;
@@ -165,7 +170,7 @@ html{
 	text-align:center;
 	background:#212623;
 	padding:10%;
-	transition:ease-out 1s;
+	transition:ease-out 3s;
 	position:absolute;
 	z-index:1;
 	top:35%;
@@ -176,9 +181,9 @@ html{
 	height:20%;
 	width:20%;
 	margin-left:40%;
-	border-right:10px solid white;
+	border-right:5px solid white;
 	border-radius:50%;
-	animation:loaderSpin 1s ease-in 0.1s infinite alternate-reverse;
+	animation:loaderSpin 1.3s ease-in 0.1s infinite;
 	backdrop-filter:brightness(80%);
 }
 @keyframes loaderSpin{
@@ -333,54 +338,65 @@ html{
 	const music6 = document.getElementById("player6");
 	const music7 = document.getElementById("player7");
 	const music8 = document.getElementById("player8");
-		
+	/*
+const playBtn = $(".fa-play");
+const pauseBtn = $(".fa-pause");
+  /*  if () {
+      playBtn.classList.remove("fa-play");
+      playBtn.classList.add("fa-pause");
+    } else {
+      playBtn.classList.remove("fa-pause");
+      playBtn.classList.add("fa-play");
+    } 
+    playBtn.show(); pauseBtn.hide();*/
 		function starts1(){
-				//  if(i=-1, i < 10, i++){ m[1].pause(); }
-				  do{i++; m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
+				 // if(i = 0, i < 6, i++){m[i].pause();};
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
 				//  else(m.pause());
      		music1.play();}
 		function pause1(){
 			music1.pause();}
 			
 		function starts2(){
-				  do{i++; m[0].pause();m[1].pause;m[2].pause;m[3].pause;m[4].pause;m[5].pause;m[6].pause;m[7].pause;}while(i < 10);
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
 			music2.play();}
 		function pause2(){
 			music2.pause();}
 			
 		function starts3(){
-				  do{i++; m[0].pause();m[1].pause;m[2].pause;m[3].pause;m[4].pause;m[5].pause;m[6].pause;}while(i < 10);
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
 			music3.play();}
 		function pause3(){
 			music3.pause();}
 			
 		function starts4(){
-				  do{i++; m[0].pause();m[1].pause;m[2].pause;m[3].pause;m[4].pause;m[5].pause;m[6].pause;m[7].pause;}while(i < 10);
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
 			music4.play();}
 		function pause4(){
 			music4.pause();}
 			
 		function starts5(){
-				  do{i++; m[0].pause();m[1].pause;m[2].pause;m[3].pause;m[4].pause;m[5].pause;m[6].pause;m[7].pause;}while(i < 10);
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
 			music5.play();}
 		function pause5(){
 			music5.pause();}
 			
 		function starts6(){
-				  do{i++; m[0].pause();m[1].pause;m[2].pause;m[3].pause;m[4].pause;m[5].pause;m[6].pause;m[7].pause;}while(i < 10);
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
 			music6.play();}
 		function pause6(){
 			music6.pause();}
 			
 		function starts7(){
-				  do{i++; m[0].pause();m[1].pause;m[2].pause;m[3].pause;m[4].pause;m[5].pause;m[6].pause;m[7].pause;}while(i < 10);
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
 			music7.play();}
 		function pause7(){
 			music7.pause();}
 			
 		function starts8(){
-				  do{i++; m[0].pause();m[1].pause;m[2].pause;m[3].pause;m[4].pause;m[5].pause;m[6].pause;m[7].pause;}while(i < 10);
-			music8.play();}
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
+			music8.play();
+			}
 		function pause8(){
 			music8.pause();}
 			
@@ -389,9 +405,8 @@ screen.hide();
 $(window).on("load", function() {
 	var preload = $('.preloader');
 		preload.fadeOut();
-				screen.show();
+				setInterval(function(){screen.show();},800);
 	});
-
 </script>
 <!--<script>
 	const audioPlayer = document.querySelector(".controls");
