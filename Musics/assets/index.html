@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SAD MUSIC PLAYLIST</title>
+<!-- Data Aos -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<!-- icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- fonts  -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+<link rel="icon" href="https://telegra.ph/file/863a2916b4699faed3271.png" type="image/x-icon">
+<!-- Meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="keywords" content="Landing Page, LandingPage, Naman, Saini, NamanSaini, Naman Saini, ProgrammerXD, programmerxd, programmarxd, Programmer XD, resume, personal, card, cards, portfolio" />
+<meta name="author" content="ProgrammerXD / Naman Saini" />
+<meta name="title" content="Naman Saini" />
+<meta name="description" content="About Naman Saini/ProgrammerXD" />
+<meta property="og:image" content="https://telegra.ph/file/863a2916b4699faed3271.png" />
+<meta property="og:title" content="Naman Saini" />
+<meta property="og:url" content="https://www.programmerxd.codes" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="About Naman Saini/ProgrammerXD" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="ProgrammerXD.codes" />
+<meta name="twitter:title" content="Naman Saini" />
+<meta name="twitter:description" content="About Naman Saini/ProgrammerXD" />
+<meta name="twitter:url" content="https://www.programmerxd.codes" />
+<meta name="twitter:image" content="https://telegra.ph/file/863a2916b4699faed3271.png" />
+<!-- SCRIPTS -->
+      <!-- Anime.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+      <!-- Jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <!-- Data Aos -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{ color:white;
+	background-image:url('./assets/img/Bg4.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background:#212623;
+}
+html{
+	overflow:hidden;
+	scroll-behavior:smooth;
+}
+.h1{
+	text-align:center;
+	position:absolute;
+	margin-left:22%;
+	margin-right:auto;
+	margin-top:-7.4%;
+	font-family: 'Bebas Neue', cursive;
+	font-size:16pt;
+	letter-spacing:1px;
+	box-shadow:inset 0 2px 8px black;
+	padding:1% 1% 0 1%;
+	backdrop-filter:brightness(80%);
+	z-index:3;
+}
+.mq1{
+	margin-top:40%;
+	position:absolute;
+}
+.animeImg{
+	height:300px;
+	width:200px;
+	left:-111%;
+	filter:brightness(60%);
+	bottom:0;
+	position:absolute;
+	z-index:;
+	overflow:hidden;
+}
+.folder{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	height:90vh;
+	width:70vw;
+	backdrop-filter:brightness(70%);
+	box-shadow:inset 0 0 10px black;
+	border-radius:10px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5vh;
+	overflow-x:scroll;
+/*	box-shadow:0 0 50px grey;*/
+	z-index:1;
+}
+.blocks{
+	height:18vh;
+	width:55vw;
+	box-shadow:0 0 0px grey;
+	border-radius:5%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5vh;
+	color:white;
+}
+.blocks img{
+	width:100%;
+	height:18vh;
+	z-index:2;
+	border-radius:5px;
+}
+.blocks .controls progress{
+	width:90%;
+	height:2vh;
+	  transition: 0.25s;
+}
+.blocks .aud{
+	width:100%;
+}
+.blocks .controls{
+	align-items:center;
+	text-align:center;
+	margin-top:-24.5%;
+	backdrop-filter:blur(2px);
+	box-shadow:0 -10px 20px black;
+	padding-bottom:3%;
+	z-index:1;
+	position:absolute;
+	width:55vw;
+	border-radius:5px;
+}
+.blocks .controls p{
+	font-size:8pt;
+	font-weight:1000;
+	text-align:left;
+	padding-left:5%;
+	text-shadow:0 0 10px red;
+	margin-bottom:-1%;
+}
+.blocks .controls .pp{
+	display:flex;
+	justify-content:space-around;
+	width:80px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.blocks .controls .pp .fa-play{
+	background:none;
+	outline:none;
+	border:none;
+	color:white;	
+}
+.blocks .controls .pp .fa-pause{
+	background:none;
+	outline:none;
+	border:none;
+	color:white;
+}
+.blocks .controls .pp .fa-play:hover{
+	text-shadow:0 0 10px black;
+}
+.blocks .controls .pp .fa-pause:hover{
+	text-shadow:0 0 10px black;
+}
+.blank{
+	padding:10%;
+	font-weight:900;
+	letter-spacing:2px;
+}
+.preloader{
+	height:100vh;
+	width:80vw;
+	text-align:center;
+	background:#212623;
+	padding:10%;
+	transition:ease-out 3s;
+	position:absolute;
+	z-index:1;
+	top:35%;
+	left:0;
+}
+.loader{
+	text-align:center;
+	height:20%;
+	width:20%;
+	margin-left:40%;
+	border-right:5px solid white;
+	border-radius:50%;
+	animation:loaderSpin 1.3s ease-in 0.1s infinite;
+	backdrop-filter:brightness(80%);
+}
+@keyframes loaderSpin{
+	from{transform:rotate(0);}
+	to{transform:rotate(3600deg);}
+}
+</style>
+<body>
+<div id="screen">
+<p class="h1"> XXXTENCTATION Collection </p>
+<!--<marquee class="mq1">XXX-TENCTATION</marquee>-->
+<img class="animeImg" src="./assets/img/anime.png" height="100" width="100">
+<div class="folder">
+	<div class="blocks 1">
+		<img src="./assets/img/Changes.jpeg">
+		<audio id="player1" class="aud" >
+		 	<source src="./assets/songs/Changes.mp3" type="audio/mpeg">
+		</audio>
+		  <div class="controls">
+		  	<p>▫️ Changes - XXXTENCTATION</p>
+		    <progress value="0"> </progress><br>
+		    <div class="pp">
+				<i onclick = "starts1()" class="fa fa-play"></i> 
+				<i onclick = "pause1()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+<!--		<div>
+    	<button onclick = "document.getElementById('player').volume += 0.2">Vol+</button>
+		<button onclick = "document.getElementById('player').volume -= 0.2">Vol-</button>
+		</div> -->
+	</div>
+	
+	<div class="blocks 2">
+		<img src="./assets/img/Hope.jpeg">
+		<audio id="player2" class="aud" >
+		 	<source src="./assets/songs/Hope.mp3" type="audio/mpeg">
+		</audio>
+		  <div class="controls">
+		  	<p>▫️ Hope </p>
+			<progress value="0"> </progress><br>
+			<div class="pp">
+				<i onclick = "starts2()" class="fa fa-play"></i> 
+				<i onclick = "pause2()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 3">
+		<img src="./assets/img/Exbitch.jpeg">
+		<audio id="player3" class="aud" >
+		 	<source src="./assets/songs/ExBitch.mp3" type="audio/mpeg">
+		</audio>
+     	  <div class="controls">
+     	  	<p>▫️ Ex Bitch </p>
+			<progress value="0"> </progress><br>
+			<div class="pp">
+				<i onclick = "starts3()" class="fa fa-play"></i> 
+				<i onclick = "pause3()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 4">
+		<img src="./assets/img/BadVibes.jpg">
+		<audio id="player4" class="aud" >
+		 	<source src="./assets/songs/BadVibes.mp3" type="audio/mpeg">
+		</audio>
+	     <div class="controls">
+	     	<p>▫️Bad Vibes Forever </p>	
+			<progress value="0"> </progress><br>
+			<div class="pp">
+				<i onclick = "starts4()" class="fa fa-play"></i> 
+				<i onclick = "pause4()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 5">
+		<img src="./assets/img/Remedy.jpeg">
+		<audio id="player5" class="aud" >
+		 	<source src="./assets/songs/Remedy.mp3" type="audio/mpeg">
+		</audio>
+	     	  <div class="controls">
+	     	<p> The Remedy Of A Broken Heart </p>
+			<progress value="0"> </progress><br>
+			<div class="pp">
+				<i onclick = "starts5()" class="fa fa-play"></i> 
+				<i onclick = "pause5()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 6">
+		<img src="./assets/img/Moonlight.jpeg">
+		<audio id="player6" class="aud" >
+		 	<source src="./assets/songs/Moonlight.mp3" type="audio/mpeg">
+		</audio>
+	     	  <div class="controls">
+	     	<p>▫️ Moonlight </p>
+			<progress value="0"> </progress><br>
+			<div class="pp">
+				<i onclick = "starts6()" class="fa fa-play"></i> 
+				<i onclick = "pause6()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 7">
+		<img src="./assets/img/Numb.jpeg">
+		<audio id="player7" class="aud" >
+		 	<source src="./assets/songs/Numb.mp3" type="audio/mpeg">
+		</audio>
+	     	  <div class="controls">
+	     	<p>▫️ Numb </p>
+			<progress value="0"> </progress><br>
+			<div class="pp">
+				<i onclick = "starts7()" class="fa fa-play"></i> 
+				<i onclick = "pause7()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 8">
+		<img src="./assets/img/KillVibe.jpeg">
+		<audio id="player8" class="aud" >
+		 	<source src="./assets/songs/KillVibe.mp3" type="audio/mpeg">
+		</audio>
+	     	  <div class="controls">
+	     	<p> Kill My Vibe </p>
+			<progress value="0"> </progress><br>
+			<div class="pp">
+				<i onclick = "starts8()" class="fa fa-play"></i> 
+				<i onclick = "pause8()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div><br> <div class="blank">.......</div>
+</div></div>
+<div class="preloader">
+	<h2> Site under contruction and may have bugs! </h2>
+	<h1> ⚠ </h1>
+	<div class="loader">.</div>
+	<p>processing playlists...</p>
+</div>
+<script>
+	var i = 0;
+	var m = document.getElementsByClassName("aud");
+	const music1 = document.getElementById("player1");
+	const music2 = document.getElementById("player2");
+	const music3 = document.getElementById("player3");
+	const music4 = document.getElementById("player4");
+	const music5 = document.getElementById("player5");
+	const music6 = document.getElementById("player6");
+	const music7 = document.getElementById("player7");
+	const music8 = document.getElementById("player8");
+	/*
+const playBtn = $(".fa-play");
+const pauseBtn = $(".fa-pause");
+  /*  if () {
+      playBtn.classList.remove("fa-play");
+      playBtn.classList.add("fa-pause");
+    } else {
+      playBtn.classList.remove("fa-pause");
+      playBtn.classList.add("fa-play");
+    } 
+    playBtn.show(); pauseBtn.hide();*/
+		function starts1(){
+				 // if(i = 0, i < 6, i++){m[i].pause();};
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
+				//  else(m.pause());
+     		music1.play();}
+		function pause1(){
+			music1.pause();}
+			
+		function starts2(){
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
+			music2.play();}
+		function pause2(){
+			music2.pause();}
+			
+		function starts3(){
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
+			music3.play();}
+		function pause3(){
+			music3.pause();}
+			
+		function starts4(){
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
+			music4.play();}
+		function pause4(){
+			music4.pause();}
+			
+		function starts5(){
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
+			music5.play();}
+		function pause5(){
+			music5.pause();}
+			
+		function starts6(){
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
+			music6.play();}
+		function pause6(){
+			music6.pause();}
+			
+		function starts7(){
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
+			music7.play();}
+		function pause7(){
+			music7.pause();}
+			
+		function starts8(){
+				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
+			music8.play();
+			}
+		function pause8(){
+			music8.pause();}
+			
+var screen = $('#screen');
+screen.hide();
+$(window).on("load", function() {
+	var preload = $('.preloader');
+		preload.fadeOut();
+				setInterval(function(){screen.show();},800);
+	});
+</script>
+<!--<script>
+	const audioPlayer = document.querySelector(".controls");
+	const audio = new Audio("./assets/songs/Hope.mp3");
+	console.dir(audio);
+	
+	audio.addEventListener(
+	"loadeddata",
+	() => {
+	audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
+	audio.duration
+	);
+	audio.volume = .75;
+	},
+	false
+	);
+</script>-->
+</body>
+</html>
