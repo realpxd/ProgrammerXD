@@ -109,7 +109,7 @@ html{
 .blocks .controls progress{
 	width:90%;
 	height:2vh;
-	  transition: 0.25s;
+	transition: 0.25s;
 }
 .blocks .aud{
 	width:100%;
@@ -190,6 +190,22 @@ html{
 	from{transform:rotate(0);}
 	to{transform:rotate(3600deg);}
 }
+.slide{
+    width:90%;
+    background:white;
+    height:1.1vh;
+    margin-left:auto;
+    margin-right:auto;
+    margin:2% auto 3% auto;
+    border-radius:10px;
+}
+#range{
+    width:0;
+    background:orange;
+    height:1vh;
+    border:0.1px solid white;
+    border-radius:10px;
+}
 </style>
 <body>
 <div id="screen">
@@ -204,7 +220,9 @@ html{
 		</audio>
 		  <div class="controls">
 		  	<p>▫️ Changes - XXXTENCTATION</p>
-		    <progress value="0"> </progress><br>
+			    <div class="slide">
+				    <div class="range1" id="range"></div>
+			    </div>
 		    <div class="pp">
 				<i onclick = "starts1()" class="fa fa-play"></i> 
 				<i onclick = "pause1()" class="fa fa-pause"></i>
@@ -223,7 +241,9 @@ html{
 		</audio>
 		  <div class="controls">
 		  	<p>▫️ Hope </p>
-			<progress value="0"> </progress><br>
+				<div class="slide">
+					<div class="range2" id="range"></div>
+				</div>
 			<div class="pp">
 				<i onclick = "starts2()" class="fa fa-play"></i> 
 				<i onclick = "pause2()" class="fa fa-pause"></i>
@@ -232,13 +252,15 @@ html{
 	</div>
 	
 	<div class="blocks 3">
-		<img src="./assets/img/ExBitch.jpeg">
+		<img src="./assets/img/Exbitch.jpeg">
 		<audio id="player3" class="aud" >
-		 	<source src="./assets/songs/ExBitch.mp3" type="audio/mpeg">
+		 	<source src="./assets/songs/Exbitch.mp3" type="audio/mpeg">
 		</audio>
      	  <div class="controls">
      	  	<p>▫️ Ex Bitch </p>
-			<progress value="0"> </progress><br>
+				<div class="slide">
+					<div class="range3" id="range"></div>
+				</div>
 			<div class="pp">
 				<i onclick = "starts3()" class="fa fa-play"></i> 
 				<i onclick = "pause3()" class="fa fa-pause"></i>
@@ -253,7 +275,9 @@ html{
 		</audio>
 	     <div class="controls">
 	     	<p>▫️Bad Vibes Forever </p>	
-			<progress value="0"> </progress><br>
+				<div class="slide">
+					<div class="range4" id="range"></div>
+				</div>
 			<div class="pp">
 				<i onclick = "starts4()" class="fa fa-play"></i> 
 				<i onclick = "pause4()" class="fa fa-pause"></i>
@@ -268,7 +292,9 @@ html{
 		</audio>
 	     	  <div class="controls">
 	     	<p> The Remedy Of A Broken Heart </p>
-			<progress value="0"> </progress><br>
+				<div class="slide">
+					<div class="range5" id="range"></div>
+				</div>
 			<div class="pp">
 				<i onclick = "starts5()" class="fa fa-play"></i> 
 				<i onclick = "pause5()" class="fa fa-pause"></i>
@@ -283,7 +309,9 @@ html{
 		</audio>
 	     	  <div class="controls">
 	     	<p>▫️ Moonlight </p>
-			<progress value="0"> </progress><br>
+				<div class="slide">
+					<div class="range6" id="range"></div>
+				</div>
 			<div class="pp">
 				<i onclick = "starts6()" class="fa fa-play"></i> 
 				<i onclick = "pause6()" class="fa fa-pause"></i>
@@ -298,7 +326,9 @@ html{
 		</audio>
 	     	  <div class="controls">
 	     	<p>▫️ Numb </p>
-			<progress value="0"> </progress><br>
+				<div class="slide">
+					<div class="range7" id="range"></div>
+				</div>
 			<div class="pp">
 				<i onclick = "starts7()" class="fa fa-play"></i> 
 				<i onclick = "pause7()" class="fa fa-pause"></i>
@@ -313,7 +343,9 @@ html{
 		</audio>
 	     	  <div class="controls">
 	     	<p> Kill My Vibe </p>
-			<progress value="0"> </progress><br>
+				<div class="slide">
+					<div class="range8" id="range"></div>
+				</div>
 			<div class="pp">
 				<i onclick = "starts8()" class="fa fa-play"></i> 
 				<i onclick = "pause8()" class="fa fa-pause"></i>
@@ -325,11 +357,12 @@ html{
 	<h2> Site under contruction and may have bugs! </h2>
 	<h1> ⚠ </h1>
 	<div class="loader">.</div>
-	<p>processing playlists...</p>
+	<p>processing latest playlist...</p>
 </div>
 <script>
 	var i = 0;
 	var m = document.getElementsByClassName("aud");
+	
 	const music1 = document.getElementById("player1");
 	const music2 = document.getElementById("player2");
 	const music3 = document.getElementById("player3");
@@ -338,6 +371,17 @@ html{
 	const music6 = document.getElementById("player6");
 	const music7 = document.getElementById("player7");
 	const music8 = document.getElementById("player8");
+	
+	var player1 = document.getElementById("player1");   
+	var player2 = document.getElementById("player2");    
+	var player3 = document.getElementById("player3");   
+	var player4 = document.getElementById("player4");   
+	var player5 = document.getElementById("player5");  
+	var player6 = document.getElementById("player6");   
+	var player7 = document.getElementById("player7");    
+	var player8 = document.getElementById("player8");   
+	
+		var hl = document.getElementsByClassName("blocks");
 	/*
 const playBtn = $(".fa-play");
 const pauseBtn = $(".fa-pause");
@@ -353,52 +397,115 @@ const pauseBtn = $(".fa-pause");
 				 // if(i = 0, i < 6, i++){m[i].pause();};
 				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
 				//  else(m.pause());
-     		music1.play();}
+     		music1.play();
+     			player1.addEventListener("timeupdate", function() {
+     			var currentTime = player1.currentTime;
+     			var duration = player1.duration;
+     			$('.range1').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+     			});
+     				hl[0].style.boxShadow = "0 0 9px gold";}
 		function pause1(){
-			music1.pause();}
+			music1.pause();
+				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
+			}
 			
 		function starts2(){
 				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
-			music2.play();}
+			music2.play();
+				player2.addEventListener("timeupdate", function() {
+				var currentTime = player2.currentTime;
+				var duration = player2.duration;
+				$('.range2').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+				});
+					hl[1].style.boxShadow = "0 0 9px gold";}
 		function pause2(){
-			music2.pause();}
+			music2.pause();
+				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
+			}
 			
 		function starts3(){
 				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
-			music3.play();}
+			music3.play();
+				player3.addEventListener("timeupdate", function() {
+				var currentTime = player3.currentTime;
+				var duration = player3.duration;
+				$('.range3').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+				});
+					hl[2].style.boxShadow = "0 0 9px gold";}
 		function pause3(){
-			music3.pause();}
+			music3.pause();
+				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
+			}
 			
 		function starts4(){
 				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
-			music4.play();}
+			music4.play();
+				player4.addEventListener("timeupdate", function() {
+				var currentTime = player4.currentTime;
+				var duration = player4.duration;
+				$('.range4').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+				});
+					hl[3].style.boxShadow = "0 0 9px gold";}
 		function pause4(){
-			music4.pause();}
+			music4.pause();
+				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
+			}
 			
 		function starts5(){
 				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
-			music5.play();}
+			music5.play();
+				player5.addEventListener("timeupdate", function() {
+				var currentTime = player5.currentTime;
+				var duration = player5.duration;
+				$('.range5').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+				});
+					hl[4].style.boxShadow = "0 0 9px gold";}
 		function pause5(){
-			music5.pause();}
+			music5.pause();
+				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
+			}
 			
 		function starts6(){
 				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
-			music6.play();}
+			music6.play();
+				player6.addEventListener("timeupdate", function() {
+				var currentTime = player6.currentTime;
+				var duration = player6.duration;
+				$('.range6').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+				});
+					hl[5].style.boxShadow = "0 0 9px gold";}
 		function pause6(){
-			music6.pause();}
+			music6.pause();
+				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
+			}
 			
 		function starts7(){
 				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
-			music7.play();}
+			music7.play();
+				player7.addEventListener("timeupdate", function() {
+				var currentTime = player7.currentTime;
+				var duration = player7.duration;
+				$('.range7').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+				});
+					hl[6].style.boxShadow = "0 0 9px gold";}
 		function pause7(){
-			music7.pause();}
+			music7.pause();
+				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
+			}
 			
 		function starts8(){
 				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
 			music8.play();
-			}
+				player8.addEventListener("timeupdate", function() {
+				var currentTime = player8.currentTime;
+				var duration = player8.duration;
+				$('.range8').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+				});
+					hl[7].style.boxShadow = "0 0 9px gold";}
 		function pause8(){
-			music8.pause();}
+			music8.pause();
+				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
+			}
 			
 var screen = $('#screen');
 screen.hide();
@@ -407,6 +514,17 @@ $(window).on("load", function() {
 		preload.fadeOut();
 				setInterval(function(){screen.show();},800);
 	});
+	
+	
+/*var player = document.getElementsByClassName("aud");    
+if(i = 0, i < 7 ,i++){
+	player[1].addEventListener("timeupdate", function() {
+	var currentTime = player[1].currentTime;
+	var duration = player[1].duration;
+	$('.hp_range').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
+})};*/
+
+
 </script>
 <!--<script>
 	const audioPlayer = document.querySelector(".controls");
