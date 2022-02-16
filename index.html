@@ -401,7 +401,8 @@ a:hover{
 		    <a target="_blank" rel="noopener noreferrer" href="Certificates.html" class="nav" > CERTIFICATES </a><br>
 		    <p class="nav" id="projects" onclick="project()"> My Projects <i class="fa fa-angle-down"></i></p>
 		    <div class="projectsContainer" id="projectsContainer">
-		    	<a target="_blank" rel="noopener noreferrer" href="./TelegramUi/index.html" class="navNew">Telegram UI</a>
+		    	<a target="_blank" rel="noopener noreferrer" href="./TelegramUi/index.html" class="navNew" id="tui">Telegram UI</a>
+		    	<a target="_blank" rel="noopener noreferrer" href="./SololearnUi/index.html" class="navNew" id="sui">Sololearn UI</a>
 		    </div>
 		<div class="box">
 			  <div class="footer"><hr><br>
@@ -498,6 +499,9 @@ AOS.init();
 		  		 	document.getElementById("projectsContainer").style.height = "0";
 		  		 };	  		
 		  };
+		  $("#sui").on('click',function(){
+		 		alert("PAGE UNDER CONSTRUCTION!! \n\n Press 'ok' to continue.");
+		 });
 </script>
 <script>
 /* Anime.js */
