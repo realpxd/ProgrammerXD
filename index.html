@@ -75,7 +75,7 @@ body{
 .Snav{
     position:absolute;
     background:white;
-    height:40.5%;
+    height:53.5%;
     width:100%;
     display:block;
     top:-120%;
@@ -99,7 +99,32 @@ a:hover{
     color:black;
     border-bottom:1px solid black;
 }
-
+.projectsContainer{
+	display:none;
+	justify-content:space-around;
+	align-items:center;
+	height:0%;
+}
+.navNew{
+	padding:1%;
+	border:1px solid brown;
+	border-radius:10px;
+	color:white;
+	font-size:14pt;
+	text-decoration:none;
+	font-family:righteous;
+	margin-top:5%;
+	background:green;
+	transition:0.2s ease;
+}
+.navNew:active{
+	box-shadow:0 5px 5px black;
+	color:white;
+}
+.navNew:hover{
+	box-shadow:0 5px 5px black;
+	color:white;
+}
 /* illustration 1 */
 .LandingIcon{
     height:250px;
@@ -373,7 +398,11 @@ a:hover{
 	<div class="Snav" id="Snav"><br><br>
 		    <a href="#" class="nav"> HOME </a><br>
 		    <a target="_blank" rel="noopener noreferrer" href="Resume.html" class="nav"> MY RESUME </a><br>
-		    <a target="_blank" rel="noopener noreferrer" href="Certificates.html" class="nav" > CERTIFICATES </a>
+		    <a target="_blank" rel="noopener noreferrer" href="Certificates.html" class="nav" > CERTIFICATES </a><br>
+		    <p class="nav" id="projects" onclick="project()"> My Projects <i class="fa fa-angle-down"></i></p>
+		    <div class="projectsContainer" id="projectsContainer">
+		    	<a target="_blank" rel="noopener noreferrer" href="./TelegramUi/index.html" class="navNew">Telegram UI</a>
+		    </div>
 		<div class="box">
 			  <div class="footer"><hr><br>
 			      <footer>
@@ -444,16 +473,31 @@ AOS.init();
 		         if(sNav.style.top <= "-120%"){
 		            sNav.style.top = "4.5%";
 		            menuIcon.style.transform = "rotate(270deg)";
+		            document.getElementById("projectsContainer").style.display = "none";
 		         }
 		         else{
 		            sNav.style.top = "-120%";
 	   		        menuIcon.style.transform = "rotate(0deg)";
-		         }     
+		         }
     		};
 		    function closeNav() {
 				    sNav.style.top = "-120%"
 	       		    menuIcon.style.transform = "rotate(0deg)";
-		    }
+		    };
+		  
+		  function project(){
+		  		if(document.getElementById("projectsContainer").style.display = "none"){
+		  			setTimeout(function(){document.getElementById("projectsContainer").style.display = "flex";},100);
+		  			document.getElementById("projectsContainer").style.height = "100";
+		  			sNav.style.top = "4.5%";
+		  			menuIcon.style.transform = "rotate(270deg)";
+		  		}
+		  		else{
+		  			document.getElementById("projectsContainer").style.display = "none";
+		  		 	sNav.style.top = "-120%";
+		  		 	document.getElementById("projectsContainer").style.height = "0";
+		  		 };	  		
+		  };
 </script>
 <script>
 /* Anime.js */
