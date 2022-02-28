@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>Squid Game / Money Game</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <meta id="theme" name="theme-color" content="#000" />
@@ -114,7 +114,7 @@ cty = canvas.height;
    const BGmusic = new Audio('./assets/sounds/sgt.mp3');
 
    var playing = true;
-   const coinGrab = new Audio('./assets/sounds/Coin.mp3');
+   const coinGrab = new Audio('./assets/sounds/coin.mp3');
    
     //main
 window.onload = function(){
@@ -149,7 +149,7 @@ window.onload = function(){
         x <= coinx+50 && coiny <= y + 30 &&
         y <= coiny+50) {
         score++; speed += 13;
-        coinx = Math.random() * (400-50); coiny = Math.random()* (500-50);
+        coinx = Math.random() * (ctx-50); coiny = Math.random()* (cty-50);
         coinGrab.play();
         }
         
@@ -162,13 +162,13 @@ window.onload = function(){
         right.onmousedown = function() {dir = 2;}
         left.ontouchstart = function() {dir = 3;}
         left.onmousedown = function() {dir = 3;}
-        if(dir == 0 && y + 80 < 500) { 
+        if(dir == 0 && y + 80 < cty) { 
         y += (speed * timePassed);
         }
         else if(dir == 1 && y >= 10) {
         y -= (speed * timePassed);
         }
-        else if(dir == 2 && x + 70 < 400) { 
+        else if(dir == 2 && x + 70 < ctx) { 
         x += (speed * timePassed);
         }
         else if(dir == 3 && x >= 10) { 
