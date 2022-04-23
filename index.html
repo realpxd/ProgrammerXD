@@ -55,7 +55,7 @@ body{
     background:white;
     padding:1%;
     display:block;
-    z-index:3;
+    z-index:4;
 }
 	.MenuBar .Naman{
 		    float:left;
@@ -89,7 +89,7 @@ body{
     padding:5% 0 5% 0;
     text-align:center;
     transition:0.3s;
-    z-index:2;
+    z-index:3;
     box-shadow:0 0 10px black;
 
 }
@@ -302,7 +302,7 @@ a:hover{
 		        font-size:30pt;
 	    }
 	.Snav{
-		 height:63.5%;
+		height:25%;
 	}
 	    .Snav .nav{
 		        font-size:25pt;
@@ -393,11 +393,86 @@ a:hover{
     font-weight:500;
     letter-spacing:1px;
 }
+.PopUp{
+	position:fixed;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.4px);
+	-webkit-backdrop-filter: blur(3.4px);
+	border: 3px solid rgba(255, 255, 255, 0.45);
+	height:100vh;
+	width:95vw;
+	z-index:999;
+	overflow:hidden;
+	text-align:center;
+	color:white;
+	padding-top:55%;
+	font-weight:900;
+	text-shadow:0px 1px 3px black;
+	transition:all 0.2s ease;
+}
+.PopUp span{
+	position:absolute;
+	top:15%;
+	right:5%;
+	font-size:27pt;
+	color:darkred;
+	text-shadow:none;
+	border:1px solid black;
+	border-radius:5px;
+	padding:0 2% 0 2%;
+}
+.PopUp button{
+	border:none;
+	border-radius:100px;
+	background: white;
+	outline:none;
+	padding:3% 6% 3% 6%;
+	font-size:15pt;
+	color: darkgreen;
+	font-weight:500;
+	background: linear-gradient(145deg, #fafafa, #d3d3d3);
+	cursor:pointer;
+}
+.PopUp button:active {
+	background: #eaeaea;
+	box-shadow: inset 13px 13px 25px #d0d0d0,
+	inset -13px -13px 25px #ffffff;
+	font-size:14pt;
+}
+.v2{
+	position:fixed;
+	border:none;
+	border-radius:100px;
+	background: white;
+	outline:none;
+	padding:2% 5% 2% 5%;
+	font-size:10pt;
+	color: darkgreen;
+	font-weight:700;
+	background: linear-gradient(145deg, #fafafa, #d3d3d3);
+	cursor:pointer;
+	right:5%;
+	top:13%;
+	z-index:2;
+}
+.v2:active {
+	background: #eaeaea;
+	box-shadow: inset 13px 13px 25px #d0d0d0,
+	inset -13px -13px 25px #ffffff;
+	font-size:9pt;
+}
 </style>
 </head>
 <body>
-
+<div class="PopUp">
+	<span><i class="fa fa-close" onclick="closepop()"></i></span>
+	<h2>This Version of the site has been expired and no longer supported.<br><br> Would you like to move to V2?</h2>
+	<button onclick="location.href='./main.html'">continue</button>
+</div>
 <!-- Menu Bar -->
+
 	<span class="MenuBar">
 	     <img src="./assets/img/Naman.png" class="Naman" alt="Name" >
 	     <input value="&#9776;" type="text" class="menu " id="menu" onclick="openNav()" onblur="closeNav()" readonly>
@@ -430,15 +505,16 @@ a:hover{
 			      </footer><br><br><br>
 			  </div>
 		</div>
-	</div><br><br><br><br><br>
-           
+	</div>
+	<br><br><br><br><br>
+		<button class="v2" onclick="location.href='./main.html'">Goto v2 ➶</button>
 <!-- illustrations -->
       <img src="./assets/img/Cloud.png" class="Cloud" alt="Cloud">
 	<div class="FullPlane">
 	      <img src="./assets/img/Plane.png" class="Plane" alt="Plane">
 	      <img src="./assets/img/Smoke.png" class="Smoke" alt="Smoke">
 	</div><br><br><br>
-	
+
 <!-- Main Section -->
 	<div id="MarginTop">
 	      <img src="./assets/img/LandingIcon.png" class="LandingIcon" alt="Queen"><hr>
@@ -449,7 +525,7 @@ a:hover{
 		                So, now you can take a tour where you can know more about me Or just listen to musics or play games!! Many more things to come soon... Stay tuned! :)</p>
 		    <a href="Resume.html"><button class="Tour">Take Tour</button></a>
 				<div class="Buttons">
-					<a href="./RoadToInfinity/index.html"><button class="Btn Game">Play Games</button></a>
+					<a href="./Money-Game/index.html"><button class="Btn Game">Play Games</button></a>
 					<a href="./Musics/index.html"><button class="Btn Music">Listen To Musics</button></a>				
 				</div><br><br>
 	<a href="https://www.buymeacoffee.com/ProgrammerXD" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important; box-shadow:0px 3px 3px black; border-radius:10px;" ></a>
@@ -509,6 +585,9 @@ AOS.init();
 		 		alert("PAGE UNDER CONSTRUCTION!! \n\n Press 'ok' to continue.");
 		 });
 
+function closepop(){
+$('.PopUp').fadeOut(200);
+}
 
 /* Anime.js */
     /* GREETINGS */

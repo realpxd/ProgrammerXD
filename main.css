@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+*{
+	margin:0;
+	padding:0;
+	color:white;
+	scroll-behavior:smooth;
+}
+body{
+	background:black;
+	overflow-x:hidden;
+}
+.container{
+	overflow:hidden;
+	height:80vh;
+	padding:5%;
+	margin:20% 5% 2% 5%;
+	z-index:6;
+}
+.block,.block2{
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-between;
+}
+.block2{
+	text-align:right;
+}
+.block2 p{ transform:translateX(100%);}
+.container .container-content{
+	display:inline-block;
+	position:relative;
+	z-index:5;
+}
+	.container-content h1{
+		font-size:25pt;
+		width:100%;
+		z-index:5;
+	}
+	.container-content p{
+		color:silver;
+		font-size:15pt;
+		width:50%;
+		line-height:30px;
+		letter-spacing:2px;
+		margin-top:1%;
+		z-index:5;
+	}
+	.container-btn{
+		margin-top:7%;
+		color:black;
+		background:linear-gradient(to right, silver, grey);
+		outline:none; border:none;
+		padding:2% 4% 2% 4%;
+		border-radius:5px;
+		font-weight:900;
+		z-index:5;
+	}
+.container-img{
+	display:inline-block;
+	position:absolute;
+	background-position:center;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	z-index:5;
+}
+	.main{
+		background-image:url('./assets/img/1.png');
+		background-size:135%;
+		height:50%;
+		width:50%;
+		transform:translateX(80%) translateY(-3%);
+	}
+	.new1{
+		background-image:url('./assets/img/2.jpg');
+		background-size:135%;
+		height:50%;
+		width:50%;
+		transform:translateX(0%) translateY(-3%);
+	}
+.hr{
+	width:70vw;
+	margin:60% 5% 10% 5%;
+	border:3px solid white;
+	border-radius:5px;
+	outline:none;
+	z-index:8;
+}
+.container-projects{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items:center;
+	padding:0 5% 0 5%;
+	margin-top:10%;
+}
+.projects{
+	margin-top:15%;
+}
+.project-img{
+	background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url('./assets/img/4.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:165%;
+	backdrop-filter:brightness(30%);
+	display:block;
+	position:absolute;
+	height:70vh;
+	width:70vw;
+	padding:0;
+	margin:20% 5% 2% 5%;
+	top:calc(80vh*2.15);
+	left:10%;
+	z-index:1;
+
+}
+#canvas{
+	background-image:silver;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:165%;
+	margin-bottom:59%;
+	box-sizing:border-box;
+	left:0;
+	right:0;
+}
