@@ -1,3 +1,16 @@
+/* Menu Bar Toggle */
+
+var menuIcon = document.getElementById('menu');
+var sn = document.getElementById("Snav");
+function openNav(){
+  sn.style.left = "0";
+  menuIcon.style.transform = "rotate(1800deg) translateX(0%)";
+}
+function closeNav(){
+  sn.style.left = "-120vw";
+  menuIcon.style.transform = "rotate(0deg)";
+}
+
 canvas = document.getElementById('canvas');
 context = canvas.getContext("2d");
 canvas.width = window.innerWidth-10;
@@ -90,3 +103,4 @@ draw();
 
          //setInterval(draw,160);
      },1000)}
+
