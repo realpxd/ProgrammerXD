@@ -3,6 +3,7 @@
 <head>
 <title></title>
 <link href="main.css" rel="stylesheet">
+<link href="responsive.css" rel="stylesheet">
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <!-- Data Aos -->
@@ -17,48 +18,69 @@
 <!-- Meta tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
-<body>
-
-
-<div class="container" id="1">
-<div class="block">
-	<div class="container-content">
-		<h1> Hellow Stalker</h1> <br> 
-		 <p>I am glad that you visited my WebSite . Let's explore more, just click the button below.
-		</p>
-		<button onclick="location.href='#2'" class="container-btn">Know more ⤵</button>
+<header>
+	<div class="MenuBar">
+		<a href="#"><img src="./assets/img/pxd.png" class="Naman" alt="Name" ></a>
+		<input value="&#9776;" type="text" class="menu " id="menu" onclick="openNav()" onblur="closeNav()" readonly />
+   <!-- Second Menu Bar -->
+	<div class="Snav" id="Snav"><br><br>
+		<a href="#" class="nav"> HOME </a><br>
+		<a target="_blank" rel="noopener noreferrer" href="Resume.html" class="nav"> MY RESUME </a><br>
+		<a target="_blank" rel="noopener noreferrer" href="Certificates.html" class="nav" > CERTIFICATES </a>
+		<footer class="footer">
+			<div class="social">
+					<a target="_blank" rel="noopener noreferrer" href="https://instagram.com/programmerxd?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+					<a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCiKTJ_cHytgUSITeuFGzJmQ"><i class="fa fa-youtube"></i></a>
+					<a target="_blank" rel="noopener noreferrer" href="mailto:amlittleprogrammer@gmail.com"><i class="fa fa-google"></i></a>
+					<a target="_blank" rel="noopener noreferrer" href="https://t.me/DevelopersAndProgrammers"><i class="fa fa-telegram"></i></a>
+					<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100069078836350"><i class="fa fa-facebook"></i></a>
+					<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/chaosAgent75?s=09"><i class="fa fa-twitter"></i></a>      
+			</div>
+				<p>ProgrammerXD &copy; 2021</p>
+		</footer>
 	</div>
-	<div class="container-img main"></div>
-</div>
+	</div>
+</header>
+<body>
+<div class="container" id="1">
+	<div class="blocks blockA">
+		<div class="data">
+			<h1> Hellow Stalker</h1> <br> 
+			<p>I am glad that you visited my WebSite . Let's explore more, just click the button below.
+			</p>
+			<button onclick="location.href='#2'" class="btn">Know more ⤵</button>
+		</div>
+		<div class="img imgA"></div>
+	</div>
 	<hr class="hr" align="center" >
 </div>
 
 <div class="container" id="2">
-<div class="block2">
-	<div class="container-img new1"></div>
-	<div class="container-content">
-		<h1>About me</h1>
-		<p>I am a web developer since 2019, and have great skills in &lt;/javascript&gt; &amp; web-development</p>
-		<button onclick="location.href='#3'" class="container-btn">Check my Projects ⤵</button>
-	</div>
+	<div class="blocks blockB">
+		<div class="img imgB"></div>
+		<div class="data">
+			<h1>About me</h1>
+			<p>I am a web developer since 2019, and have great skills in &lt;/javascript&gt; &amp; web-development</p>
+			<button onclick="location.href='#3'" class="btn">Check my Projects ⤵</button>
+		</div>
 </div>
 
 	<hr class="hr" align="center" >	
 </div>
 
 <div class="container projects" id="3">
-<div class="block3">
-	<div class="container-content">
-		<h1 align="center">My Projects</h1>
-		<div class="container-projects">
-			<button onclick="location.href='./MoneyGame'" class="container-btn">Squid/Money Game</button>
-			<button onclick="location.href='./TelegramUI'" class="container-btn">Telegram UI</button>
-			<button onclick="location.href='./RoadToInfinity'" class="container-btn">Road to infinity - Game</button>
-			<button onclick="location.href='./TextRepeater'" class="container-btn">Text Repeater</button>
-			<button onclick="location.href='./Musics'" class="container-btn">Music playlist</button>
-			<button onclick="location.href='./HN24'" class="container-btn">HN24 PROJECT</button>
+	<div class="blocks blockC">
+		<div class="data">
+			<h1 align="center">My Projects</h1>
+			<div class="list">
+				<button onclick="location.href='./MoneyGame/index.html'" class="btn">Squid/Money Game</button>
+				<button onclick="location.href='./TelegramUI/index.html'" class="btn">Telegram UI</button>
+				<button onclick="location.href='./RoadToInfinity/index.html'" class="btn">Road to infinity - Game</button>
+				<button onclick="location.href='./TextRepeater/index.html'" class="btn">Text Repeater</button>
+				<button onclick="location.href='./Musics/index.html'" class="btn">Music playlist</button>
+				<button onclick="location.href='./HN24/index.html'" class="btn">HN24 PROJECT</button>
+			</div>
 		</div>
-	</div>
 </div>
 	<hr class="hr" align="center" >
 <!--<div class="project-img"></div>-->
