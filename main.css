@@ -6,7 +6,7 @@
 	scroll-behavior:smooth;
 }
 body{
-	background:rgb(4, 4, 4);
+	background:#090a09;
 	overflow-x:hidden;
 }
 .MenuBar{
@@ -17,18 +17,17 @@ body{
     height:7vh;
     width:100vw;
     box-sizing:border-box;
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(9,10, 9, 0.5);
 	border-bottom:1px solid rgba(112, 93, 17, 0.4);
     padding:0.1rem;
     z-index:9;
 }
-	.MenuBar .Naman{
+	.MenuBar .Logo{
 			position:absolute;
 			top: 0.1rem;
 			left: 0.1rem;
 		    height:6vh;
 		    width:14vw;
-			
 			margin: 0;
 			padding: 0;
 	}
@@ -51,7 +50,7 @@ body{
 .Snav{
 	display: block;
     position:absolute;
-	background:rgba(0, 0, 0, 0.5);
+	background:rgba(9, 10, 9, 0.5);
 	box-shadow:0 15px 10px rgba(0, 0, 0, 0.6);
     height:100vh;
     width:100vw;
@@ -181,7 +180,7 @@ a:hover{
 		background-repeat:no-repeat;
 		background-size:130%;
 		overflow:hidden;
-		z-index:6;
+		z-index:7;
 	}
 		.imgA{
 			background-image:url('./assets/img/1.png');
@@ -190,10 +189,10 @@ a:hover{
 			transform:translateX(80%) translateY(-3%);
 		}
 		.imgB{
-			background-image:url('./assets/img/2.jpg');
+			background-image:url('./assets/img/2.png');
 			height:50%;
 			width:50%;
-			transform:translateX(0%) translateY(-3%);
+			transform:translateX(-15%) translateY(-3%);
 		}
 .hr{
 	width:70vw;
