@@ -100,6 +100,16 @@ html{
 	margin-top:5vh;
 	color:white;
 }
+.blocks:active{
+	animation:multiColor 1.5s linear infinite alternate-reverse;
+}
+@keyframes multiColor{
+     0%{box-shadow:0 0 10px white;}
+	25%{box-shadow:0 0 10px blue;}
+	50%{box-shadow:0 0 10px gold;}
+	75%{box-shadow:0 0 10px red;}
+   100%{box-shadow:0 0 10px orange;}
+}
 .blocks img{
 	width:100%;
 	height:18vh;
@@ -173,8 +183,12 @@ html{
 	transition:ease-out 3s;
 	position:absolute;
 	z-index:1;
-	top:35%;
+	top:20%;
 	left:0;
+	overflow:hidden;
+}
+.preloader p{
+	letter-spacing:0.1rem;
 }
 .loader{
 	text-align:center;
@@ -206,10 +220,20 @@ html{
     border:0.1px solid white;
     border-radius:10px;
 }
+@media screen and (max-width:600px){
+	.blocks{
+		height:35vh;
+		width:40vw;
+	}
+	.blocks img{
+		width:100%;
+		height:35vh;
+	}
+}
 </style>
 <body>
 <div id="screen">
-<p class="h1"> XXXTENCTATION Collection </p>
+<p class="h1"> XXXTENCTACION Collection </p>
 <!--<marquee class="mq1">XXX-TENCTATION</marquee>-->
 <img class="animeImg" src="./assets/img/anime.png" height="100" width="100">
 <div class="folder">
@@ -219,7 +243,7 @@ html{
 		 	<source src="./assets/songs/Changes.mp3" type="audio/mpeg">
 		</audio>
 		  <div class="controls">
-		  	<p>▫️ Changes - XXXTENCTATION</p>
+		  	<p>▫️ Changes - XXXTENCTACION</p>
 			    <div class="slide">
 				    <div class="range1" id="range"></div>
 			    </div>
@@ -291,7 +315,7 @@ html{
 		 	<source src="./assets/songs/Remedy.mp3" type="audio/mpeg">
 		</audio>
 	     	  <div class="controls">
-	     	<p> The Remedy Of A Broken Heart </p>
+	     	<p>▫️ The Remedy Of A Broken Heart </p>
 				<div class="slide">
 					<div class="range5" id="range"></div>
 				</div>
@@ -342,7 +366,7 @@ html{
 		 	<source src="./assets/songs/KillVibe.mp3" type="audio/mpeg">
 		</audio>
 	     	  <div class="controls">
-	     	<p> Kill My Vibe </p>
+	     	<p>▫️ Kill My Vibe </p>
 				<div class="slide">
 					<div class="range8" id="range"></div>
 				</div>
@@ -357,7 +381,7 @@ html{
 	<h2> Site under contruction and may have bugs! </h2>
 	<h1> ⚠ </h1>
 	<div class="loader">.</div>
-	<p>processing latest playlist...</p>
+	<p>Processing my Playlist..</p>
 </div>
 <script>
 	var i = 0;
@@ -402,11 +426,9 @@ const pauseBtn = $(".fa-pause");
      			var currentTime = player1.currentTime;
      			var duration = player1.duration;
      			$('.range1').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
-     			});
-     				hl[0].style.boxShadow = "0 0 9px gold";}
+     			});}
 		function pause1(){
 			music1.pause();
-				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
 			}
 			
 		function starts2(){
@@ -416,13 +438,11 @@ const pauseBtn = $(".fa-pause");
 				var currentTime = player2.currentTime;
 				var duration = player2.duration;
 				$('.range2').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
-				});
-					hl[1].style.boxShadow = "0 0 9px gold";}
+				});}
 		function pause2(){
 			music2.pause();
-				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
 			}
-			
+
 		function starts3(){
 				  do{i++; m[0].pause(); m[1].pause(); m[2].pause(); m[3].pause(); m[4].pause(); m[5].pause(); m[6].pause(); m[7].pause();}while(i < 10);
 			music3.play();
@@ -430,11 +450,9 @@ const pauseBtn = $(".fa-pause");
 				var currentTime = player3.currentTime;
 				var duration = player3.duration;
 				$('.range3').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
-				});
-					hl[2].style.boxShadow = "0 0 9px gold";}
+				});}
 		function pause3(){
 			music3.pause();
-				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
 			}
 			
 		function starts4(){
@@ -444,11 +462,9 @@ const pauseBtn = $(".fa-pause");
 				var currentTime = player4.currentTime;
 				var duration = player4.duration;
 				$('.range4').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
-				});
-					hl[3].style.boxShadow = "0 0 9px gold";}
+				});}
 		function pause4(){
 			music4.pause();
-				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
 			}
 			
 		function starts5(){
@@ -458,11 +474,9 @@ const pauseBtn = $(".fa-pause");
 				var currentTime = player5.currentTime;
 				var duration = player5.duration;
 				$('.range5').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
-				});
-					hl[4].style.boxShadow = "0 0 9px gold";}
+				});}
 		function pause5(){
 			music5.pause();
-				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
 			}
 			
 		function starts6(){
@@ -472,11 +486,9 @@ const pauseBtn = $(".fa-pause");
 				var currentTime = player6.currentTime;
 				var duration = player6.duration;
 				$('.range6').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
-				});
-					hl[5].style.boxShadow = "0 0 9px gold";}
+				});}
 		function pause6(){
 			music6.pause();
-				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
 			}
 			
 		function starts7(){
@@ -486,11 +498,9 @@ const pauseBtn = $(".fa-pause");
 				var currentTime = player7.currentTime;
 				var duration = player7.duration;
 				$('.range7').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
-				});
-					hl[6].style.boxShadow = "0 0 9px gold";}
+				});}
 		function pause7(){
 			music7.pause();
-				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
 			}
 			
 		function starts8(){
@@ -501,10 +511,9 @@ const pauseBtn = $(".fa-pause");
 				var duration = player8.duration;
 				$('.range8').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
 				});
-					hl[7].style.boxShadow = "0 0 9px gold";}
+}
 		function pause8(){
 			music8.pause();
-				hl[0,1,2,3,4,5,6,7].style.boxShadow = "0 0 0 gold";
 			}
 			
 var screen = $('#screen');
