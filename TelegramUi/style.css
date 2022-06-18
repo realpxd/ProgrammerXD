@@ -380,3 +380,11 @@ ul,li{
 #unmute{
   z-index:5;
 }
+.ch img, .ch p{
+	animation:notif 1.2s ease-out infinite alternate-reverse;
+}
+
+@keyframes notif{
+	from{}
+	to{box-shadow:0px 0px 15px darkred;}
+}
