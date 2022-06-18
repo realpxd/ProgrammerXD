@@ -100,12 +100,12 @@ function sendmail(){
 			var email = $('#email').val();
 			var subject = $('#topic').val();
             var message = $('#Message').val();
-			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message+'<br>h';
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message+'<br>';
 			//console.log(name, phone, email, message);
 
 			Email.send({
-        SecureToken:"c43f36e7-8cb5-4347-9d8f-a814631361c5",
-				To: 'hn24news@gmail.com',
+        SecureToken:"5a5b68a8-f001-4a96-b742-0d2ad7dc4733",
+				To: 'saininaman006@gmail.com',
 				From: email,
 				Subject: subject,
 				Body: Body
