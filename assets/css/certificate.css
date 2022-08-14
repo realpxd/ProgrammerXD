@@ -2,16 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     margin:0;
+    --webkit-user-select:none;
+    -webkit-tap-highlight-color: transparent;
 }
 body{
     justify-content:center;
     align-items:center;
     text-align:center;
     font-family: 'Source Code Pro', monospace;
+    background: #090a09;
 }
 h1{
     letter-spacing:7px;
     font-weight:900;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 2px red;
+    color:transparent;
 }
 a{
     text-decoration:none;
@@ -19,22 +25,29 @@ a{
     letter-spacing:10px;
     line-height:50px;
     transition:0.4s;
+
 }
 a:hover{
     background-color:none;
     color:;
-    text-shadow:0 0 50px black;
+    text-shadow:0 0 50px silver;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 2px red;
+    color:transparent;
 }
 #All{
    justify-content:center;
    align-items:center;
    text-align:center;
-   background-color:#6699FF;
+   border:1px solid lightblue;
+   color:black;
+   //background-color:#6699FF;
+   background: #090a09;
    border-radius:20px;
    margin:2%;
    padding:10%;
-   font-size:20pt;
-   font-family: 'Righteous', cursive;
+   font-size:24pt;
+
    font-weight:900;
 }
 .box {
@@ -44,6 +57,7 @@ a:hover{
   width:100%;
   padding-top:5%;
   overflow:hidden;
+  color:black;
 }
 	.box .footer .social {
 		  text-align:center;
@@ -65,6 +79,9 @@ a:hover{
 			  border:none;
 			  transform:scale(1.2);
 			  text-shadow:0 0px 25px black;
+			  -webkit-text-stroke: 1px white;
+			  text-stroke: 2px red;
+			  color:transparent;
 		}
 	.box .footer .copyright {
 		  font-size:13px;
@@ -102,4 +119,22 @@ a:hover{
     a{
         line-height:40px;
     }
+}
+
+
+.particles{
+	display:block;
+	position:absolute;
+	height:15px; width:15px;
+	background:orange;
+	border-radius:5px;
+	animation:mv eval('rand')s ease-in infinite alternate-reverse;
+}
+@element '#animation' {
+  .particles {
+    animation-duration: eval('rand')s;
+  }
+ }
+@keyframes mv {
+	to{transform:rotate(360deg) translate(0%,60%);}
 }
