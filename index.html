@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title></title>
-<link href="main.css" rel="stylesheet">
-<link href="responsive.css" rel="stylesheet">
+<title>Official website for ProgrammerXD</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4689412167798339"
+     crossorigin="anonymous"></script>
 <!-- Anime.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 <!-- Jquery -->
@@ -34,85 +34,594 @@
 <meta name="twitter:description" content="About Naman Saini/ProgrammerXD" />
 <meta name="twitter:url" content="https://www.programmerxd.codes" />
 <meta name="twitter:image" content="https://telegra.ph/file/863a2916b4699faed3271.png" />
-<meta id="themeH" name="theme-color" content="#000" />
-<meta name = "revised" content = "ProgrammerXD, 16/6/2022" />
+
+<!-- styling -->
+<style type="text/css">
+*{
+    scroll-behavior: smooth;
+    user-select:none;
+	margin: 0;
+}
+body{
+    background:#6699FF;
+}
+/* MENU BAR RELATED */
+.MenuBar{
+	display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    height:7vh;
+    width:100vw;
+    box-sizing:border-box;
+    background:white;
+    padding:0.1rem;
+    z-index:4;
+}
+	.MenuBar .Naman{
+			position:absolute;
+			top: 0.1rem;
+			left: 0.1rem;
+		    height:6vh;
+		    width:30vw;
+			border: 1px solid #99CC00;
+			margin: 0;
+			padding: 0;
+	}
+	.MenuBar .menu{
+		display:inline-block;
+			position:absolute;
+		    height:40px;
+		    color:black;
+		    font-size:2rem;
+		    font-stretch:ultra-expanded;
+		    transition:0.2s;
+		    right:1rem;
+		    background:none;
+		    outline:none;
+		    border:none;
+			width:10vw;
+		    font-size:23pt;
+		    transition:0.2s;
+	}
+.Snav{
+	display: block;
+    position:absolute;
+    background:white;
+	box-shadow:0 15px 10px rgba(0, 0, 0, 0.5);
+    height:60vh;
+    width:100vw;
+    left:-120vh;
+    top:7vh;
+    padding:5% 0 5% 0;
+    text-align:center;
+    transition:0.3s;
+    z-index:3;
+}
+	.Snav .nav{
+			display:block;
+		    color:black;
+		    font-size:1.5rem;
+		    text-decoration:none;
+		    font-family:righteous;
+	}
+a:hover{
+    text-decoration:none;
+    color:black;
+    border-bottom:1px solid black;
+}
+.projectsContainer{
+	display:none;
+	justify-content:space-around;
+	align-items:center;
+	flex-wrap:wrap;
+	height:0%;
+	margin-bottom:9.5vh;
+}
+.navNew{
+	padding:1%;
+	border:1px solid brown;
+	border-radius:10px;
+	color:white;
+	font-size:14pt;
+	text-decoration:none;
+	font-family:righteous;
+	margin-top:5%;
+	background:green;
+	transition:0.2s ease;
+}
+.navNew:active{
+	box-shadow:0 5px 5px black;
+	color:white;
+}
+.navNew:hover{
+	box-shadow:0 5px 5px black;
+	color:white;
+}
+/* illustration 1 */
+.LandingIcon{
+    height:250px;
+    width:250px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    z-index:4;
+}
+/* illustration 2 */
+.Cloud{
+    height:70px;
+    width:110px;
+    position:absolute;
+    top:18%;
+    left:30%;
+    filter:opacity(0.8);
+    z-index:1;
+    animation:Cloud 1s ease 0s infinite alternate-reverse;
+}
+.FullPlane{
+    display:flex;
+    position:absolute;
+    margin-left:40%;
+    animation:float 2s ease 0s infinite alternate-reverse;
+}
+/* illustration 4 */
+	.FullPlane .Plane{
+		    height:50px;
+		    width:150px;
+		    z-index:5;
+		    margin-left:90%;
+		    position:absolute;
+		    display:inline-block;
+}
+/* illustration 5 */
+	.FullPlane .Smoke{
+		    height:30px;
+		    width:30px;
+		    position:absolute;
+		    transform:rotate(-10deg);
+		    z-index:5;
+		    display:inline-block;
+		    margin-left:150px;
+		    margin-top:20px;
+}
+/* animation */
+@keyframes Cloud {
+    from{}
+    to{margin-top:3px;}
+}
+@keyframes float {
+    from{margin-top:-6%;}
+    to{margin-top:3%;}
+}
+
+/* greetings */
+.data{
+    display:block;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    margin-left:7%;
+    margin-right:7%;
+    z-index:6;
+}
+	.data .h1{
+		    font-family:serif;
+		    font-size:22pt;
+		    font-weight:1100;
+	}
+	.data .h5{
+		    letter-spacing:1px;
+		    font-size:12pt;
+	}
+	.data .Tour{
+		    border:none;
+		    background:#99CC00;
+		    padding:2%;
+		    font-size:13pt;
+		    border-radius:10px;
+		    font-weight:bold;
+		    color:white;
+		    width:150px;
+		    box-shadow:inset 0px -2px 3px black;
+	}
+.Btn {
+	border:none;
+	background:#99CC00;
+	padding:7%;
+	font-size:13pt;
+	border-radius:10px;
+	font-weight:bold;
+	color:white;
+	width:40vw;
+	box-shadow:inset -1px -2px 2px black;
+	margin-top:3%;
+}
+.Music{
+	box-shadow:inset 1px -2px 2px black;
+}
+.morePages{
+	text-align:center;
+	color:#99CC00;
+	font-weight:1500;
+	font-size:8pt;
+	text-shadow:0 0px 5px white;
+	margin-top:9%;
+}
+.Buttons{
+	display:flex;
+	justify-content: space-between;
+	margin-top:3%;
+}
+.box {
+  position:relative;
+  top:5%;
+  height:200%;
+  width:100%;
+  padding-top:5%;
+  overflow:hidden;
+}
+	.box .footer .social {
+		  text-align:center;
+	}
+	.box .footer .social > a {
+		  font-size:20px;
+		  width:40px;
+		  height:40px;
+		  display:inline-block;
+		  text-align:center;
+		  margin:0 1px;
+		  color:black;
+		  padding:1%;
+		  transition:0.5s;
+	}
+		.box .footer .social > a:hover {
+			  text-decoration:none;
+			  outline:none;
+			  border:none;
+			  transform:scale(1.2);
+			  text-shadow:0 20px 0.5px grey;
+		}
+	.box .footer .copyright {
+		  font-size:13px;
+		  color:#aaa;
+		  text-align:center;
+		  font-family:helvetica;
+		  font-weight:300;
+		  letter-spacing:2px;
+	}
+/*@media screen and (min-width:450px) and (max-width:1500px){
+    .MenuBar{
+        height:4.5%;
+    }
+	    .MenuBar .Naman{
+		        margin:0;
+		        margin-top:-5%;
+		        height:160px;
+		        width:160px;
+	    }
+	    .MenuBar .menu{
+		        margin-top:1%;
+		        margin-left:50%;
+		        font-size:30pt;
+	    }
+	.Snav{
+		height:25%;
+	}
+	    .Snav .nav{
+		        font-size:25pt;
+	    }
+    .footer .social > a {
+        font-size:30pt;
+        padding:3%;
+    }
+	    .footer .copyright {
+		        font-size:15pt;
+	    }
+    .Cloud{
+        top:8%;
+        height:125px;
+        width:180px;
+    }
+    .FullPlane .Plane{
+        height:80px;
+        width:180px;
+    }
+    .FullPlane .Smoke{
+        height:50px;
+        width:50px;
+        margin-left:185px;
+    }
+    .data .h5{
+        font-size:22pt;
+    }
+    .data .Tour{
+        width:250px;
+        font-size:20pt;
+        padding:4%;
+    }
+    #MarginTop{
+    margin-top:25px;
+    }
+}*/
+.container {
+	margin:10px;
+	margin-top:25%;
+    background:none;
+	padding:10px;
+	color:white;
+	backdrop-filter:blur(2px);
+}
+.container label{
+    font-weight:900;
+    font-size:20pt;
+    text-shadow:0 0 1px black;
+}
+.container .form{
+    width:80%;
+    margin-left:10%;
+}
+.container .form .name::placeholder,
+.container .form .email::placeholder,
+.container .form .message::placeholder{
+    color:silver;
+}
+.container .form .name,
+.container .form .email,
+.container .form .message{
+	height:30px;
+	width:100%;
+	border:none;
+	outline:none;
+	border-bottom:1px solid skyblue;
+	background:none;
+	margin-top:20px;
+	color:white;
+}
+.container .form .message{
+    border:1px solid skyblue;
+    height:120px;
+    padding:15px;
+    width:88%;
+    border-radius:5px;
+}
+.container .form .submit{
+	height:30px;
+    width:100%;
+    background:#99CC00;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    margin-top:10px;
+    color:white;
+    font-weight:500;
+    letter-spacing:1px;
+}
+.PopUp{
+	position:fixed;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.4px);
+	-webkit-backdrop-filter: blur(3.4px);
+	border: 3px solid rgba(255, 255, 255, 0.45);
+	height:100vh;
+	width:95vw;
+	z-index:999;
+	overflow:hidden;
+	text-align:center;
+	color:white;
+	padding-top:55%;
+	font-weight:900;
+	text-shadow:0px 1px 3px black;
+	transition:all 0.2s ease;
+}
+.PopUp span{
+	position:absolute;
+	top:15%;
+	right:5%;
+	font-size:27pt;
+	color:darkred;
+	text-shadow:none;
+	border:1px solid black;
+	border-radius:5px;
+	padding:0 2% 0 2%;
+}
+.PopUp button{
+	border:none;
+	border-radius:100px;
+	background: white;
+	outline:none;
+	padding:3% 6% 3% 6%;
+	font-size:15pt;
+	color: darkgreen;
+	font-weight:500;
+	background: linear-gradient(145deg, #fafafa, #d3d3d3);
+	cursor:pointer;
+}
+.PopUp button:active {
+	background: #eaeaea;
+	box-shadow: inset 13px 13px 25px #d0d0d0,
+	inset -13px -13px 25px #ffffff;
+	font-size:14pt;
+}
+.v2{
+	position:fixed;
+	border:none;
+	border-radius:100px;
+	background: white;
+	outline:none;
+	padding:2% 5% 2% 5%;
+	font-size:10pt;
+	color: darkgreen;
+	font-weight:700;
+	background: linear-gradient(145deg, #fafafa, #d3d3d3);
+	cursor:pointer;
+	right:5%;
+	top:13%;
+	z-index:2;
+}
+.v2:active {
+	background: #eaeaea;
+	box-shadow: inset 13px 13px 25px #d0d0d0,
+	inset -13px -13px 25px #ffffff;
+	font-size:9pt;
+}
+</style>
 </head>
-<header>
-	<div class="MenuBar">
-		<a href="#"><img src="./assets/img/pxd.png" class="Logo" alt="Logo" ></a>
-		<input value="&#9776;" type="text" class="menu " id="menu" onclick="openNav()" onblur="closeNav()" readonly />
-   <!-- Second Menu Bar -->
-	<div class="Snav" id="Snav"><br><br>
-		<a href="#" class="nav"> HOME </a><br>
-		<a target="_blank" rel="noopener noreferrer" href="Resume.html" class="nav"> MY RESUME </a><br>
-		<a target="_blank" rel="noopener noreferrer" href="Certificates.html" class="nav" > CERTIFICATES </a>
-		<footer class="footer">
-			<div class="social">
-					<a target="_blank" rel="noopener noreferrer" href="https://instagram.com/programmerxd?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
-					<a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCiKTJ_cHytgUSITeuFGzJmQ"><i class="fa fa-youtube"></i></a>
-					<a target="_blank" rel="noopener noreferrer" href="mailto:amlittleprogrammer@gmail.com"><i class="fa fa-google"></i></a>
-					<a target="_blank" rel="noopener noreferrer" href="https://t.me/DevelopersAndProgrammers"><i class="fa fa-telegram"></i></a>
-					<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100069078836350"><i class="fa fa-facebook"></i></a>
-					<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/chaosAgent75?s=09"><i class="fa fa-twitter"></i></a>      
-			</div>
-				<p>ProgrammerXD &copy; 2021</p>
-		</footer>
-	</div>
-	</div>
-</header>
 <body>
-<div class="container" id="1">
-	<div class="blocks blockA">
-		<div class="data">
-			<h1> Hellow Stalker</h1> <br> 
-			<p>I am glad that you visited my WebSite . Let's explore more, just click the button below.
-			</p>
-			<button onclick="location.href='#2'" class="btn">Know more ⤵</button>
+<div class="PopUp">
+	<span><i class="fa fa-close" onclick="closepop()"></i></span>
+	<h2>This Version of the site has been expired and no longer supported.<br><br> Would you like to move to V2?</h2>
+	<button onclick="location.href='./main.html'">continue</button>
+</div>
+<!-- Menu Bar -->
+
+	<div class="MenuBar">
+	     <img src="./assets/img/Naman.png" class="Naman" alt="Name" >
+	     <input value="&#9776;" type="text" class="menu " id="menu" onclick="openNav()" onblur="closeNav()" readonly />
+	<!-- Second Menu Bar -->
+	<div class="Snav" id="Snav"><br><br>
+		    <a href="#" class="nav"> HOME </a><br>
+		    <a target="_blank" rel="noopener noreferrer" href="Resume.html" class="nav"> MY RESUME </a><br>
+		    <a target="_blank" rel="noopener noreferrer" href="Certificates.html" class="nav" > CERTIFICATES </a><br>
+		    <p class="nav" id="projects" onclick="project()"> My Projects <i class="fa fa-angle-down"></i></p>
+		    <div class="projectsContainer" id="projectsContainer">
+		    	<a target="_blank" rel="noopener noreferrer" href="./TelegramUi/index.html" class="navNew" id="tui">Telegram UI</a>
+		    	<a target="_blank" rel="noopener noreferrer" href="./SololearnUi/index.html" class="navNew" id="sui">Sololearn UI</a>
+		    	<a target="_blank" rel="noopener noreferrer" href="./DevTo/index.html" class="navNew" id="sui">Dev.to Clone</a>
+		    	<a target="_blank" rel="noopener noreferrer" href="./Repeater/index.html" class="navNew" id="sui">Text Repeater</a>
+		    	<a target="_blank" rel="noopener noreferrer" href="" class="navNew" id="sui">HN24 PROJECT</a>
+		    </div>
+		<div class="box">
+			  <div class="footer"><hr><br>
+			      <footer>
+			          <div class="social">
+				            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/programmerxd?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+				            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCiKTJ_cHytgUSITeuFGzJmQ"><i class="fa fa-youtube"></i></a>
+				            <a target="_blank" rel="noopener noreferrer" href="mailto:amlittleprogrammer@gmail.com"><i class="fa fa-google"></i></a>
+				            <a target="_blank" rel="noopener noreferrer" href="https://t.me/DevelopersAndProgrammers"><i class="fa fa-telegram"></i></a>
+				            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100069078836350"><i class="fa fa-facebook"></i></a>
+				            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/chaosAgent75?s=09"><i class="fa fa-twitter"></i></a>      
+			          </div>
+   		              <p class="copyright">ProgrammerXD &copy; 2021</p>
+			      </footer><br><br><br>
+			  </div>
 		</div>
-		<div class="img imgA"></div>
 	</div>
-	<hr class="hr" align="center" >
-</div>
+</div><br><br>
+	<br><br><br><br><br>
+		<button class="v2" onclick="location.href='./main.html'">Goto v2 ➶</button>
+<!-- illustrations -->
+      <img src="./assets/img/Cloud.png" class="Cloud" alt="Cloud">
+	<div class="FullPlane">
+	      <img src="./assets/img/Plane.png" class="Plane" alt="Plane">
+	      <img src="./assets/img/Smoke.png" class="Smoke" alt="Smoke">
+	</div><br><br><br>
 
-<div class="container" id="2">
-	<div class="blocks blockB">
-		<div class="img imgB"></div>
+<!-- Main Section -->
+	<div id="MarginTop">
+	      <img src="./assets/img/LandingIcon.png" class="LandingIcon" alt="Queen"><hr>
+	<!-- Greetings -->
 		<div class="data">
-			<h1>About me</h1>
-			<p>I am a web developer since 2019, and have great skills in &lt;/javascript&gt; &amp; web-development</p>
-			<button onclick="location.href='#3'" class="btn">Check my Projects ⤵</button>
+		    <h1 class="h1"> Hello, Mr./Ms. Stalker </h1>
+		    <p  class="h5"> I am glad that you visited my webpage. 
+		                So, now you can take a tour where you can know more about me Or just listen to musics or play games!! Many more things to come soon... Stay tuned! :)</p>
+		    <a href="Resume.html"><button class="Tour">Take Tour</button></a>
+				<div class="Buttons">
+					<a href="./Money-Game/index.html"><button class="Btn Game">Play Games</button></a>
+					<a href="./Musics/index.html"><button class="Btn Music">Listen To Musics</button></a>				
+				</div><br><br>
+	<a href="https://www.buymeacoffee.com/ProgrammerXD" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important; box-shadow:0px 3px 3px black; border-radius:10px;" ></a>
 		</div>
-</div>
+			<div class="morePages">
+			  <!-- OR DO SOMETHING DIFFERENT! -->
 
-	<hr class="hr" align="center" >	
-</div>
-
-<div class="container projects" id="3">
-	<div class="blocks blockC">
-		<div class="data">
-			<h1 align="center">My Projects</h1>
-			<div class="list">
-				<button onclick="location.href='./Money-Game/index.html'" class="btn">Squid/Money Game</button>
-				<button onclick="location.href='./TelegramUi/index.html'" class="btn">Telegram UI</button>
-				<button onclick="location.href='./RoadToInfinity/index.html'" class="btn">Road to infinity - Game</button>
-				<button onclick="location.href='./Repeater/index.html'" class="btn">Text Repeater</button>
-				<button onclick="location.href='./Musics/index.html'" class="btn">Music playlist</button>
-				<button onclick="location.href='./HN24/index.html'" class="btn">HN24 PROJECT</button>
 			</div>
-		</div>
-</div>
-	<hr class="hr" align="center" >
-<!--<div class="project-img"></div>-->
-</div>
-
-<cavas id="cavas" height="300" width="380"></cavas>
-
-<footer>
-	<div>
-		
 	</div>
-</footer>
-<script src="./main.js"></script>
-</body>
+<!--<!-- Contact Me ->
+	<div class="container contact"><hr><br>
+		<label for="ContactForm">Contact me :-</label>
+		<form class="form" action="" name="ContactForm">
+			<input class="name" type="name" placeholder="Full Name" name="Contact" required><br>
+			<input class="email" type="email" placeholder="Your Email" name="Contact" required><br>
+			<textarea class="message" name="Contact" placeholder="Type your message...." required></textarea><br>
+			<button class="submit" type="submit" name="Contact">SUBMIT</button>
+		</form>
+	</div>-->
+<!-- SCRIPTS -->
+<script>
+      /* AOS */
+AOS.init();
+      /* Menu Bar Toggle */
+
+	      var menuIcon = document.getElementById('menu');
+		  var sn = document.getElementById("Snav");
+			function openNav(){
+				sn.style.left = "0";
+				menuIcon.style.transform = "rotate(1800deg) translateX(0%)";
+			}
+			function closeNav(){
+				sn.style.left = "-120vw";
+				menuIcon.style.transform = "rotate(0deg)";
+			}
+		  
+		  function project(){
+		  		if(document.getElementById("projectsContainer").style.display = "none"){
+		  			setTimeout(function(){document.getElementById("projectsContainer").style.display = "flex";},100);
+		  			document.getElementById("projectsContainer").style.height = "100";
+		  			sNav.style.top = "4.5%";
+		  			menuIcon.style.transform = "rotate(270deg)";
+		  		}
+		  		else{
+		  			document.getElementById("projectsContainer").style.display = "none";
+		  		 	sNav.style.top = "-120%";
+		  		 	document.getElementById("projectsContainer").style.height = "0";
+		  		 };	  		
+		  };
+		  $("#sui").on('click',function(){
+		 		alert("PAGE UNDER CONSTRUCTION!! \n\n Press 'ok' to continue.");
+		 });
+
+function closepop(){
+$('.PopUp').fadeOut(200);
+}
+
+/* Anime.js */
+    /* GREETINGS */
+anime.timeline({loop:false}) 
+    .add({
+          targets:".data",
+          translateY:["-35px",0],
+          opacity:[0,1],
+          duration:10000
+});
+	/* Icon in Menu Bar */  
+anime.timeline({loop:false}) 
+    .add({
+          targets:".Naman",
+          translateX:["-26000px","0"],
+          translateY:["100px","0"],
+          opacity:[0,1],
+          duration:2000,
+          delay: 400,
+          easing: 'easeOutQuart',
+          delay:function(element,i) {
+          return i*200;
+          }
+});
+    /* Plane Animation */
+anime.timeline({loop:true}) 
+    .add({
+          targets:".FullPlane",
+          translateX:["90px","-300px"],
+          opacity:[0.8,0],
+          duration:40000,
+          delay:function(element,i) {
+          return i*200;
+          }
+});
+</script>
 </body>
 </html>
