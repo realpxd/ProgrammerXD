@@ -2,20 +2,23 @@
 <html>
 <head>
 <title>PROGRAMMERXD</title>
+<!-- STYLESHEETS -->
 <link href="main.css" rel="stylesheet">
 <link href="responsive.css" rel="stylesheet">
+<!-- Smtp ~ contact form -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <!-- Anime.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+	<!-- no use rn :--    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>  -->
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <!-- Data Aos -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- Data Aos -->
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <!-- icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- fonts  -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+<!-- X-icon -->
 <link rel="icon" href="https://telegra.ph/file/863a2916b4699faed3271.png" type="image/x-icon">
 <!-- Meta tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -35,8 +38,9 @@
 <meta name="twitter:url" content="https://www.programmerxd.codes" />
 <meta name="twitter:image" content="https://telegra.ph/file/863a2916b4699faed3271.png" />
 <meta id="themeH" name="theme-color" content="#000" />
-<meta name = "revised" content = "ProgrammerXD, 16/6/2022" />
+<meta name = "revised" content = "ProgrammerXD, 11/7/2022" />
 </head>
+<!--Menu navigation bar-->
 <header>
 	<div class="MenuBar">
 		<a href="#"><img src="./assets/img/pxd.png" class="Logo" alt="Logo" ></a>
@@ -60,60 +64,121 @@
 	</div>
 	</div>
 </header>
+<!-- Start of body-->
 <body>
+<!-- Block A ~ GREETINGS -->
 <div class="container" id="1">
 	<div class="blocks blockA">
 		<div class="data">
-			<h1> Hellow Stalker</h1> <br> 
+			<h1> Hellow <span class="fi">Stalker</span><span class="lf">Stalker</span></h1> <br> 
 			<p>I am glad that you visited my WebSite . Let's explore more, just click the button below.
 			</p>
 			<button onclick="location.href='#2'" class="btn">Know more ⤵</button>
 		</div>
-		<div class="img imgA"></div>
+		<div class="img imgA">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="1 3 600 1062">
+			<polyline points="0,1594 131,0 0,348 269,90 0,562 47,0 
+			0,766 565,14 09,1602 719,0 289,1062 843,990 543,1062 995,0 729,1062 1161,0 947,1062 1307,0 1143,1062 1500,162 1299,1062 1500,830"/>
+			</svg>
+		</div>
 	</div>
 	<hr class="hr" align="center" >
 </div>
-
+<!-- Block B ~ INTRODUCTION -->
 <div class="container" id="2">
 	<div class="blocks blockB">
-		<div class="img imgB"></div>
-		<div class="data">
-			<h1>About me</h1>
-			<p>I am a web developer since 2019, and have great skills in &lt;/javascript&gt; &amp; web-development</p>
-			<button onclick="location.href='#3'" class="btn">Check my Projects ⤵</button>
+		<div class="img imgB">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="327 0 600 1062">
+			<polyline points="0,1594 131,0 0,348 269,90 0,562 47,0 
+			0,766 565,14 09,1602 719,0 289,1062 843,990 543,1062 995,0 729,1062 1161,0 947,1062 1307,0 1143,1062 1500,162 1299,1062 1500,830"/>
+			</svg>
 		</div>
+		<div class="data">
+			<h1 class="iffi">About <span class="fi">me</span><span class="lf">me</span></h1>
+			<p>I am a <font style="color: pink;">web developer</font> since 2019, and have great skills in &lt;/javascript&gt; &amp; web-development</p>
+			<button onclick="location.href='#3-A'" class="btn">Check my Projects ⤵</button>
+		</div>
+	</div>
+	<hr id="3-A" class="hr" align="center" >	
 </div>
 
-	<hr class="hr" align="center" >	
-</div>
-
+<!-- Block C ~ PROJECTS -->
 <div class="container projects" id="3">
+	<h1 class="iffi" align="center">My <span class="fi">Projects</span><span class="lf">Projects</span></h1>
 	<div class="blocks blockC">
 		<div class="data">
-			<h1 align="center">My Projects</h1>
 			<div class="list">
 				<button onclick="location.href='./Money-Game/index.html'" class="btn">Squid/Money Game</button>
 				<button onclick="location.href='./RoadToInfinity/index.html'" class="btn">RTI - Game</button>
 				<button onclick="location.href='./TelegramUi/index.html'" class="btn">Telegram UI</button>
 				<button onclick="location.href='./Musics/index.html'" class="btn">Music Playlist</button>
-				<button onclick="location.href='./HN24/index.html'" class="btn">HN24 Web-app</button>
+				<button onclick="location.href='https://naman77s.github.io/Hn24/'" class="btn">HN24 Web-app</button>
 				<button onclick="location.href='https://ufolinux.tk'" class="btn">UFO linux website</button>
+				<button onclick="location.href='./Inf.html'" class="btn">Mobile Information Grabber</button>
 				<button onclick="location.href='./Repeater/index.html'" class="btn">Text Repeater</button>
 				<button onclick="location.href='./Calculator.html'" class="btn">The Calculator</button>
 			</div>
-		</div>
+		</div><br>
+		<button align="center" onclick="location.href='#5-A'" class="btn btn-hire">Want to hire me?</button>
 </div>
 	<hr class="hr" align="center" >
-<!--<div class="project-img"></div>-->
+		<!--<div class="project-img"></div>-->
 </div>
 
-<cavas id="cavas" height="300" width="380"></cavas>
-
-<footer>
-	<div>
-		
+<!-- Block D ~ STATISTICS -->
+<div class="container" id="4">
+	<h1 class="font-sts" align="center">Statistics</h1>
+	<div class="blocks blockD">
+		<a class="stats" href="https://github.com/naman77s">
+			<img align="center" src="https://github-readme-stats.vercel.app/api?username=naman77s&show_icons=true&theme=radical" />
+		</a>
+		<a class="stats-lang" href="https://github.com/naman77s">
+			<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=naman77s&layout=compact&theme=radical" />
+		</a>
 	</div>
-</footer>
+	<hr id="5-A" class="hr hrD" align="center" >
+</div>
+
+<!-- Block E ~ CONTACT ME -->
+<div class="container" id="5">
+	<h1 align="center">Contact Now!</h1>
+	<div class="blocks blockE">
+		<div class="data">
+			<div class="contact-form">
+				<form class="cform" method="post" action="javascript:sendmail()">
+					<div class="row">
+						<input class="name" id="name" type="text" name="name" placeholder="Full name" required/>
+						<input class="email" id="email" type="email" name="email" placeholder="Email@google.com" required/>
+						<textarea class="message" id="message" name="message" placeholder="Type your Message here.." required></textarea>
+						<button type="submit" class="btn btn-form" onclick="return true;">Send Message</button>
+					</div>
+				</form>
+			</div>
+			<br>
+			<img class="map" src="./assets/img/Bharat.svg"><br>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="social">
+				<a target="_blank" rel="noopener noreferrer" href="https://instagram.com/programmerxd?utm_medium=copy_link"><i class="fa fa-instagram"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCiKTJ_cHytgUSITeuFGzJmQ"><i class="fa fa-youtube"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="mailto:amlittleprogrammer@gmail.com"><i class="fa fa-google"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://t.me/DevelopersAndProgrammers"><i class="fa fa-telegram"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100069078836350"><i class="fa fa-facebook"></i></a>
+				<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/chaosAgent75?s=09"><i class="fa fa-twitter"></i></a>      
+			</div>
+			<p class="copyright">ProgrammerXD © 2021</p>
+		</div>
+	</footer>
+	<hr class="hr" align="center" >	
+</div>
+
+
+<!-- Last Block ~ SHORT CANVAS GANE-->
+	<!-- not in use rn :-- <cavas id="cavas" height="300" width="380"></cavas>  -->
+
+<!-- loading scripts... -->
 <script src="./main.js"></script>
 </body>
 </body>

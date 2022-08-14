@@ -1,6 +1,5 @@
 # ProgrammerXD
-<h3>Duplicate repository of PXD</h3>
-
+<h3>Main repository of PXD</h3>
 <a href="https://programmerxd.codes"> <img src="https://img.shields.io/badge/Official_Website-ProgrammerXD-orange" ></a> <br>
 <a href="https://programmerxd.codes/Certificates.html"> <img src="https://img.shields.io/badge/Certificates-ProgrammerXD-blue" ></a>
 <a href="https://www.linkedin.com/in/programmerxd"> <img src="https://img.shields.io/badge/LinkedIN-Hire_me-blue" ></a><br>
@@ -11,4 +10,3 @@
 
 
 <p> Enjoy your day :) </p> 
-
