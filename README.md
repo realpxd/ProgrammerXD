@@ -1,11 +1,14 @@
 # ProgrammerXD
 <h3>Duplicate repository of PXD</h3>
-Site Live on -> https://programmerxd.codes <br>
-Certificates -> https://programmerxd.codes/Certificates.html <br>
-PLAY GAMES -> https://programmerxd.codes/Money-Game <br>
-MUSICS PLAYLIST -> https://programmerxd.codes/Musics <br>
-<br>
 
-LinkedIn 🔒 https://www.linkedin.com/in/programmerxd
+<a href="https://programmerxd.codes"> <img src="https://img.shields.io/badge/Official_Website-ProgrammerXD-orange" ></a> <br>
+<a href="https://programmerxd.codes/Certificates.html"> <img src="https://img.shields.io/badge/Certificates-ProgrammerXD-blue" ></a>
+<a href="https://www.linkedin.com/in/programmerxd"> <img src="https://img.shields.io/badge/LinkedIN-Hire_me-blue" ></a><br>
 
-<h5> Enjoy your day :) </h5> 
+<h4> Random Stuff </h4>
+<a href="https://programmerxd.codes/Money-Game"> <img src="https://img.shields.io/badge/Play_Games-Squid_game-orange" ></a><br>
+<a href="https://programmerxd.codes/Musics"> <img src="https://img.shields.io/badge/Music_Playlist-Play_now-orange" ></a> 
+
+
+<p> Enjoy your day :) </p> 
+
