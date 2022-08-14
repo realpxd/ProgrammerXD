@@ -1,0 +1,69 @@
+@media screen and (min-width:700px){
+    .MenuBar{
+        height:7vh;
+    }
+        .MenuBar .Naman{
+                height:3rem;
+                width:4.8rem;
+                margin:0.2%;
+        }
+        .MenuBar .menu{
+                display:none;
+        }
+    .Snav{
+        display:flex;
+        justify-content: right;
+        position:absolute;
+        background:none;
+        box-shadow:none;
+        height:8vh;
+        width:77vw;
+        top:0;
+        left:20vw;
+        right: 0;
+        padding:0.8rem;
+        text-align:right;
+        transition:0.2s;
+    }
+        .Snav .nav{
+                display:inline-block;
+                font-size:1rem;
+                text-decoration:none;
+                font-family:righteous;
+                padding:0.5rem;
+                margin: 0 0.2rem;
+                color:white;
+                text-align: center;
+                height: 2.5vh;
+                width: 7vw;
+        }
+        .Snav .nav:hover{
+            transform:scale(1);
+        }
+        .Snav .footer{
+            display: none;
+        }
+        .container{
+            margin-top: 10vh;
+        }
+        .container{
+            overflow:hidden;
+            height:80vh;
+            padding:5rem 10rem;
+            margin:0.5rem auto 0.2rem auto;
+            z-index:6;
+        }
+        .blocks .data .btn , .projects .block .data .list .btn{
+            padding:1.5% 4% 1.5% 4%;
+        }
+        .blocks .img{
+            background-size:50% 110%;
+        }
+        .projects,.blockB{
+            margin-top:5%;
+        }
+        .projects{
+            margin:5% auto;
+
+        }
+}

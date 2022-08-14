@@ -1,0 +1,99 @@
+*{
+	margin:0;
+	padding:0;
+}
+.main{
+	background-image:url('./assets/img/darkbg.jpg');
+	background-size:cover;
+	background-position:center;
+	height:100vh;
+	width:100vw;
+}
+.footer{
+	height:50vh;
+	width:100vw;
+	background:black;
+}
+/*.h5{
+	display:block;
+	position:absolute;
+	color:white;
+	font-size:11pt;
+	transform-style:preserve-3d;
+
+	margin-top:80%;
+	margin-left:1%;
+	text-align:left;
+	
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 400px;
+	height: 90px;
+	margin: -45px -200px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Rationale", sans-serif;
+	font-size: 64px;
+	color: #fff;
+	line-height: 64px;
+	perspective: 150px;
+	
+	  transform: rotateY(50deg) translateX(-5.18461%);
+	 border: 2px solid #fff;
+	 padding: 10px;
+	   border-left-width: 0;
+}*/
+.h5 {
+  display: inline-block;
+  position: absolute;
+  left: 70%;
+  top: 40%;
+  width: 250px;
+  height: 90px;
+  margin: -45px -200px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Rationale", sans-serif;
+  font-size: 10pt;
+  color: #fff;
+  line-height: 20px;
+  perspective: 150px;
+}
+span {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 10px;
+}
+.right {
+  transform: rotateX(-10deg) translateX(-5.18461%);
+  text-shadow:10px 5px 10px green;
+  box-shadow:0 5px 50px green;
+}
+.left {
+  padding-right: 0;
+  border-right-width: 0;
+  transform: rotateY(-25deg) translateX(5.18461%);
+}
+
+
+
+.spinner{
+	position:absolute;
+	height:100px;
+	width:100px;
+	border:3px dashed red;
+	border-radius:50%;
+	margin-top:120%;
+	margin-left:40%;
+	transition:0.5s ease-out;
+	animation:spin 1s linear infinite;
+}
+@keyframes spin{
+	0%{border-top-width:0; border-right-width:3px; border-bottom-width:0; border-left-width:0;}
+	25%{border-top-width:0; border-right-width:0; border-bottom-width:0; border-left-width:0;}
+	25%{border-top-width:0; border-right-width:0; border-bottom-width:3px; border-left-width:3px;}
+	50%{border-top-width:3px; border-right-width:0; border-bottom-width:0; border-left-width:0;}
+	100%{border-top-width:0; border-right-width:3px; border-bottom-width:0; border-left-width:0;}
+}
