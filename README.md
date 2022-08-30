@@ -1,5 +1,7 @@
 # ProgrammerXD
-<h2>Main repository of PXD</h2><br>
+
+<a href="https://github.com/naman77s/ProgrammerIN/blob/main/assets/img/icon.png"><img src="https://raw.githubusercontent.com/naman77s/ProgrammerIN/main/assets/img/icon.png" alt="ProgrammerXD Logo" ></a> 
+<h2>Main repository of PXD</h2>
 <h3> Here are some basic things about me </h3>
 <a href="https://programmerxd.in"> <img src="https://img.shields.io/badge/Official_Website-ProgrammerXD-orange" ></a> <br>
 <a href="https://programmerxd.in/Certificates.html"> <img src="https://img.shields.io/badge/Certificates-ProgrammerXD-blue" ></a>
