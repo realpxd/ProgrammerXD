@@ -393,7 +393,7 @@ a:hover{
 	-webkit-text-stroke:0.5px white;
 	transition:3s;
 	background-clip:border-box;
-	animation:reveal-text 0.5s linear infinite;
+	animation:reveal-tex 0.5s linear infinite;
 }
 @keyframes reveal-text{
 	0%{
