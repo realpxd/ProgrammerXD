@@ -202,25 +202,27 @@ a:hover{
 		z-index:7;
 	}
 		.imgA{
-			background-image:url('./assets/img/1.png');
+			background-image:url('./assets/img/1.webp');
 			height:50%;
 			width:50%;
 			transform:translateX(80%) translateY(10%);
 		}
 		.imgB{
-			background-image:url('./assets/img/2.png');
+			background-image:url('./assets/img/2.webp');
 			height:50%;
 			width:50%;
 			transform:translateX(-20%) translateY(-3%);
 		}
 		.img svg {
 		background: #000;
+		//mix-blend-mode: multiply;
 		mix-blend-mode: lighten;
 		}
 		
 		.img svg polyline {
 		fill: none;
-		stroke: #0f0f0f;
+		//stroke: red;
+		stroke: #1c1c1c;
 		stroke-width: 200;
 		stroke-dasharray: 20000;
 		stroke-dashoffset: 20000;
@@ -386,3 +388,25 @@ a:hover{
   
   }
 
+.font-sts{
+	color:transparent;
+	-webkit-text-stroke:0.5px white;
+	transition:3s;
+	background-clip:border-box;
+	animation:reveal-text 0.5s linear infinite;
+}
+@keyframes reveal-text{
+	0%{
+		background:linear-gradient(to right ,black , black ,silver);
+		background-position:-100%;
+
+	}
+	50%{
+		background:linear-gradient(to right ,black , silver, black);
+	}
+	100%{
+		background:linear-gradient(to right , silver , black , black );
+		background-position:100%;
+
+	}
+}
