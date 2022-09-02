@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
     margin:0;
     --webkit-user-select:none;
     -webkit-tap-highlight-color: transparent;
 }
 body{
-    justify-content:center;
     align-items:center;
     text-align:center;
     font-family: 'Source Code Pro', monospace;
@@ -22,35 +20,37 @@ h1{
 a{
     text-decoration:none;
     color:white;
-    letter-spacing:10px;
-    line-height:50px;
+    letter-spacing:0.8rem;
+    line-height:3rem;
     transition:0.4s;
-
 }
 a:hover{
     background-color:none;
-    color:;
-    text-shadow:0 0 50px silver;
+    text-shadow:0 0 4rem silver;
     -webkit-text-stroke: 1px white;
     text-stroke: 2px red;
     color:transparent;
 }
-#All{
+.container{
+   display:block;
    justify-content:center;
    align-items:center;
    text-align:center;
    border:1px solid lightblue;
    color:black;
-   //background-color:#6699FF;
    background: #090a09;
-   border-radius:20px;
-   margin:2%;
-   padding:10%;
-   font-size:24pt;
-
+   border-radius:2rem;
+   margin:0.5rem;
+   padding:1rem;
+   font-size:1.8rem;
    font-weight:900;
 }
-.box {
+.cpic{
+  height:10rem;
+  width:10rem;
+  margin:auto;
+}
+.footer {
   position:relative;
   top:5%;
   height:200%;
@@ -59,10 +59,10 @@ a:hover{
   overflow:hidden;
   color:black;
 }
-	.box .footer .social {
+	.footer .social {
 		  text-align:center;
 	}
-	.box .footer .social > a {
+	.footer .social > a {
 		  font-size:20px;
 		  width:38px;
 		  height:40px;
@@ -73,7 +73,7 @@ a:hover{
 		  padding:1%;
 		  transition:0.5s;
 	}
-		.box .footer .social > a:hover {
+		.footer .social > a:hover {
 			  text-decoration:none;
 			  outline:none;
 			  border:none;
@@ -83,7 +83,7 @@ a:hover{
 			  text-stroke: 2px red;
 			  color:transparent;
 		}
-	.box .footer .copyright {
+	.footer .copyright {
 		  font-size:13px;
 		  color:#fff;
 		  text-align:center;
@@ -92,32 +92,26 @@ a:hover{
 		  letter-spacing:2px;
 		  margin-top:10%;
 	}
-#Cphoto{
-  height:100px;
-  width:100px;
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-}
-@media screen and (min-width:400px) and (max-width:1500px){
-    #All{
-        margin-left:50%;
+
+@media screen and (min-width:500px) and (max-width:1500px){
+    .container{
         position:absolute;
+        left:50%; right:0;
+        overflow:hidden;
     }
-    #Cphoto{
+    .cpic{
         float:left;
-        height:250px;
-        width:250px;
-        margin-top:10%;
-        margin-left:10%;
+        height:20rem;
+        width:20rem;
+        margin-top:1rem;
+        margin-left:1rem;
     }
     h1{
-        margin-left:-27%;
-        margin-top:45%;
+        margin-top:10rem;
         float:left;
     }
     a{
-        line-height:40px;
+        line-height:3rem;
     }
 }
 
