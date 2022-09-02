@@ -26,18 +26,25 @@ body{
     background:linear-gradient(to bottom,red,brown,green);
     color:white;
     border-radius:50%;
-    height:5em;
-    width:5em;
-    font-size:10pt;
+    height:4rem;
+    width:4rem;
+    font-size:1rem;
     margin:1%;
     align:center;
 }
+	#music{
+		border-radius:1rem;
+	}
+	#up{border-radius:5rem 5rem 1rem 1rem;}
+	#right{border-radius:1rem 5rem 5rem 1rem;}
+	#down{border-radius:1rem 1rem 5rem 5rem;}
+	#left{border-radius:5rem 1rem 1rem 5rem;}
 .controls button:active{
     box-shadow:inset 0 5px 10px grey,0 2px 0px silver;
 }
 canvas{
     border:5px solid black;
-    margin:1%;
+    margin:0.1rem;
 }
 .container{
 	display:block;
@@ -82,17 +89,17 @@ canvas{
 <div id="screen">
 <canvas id="canvas" height="500" width=""></canvas>
 <div align="center" class="controls">
-    <button id="up">up</button><br>
-    <button id="left">left</button>
+    <button id="up">O</button><br>
+    <button id="left">L</button>
     <button id="music">music</button>
-    <button id="right">Right</button><br>
-    <button id="down">down</button>
+    <button id="right">R</button><br>
+    <button id="down">X</button>
 </div>
 </div>
 <script type="text/javascript">
 canvas = document.getElementById('canvas');
 context = canvas.getContext("2d");
-canvas.width = window.innerWidth;
+canvas.width = window.innerWidth - 15;
 ctx = canvas.width;
 cty = canvas.height;
 // All vars
@@ -108,7 +115,7 @@ cty = canvas.height;
     let dir;
    
    const player = new Image();
-   player.src = 'https://telegra.ph/file/6b5aac724306526ea305c.png';
+   player.src = './assets/img/player2.webp';
    const coin = new Image();
    coin.src = 'https://telegra.ph/file/18f08ef271721b4a6e979.png';
    const BGmusic = new Audio('./assets/sounds/sgt.mp3');
@@ -132,7 +139,7 @@ window.onload = function(){
             context.fill();
         //Text 
         context.beginPath();
-               context.font = '14px Arial';
+               context.font = '1rem Arial';
                context.fillStyle = 'blue';
                context.fillText("SCORE: " + score, ctx - 100, 30);
                context.fill();
