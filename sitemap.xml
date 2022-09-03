@@ -9,19 +9,58 @@
 
 <url>
   <loc>https://programmerxd.in/</loc>
-  <lastmod>2022-08-14T07:02:44+00:00</lastmod>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://programmerxd.in/Resume.html</loc>
-  <lastmod>2022-08-14T07:02:44+00:00</lastmod>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://programmerxd.in/Certificates.html</loc>
-  <lastmod>2022-08-14T07:02:44+00:00</lastmod>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://programmerxd.in/games.html</loc>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://programmerxd.in/clcli.html</loc>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://programmerxd.in/Ganesh-Chaturthi.html</loc>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://programmerxd.in/Money-Game/index.html</loc>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://programmerxd.in/RoadToInfinity/index.html</loc>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://programmerxd.in/Musics/index.html</loc>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://instagram.programmerxd.in/</loc>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://programmerxd.in/TelegramUI/index.html</loc>
+  <lastmod>2022-09-03T17:48:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
