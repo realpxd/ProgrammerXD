@@ -65,7 +65,7 @@ function numberAnimation(el, endValue, incrementor, duration) {
 	  if(man.style.marginTop <= "60%"){
 	        man.style.marginTop = "65%";
 	    man.style.marginLeft = "25px";
-            plr.setAttribute('src','Man.png');
+            plr.setAttribute('src','Man.webp');
                 console.clear();
 	  };},1000);
 	});
