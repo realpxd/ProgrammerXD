@@ -422,9 +422,10 @@ a:hover{
 	}
 .head-img{
 	display:grid; place-items:center;	
-	margin:5rem 1rem;
+	text-align:center;
+	margin:5rem 1rem; padding:auto;
 	background-position:center;
-	 background-repeat:no-repeat;
+	background-repeat:no-repeat;
 	background-size:cover; overflow:hidden;
 	height:10rem; width:auto;
 	border-radius:2rem;
@@ -441,9 +442,11 @@ a:hover{
 	grid-template-columns:auto auto;
 }
 .container-links button{
-	width:10rem; height:4rem;
+	max-width:9rem; 
+	width:9rem; height:4rem;
 	outline:none;
-	margin:1rem; border-radius:1rem;
+	margin:1rem; padding:0 0.5rem;
+	border-radius:1rem;
 	color:white; font-size:1rem;
 	font-weight:500;
 	text-shadow:0 5px 5px black;
