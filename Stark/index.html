@@ -1,1 +1,146 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+    <!-- Style Sheet -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title> Stark ki Maaa </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="icon" href="jkr.gif" type="image/x-icon">
+<style>
+	body{
+		background:black;
+	}
+    .container-main{
+        display: grid;
+        place-items:center;
+        grid-template-columns: auto auto auto;
+        padding:1rem auto;
+        margin-bottom:4rem;
+        margin-top:1.5rem;
+        background:rgba( 255, 255, 255, 0.15 );
+        backdrop-filter:blur( 5px );
+        -webkit-backdrop-filter:blur( 5px );
+        border-radius:10px;
+        border:1px solid rgba( 255, 255, 255, 0.18 );
+        height:80vh;
+    }
+    .container-main .blocks{
+        display: grid;
+        place-items: center;
+        height: 5rem;
+        width: 6rem;
+        text-align: center;
+        border-radius: 1.4rem;
+        overflow-wrap: break-word;
+        word-wrap:wrap;
+        margin-top:1.2rem;
+        font-size:0.8rem;
+        font-weight:900;
+    	overflow:hidden;
+    	box-shadow:0px 3px 5px #fb6d62 ,
+    	inset 0px 0px 5px #d6d6d6;
+    	transition:0.15s;
+        background: linear-gradient(#aaaaaa, #fffaaa) padding-box,
+        linear-gradient(to right, #09753f, #5b4892) border-box;
+        border: 4px solid transparent;
+    }
+    
+    .blocks:hover{
+    	background: linear-gradient(#e6e6e6, #e6e6e6) padding-box,
+    	linear-gradient(to right, #875f17, #496962) border-box;
+        transform:scale(97%);
+    }
+    .blocks i{
+        font-size:1.7rem;
+    }
+    #c-d{
+        grid-template-columns: auto auto;
+    }
+    #c-d .blocks{
+        height:12rem;
+        width:9rem;
+        font-size:0.9rem;
+    }
+    #c-d .blocks i{ 
+        font-size:2.5rem;
+    }
+    h2{
+        text-align: center;
+        margin: 1rem auto;
+        text-shadow:-1px -1px 0px black;
+        font-weight:900;
+        color:;
+        background:lime;
+        width:10rem;
+        padding:0.5rem;
+    }
+    a{
+        color:inherit;
+        text-decoration:none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .GPlogo{
+	display:block;
+	height:2.5rem;
+    width: 17rem;
+    margin:0.2rem auto;
+}
+.jkr{
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	box-sizing:border-box;
+	overflow:hidden;
+	height:100vh; width:100vw;
+	background:url('jkr.gif');
+	background-repeat:no-repeat;
+	background-position:center;
+	
+	z-index:999;
+}
+</style>
+</head>
+<body>
+    <div class="block-d" id="block-d">
+        <h2> STARK KI MMY 
+         </h2>
+        <div class="container-main" id="c-d">
+            <div class="blocks" onclick="alert('Curremtly busy wid someone else');">
+                <i class="bi bi-arrow-through-heart-fill"></i>
+                <p> Take me on a date </p>
+            </div>
+            <a href="https://onlyfans.com/Stark-Ki-Mummy">
+            <div class="blocks" >
+                <i class="bi bi-badge-4k-fill"></i>
+                <p> OnlyFans.com </p>
+            </div>
+            </a>
+            <div class="blocks" onclick="alert('First choice : Always Joker <3');">
+                <i class="bi bi-bag-heart-fill"></i>
+                <p> First choice </p>
+            </div>
+            <div class="blocks" onclick="alert('Full Day - 100$ \n One night stand - 50$ \n doggy style - 10 cents \n one kiss - 1 cent \n cowboy style - 5 cent \n Blowjob - free trial \n BDSM - 7$  \n Contant on onlyfans.com for more info | Love uhhh | ummaahhhh');">
+                <i class="bi bi-cash-stack"></i>
+                <p> Payment Methods </p>
+            </div>
+        </div>
+    </div>
+    <div class="jkr" id="jkr"></div>
+    <script>
+    let jokr = document.getElementById("jkr");
+     $("#jkr").hide(10);
+    	window.onload = function(){
+    		$("#jkr").show();
+    	}
+    	setTimeout(function(){
+    		$("#jkr").hide(200);
+    	},3000);
+   </script>
+</body>
+</html>
