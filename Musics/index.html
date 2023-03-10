@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SAD MUSIC PLAYLIST</title>
+<!-- Styles -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<!-- Data Aos -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<!-- icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- fonts  -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&display=swap">
+<link rel="icon" href="https://telegra.ph/file/863a2916b4699faed3271.png" type="image/x-icon">
+<!-- Meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="keywords" content="Music Page, MusicPage, Songs, Playlist, Naman, Saini, NamanSaini, Naman Saini, ProgrammerXD, programmarxd, Programmer XD, resume, personal, Music, Musics, card, cards, portfolio" />
+<meta name="author" content="ProgrammerXD / Naman Saini" />
+<meta name="title" content="Music Playlist" />
+<meta name="description" content="Here you can listen to songs and vibe while working" />
+<meta property="og:image" content="https://telegra.ph/file/863a2916b4699faed3271.png" />
+<meta property="og:title" content="Music Playlist" />
+<meta property="og:url" content="https://www.programmerxd.codes/Musics" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Here you can listen to songs and vibe while working" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="ProgrammerXD.codes/Musics" />
+<meta name="twitter:title" content="Music Playlist" />
+<meta name="twitter:description" content="Here you can listen to songs and vibe while working" />
+<meta name="twitter:url" content="https://www.programmerxd.codes/Musics" />
+<meta name="twitter:image" content="https://telegra.ph/file/863a2916b4699faed3271.png" />
+<meta id="themeH" name="theme-color" content="grey" />
+<!-- SCRIPTS -->
+      <!-- Anime.js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+      <!-- Jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <!-- Data Aos -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style type="text/css">
+
+</style>
+<body>
+<div id="screen">
+<p class="h1"> XXXTENCTACION Collection </p>
+<!--<marquee class="mq1">XXX-TENCTATION</marquee>-->
+<img class="animeImg" src="./assets/img/anime.png" height="100" width="100">
+<div class="folder">
+	<div class="blocks 1">
+		<img src="./assets/img/Changes.jpeg">
+		<audio id="player1" class="aud" >
+		 	<source src="./assets/songs/Changes.mp3" type="audio/mpeg">
+		</audio>
+		  <div class="controls">
+		  	<p>▫️ Changes - XXXTENCTACION</p>
+			    <div class="slide">
+				    <div class="range1" id="range"></div>
+			    </div>
+		    <div class="pp">
+				<i onclick = "starts1()" class="fa fa-play"></i> 
+				<i onclick = "pause1()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+<!--		<div>
+    	<button onclick = "document.getElementById('player').volume += 0.2">Vol+</button>
+		<button onclick = "document.getElementById('player').volume -= 0.2">Vol-</button>
+		</div> -->
+	</div>
+	
+	<div class="blocks 2">
+		<img src="./assets/img/Hope.jpeg">
+		<audio id="player2" class="aud" >
+		 	<source src="./assets/songs/Hope.mp3" type="audio/mpeg">
+		</audio>
+		  <div class="controls">
+		  	<p>▫️ Hope </p>
+				<div class="slide">
+					<div class="range2" id="range"></div>
+				</div>
+			<div class="pp">
+				<i onclick = "starts2()" class="fa fa-play"></i> 
+				<i onclick = "pause2()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 3">
+		<img src="./assets/img/Exbitch.jpeg">
+		<audio id="player3" class="aud" >
+		 	<source src="./assets/songs/Exbitch.mp3" type="audio/mpeg">
+		</audio>
+     	  <div class="controls">
+     	  	<p>▫️ Ex Bitch </p>
+				<div class="slide">
+					<div class="range3" id="range"></div>
+				</div>
+			<div class="pp">
+				<i onclick = "starts3()" class="fa fa-play"></i> 
+				<i onclick = "pause3()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 4">
+		<img src="./assets/img/BadVibes.jpg">
+		<audio id="player4" class="aud" >
+		 	<source src="./assets/songs/BadVibes.mp3" type="audio/mpeg">
+		</audio>
+	     <div class="controls">
+	     	<p>▫️Bad Vibes Forever </p>	
+				<div class="slide">
+					<div class="range4" id="range"></div>
+				</div>
+			<div class="pp">
+				<i onclick = "starts4()" class="fa fa-play"></i> 
+				<i onclick = "pause4()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 5">
+		<img src="./assets/img/Remedy.jpeg">
+		<audio id="player5" class="aud" >
+		 	<source src="./assets/songs/Remedy.mp3" type="audio/mpeg">
+		</audio>
+	     	  <div class="controls">
+	     	<p>▫️ The Remedy Of A Broken Heart </p>
+				<div class="slide">
+					<div class="range5" id="range"></div>
+				</div>
+			<div class="pp">
+				<i onclick = "starts5()" class="fa fa-play"></i> 
+				<i onclick = "pause5()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 6">
+		<img src="./assets/img/Moonlight.jpeg">
+		<audio id="player6" class="aud" >
+		 	<source src="./assets/songs/Moonlight.mp3" type="audio/mpeg">
+		</audio>
+	     	  <div class="controls">
+	     	<p>▫️ Moonlight </p>
+				<div class="slide">
+					<div class="range6" id="range"></div>
+				</div>
+			<div class="pp">
+				<i onclick = "starts6()" class="fa fa-play"></i> 
+				<i onclick = "pause6()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 7">
+		<img src="./assets/img/Numb.jpeg">
+		<audio id="player7" class="aud" >
+		 	<source src="./assets/songs/Numb.mp3" type="audio/mpeg">
+		</audio>
+	     	  <div class="controls">
+	     	<p>▫️ Numb </p>
+				<div class="slide">
+					<div class="range7" id="range"></div>
+				</div>
+			<div class="pp">
+				<i onclick = "starts7()" class="fa fa-play"></i> 
+				<i onclick = "pause7()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div>
+	
+	<div class="blocks 8">
+		<img src="./assets/img/KillVibe.jpeg">
+		<audio id="player8" class="aud" >
+		 	<source src="./assets/songs/KillVibe.mp3" type="audio/mpeg">
+		</audio>
+	     	  <div class="controls">
+	     	<p>▫️ Kill My Vibe </p>
+				<div class="slide">
+					<div class="range8" id="range"></div>
+				</div>
+			<div class="pp">
+				<i onclick = "starts8()" class="fa fa-play"></i> 
+				<i onclick = "pause8()" class="fa fa-pause"></i>
+		  	</div>
+		  </div>
+	</div><br>
+</div></div>
+<div class="preloader">
+	<h1> Site under contruction and may have bugs! </h1>
+	<h1> ⚠ </h1>
+	<div class="loader">.</div>
+	<h2>Processing my Playlist..</h2>
+</div>
+<script src="scripts.js"></script>
+<!--<script>
+	const audioPlayer = document.querySelector(".controls");
+	const audio = new Audio("./assets/songs/Hope.mp3");
+	console.dir(audio);
+	
+	audio.addEventListener(
+	"loadeddata",
+	() => {
+	audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
+	audio.duration
+	);
+	audio.volume = .75;
+	},
+	false
+	);
+</script>-->
+</body>
+</html>

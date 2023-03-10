@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Details</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<!-- Meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="keywords" content="Information, Mobile information, Device information, info grabber, Naman, Saini, NamanSaini, Naman Saini, ProgrammerXD, programmerxd, programmarxd, Programmer XD, resume, personal, card, cards, portfolio" />
+<meta name="author" content="ProgrammerXD / Naman Saini" />
+<meta name="title" content="DI GRABBER" />
+<meta name="description" content="GET YOUR DEVICE INFORMATION IN SECONDS" />
+<meta property="og:image" content="https://telegra.ph/file/863a2916b4699faed3271.png" />
+<meta property="og:title" content="DI GRABBER" />
+<meta property="og:url" content="https://www.programmerxd.codes/Inf.html" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="GET YOUR DEVICE INFORMATION IN SECONDS" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="ProgrammerXD.codes/Inf.html" />
+<meta name="twitter:title" content="DI GRABBER" />
+<meta name="twitter:description" content="GET YOUR DEVICE INFORMATION IN SECONDS" />
+<meta name="twitter:url" content="https://www.programmerxd.codes/Inf.html" />
+<meta name="twitter:image" content="https://telegra.ph/file/863a2916b4699faed3271.png" />
+<meta id="themeH" name="theme-color" content="#000" />
+<meta name = "revised" content = "ProgrammerXD, 29/6/2022" />
+</head>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+	scroll-behavior: smooth;
+
+}
+body{
+	background:rgba(0,0,0,0.8);
+}
+.container{
+	display:block;
+	box-sizing:border-box;
+	margin:7rem 2rem 1rem 2rem;
+	padding:1rem;
+	border:1px solid black;
+	background:rgba(0,0,0,0.3);
+	color:white;
+	text-align:center;
+	line-height:1.5rem;
+	letter-spacing:0.05rem;
+	font-family:monospace;
+}
+.container p{
+	color:silver;
+}
+.btn{
+	background:black;
+	color:white;
+	padding:0.3rem 0.8rem;
+	outline:none;
+	border:none;
+	border-radius:0.5rem;
+	box-shadow:inset 0px 0px 5px white;
+	text-align:center;
+	font-family:sans-serif;
+	letter-spacing:0.05rem;
+	margin:0 10rem;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.btn:active{
+	background:rgba(0,0,0,0.2);
+	color:silver;
+	box-shadow:inset 0px 0px 5px white;
+}
+
+hr{
+	border:none;
+	border-bottom:2px solid brown;
+}
+.preloader{
+	display:block;
+	position:fixed;
+	box-sizing:border-box;
+	height:100vh; width:100vw;
+	top:0; left:0;
+	text-align:center;
+	background:rgba(0,0,0,0.8);
+	color:white;
+	padding:5rem;
+	letter-spacing:0.1rem;
+	font-family:Courier new,monospace;
+	overflow:hidden;
+}
+	.loader{
+		text-align:center;
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		width:22vw;
+		margin:15rem auto 5rem auto;
+		padding:auto;
+		transform:rotate(45deg);
+	}
+	.loader .l{
+		display:block;
+		height:5vh; width:10vw;
+		background:brown;
+		margin:0.05rem;
+		box-shadow:0 5px 5px black;
+	}
+	.oa{
+		animation:mv-a 1.7s ease-in infinite alternate-reverse;
+	}
+	.ob{
+		animation:mv-a2 1s ease-in infinite alternate-reverse;
+	}
+	.ea{
+		animation:mv-b 1.5s ease-out infinite alternate-reverse;
+	}
+	.eb{
+		animation:mv-b2 1.2s ease-out infinite alternate-reverse;
+	}
+@keyframes mv-a{
+	0%{transform:translate(0%,0%);}
+	25%{transform:translate(0%,100%);}
+	50%{transform:translate(-100%,100%);}
+	100%{transform:translate(-100%,0%);}
+}
+@keyframes mv-a2{
+	0%{transform:translate(-100%,0%);}
+	25%{transform:translate(-100%,-100%);}
+	50%{transform:translate(0%,-100%);}
+	100%{transform:translate(-100%,0%);}
+}
+@keyframes mv-b{
+	0%{transform:translate(100%,0%);}
+	25%{transform:translate(100%,100%);}
+	50%{transform:translate(0%,100%);}
+	100%{transform:translate(0%,100%);}
+}
+@keyframes mv-b2{
+	0%{transform:translate(0%,0%);}
+	25%{transform:translate(0%,-100%);}
+	50%{transform:translate(100%,-100%);}
+	100%{transform:translate(100%,0%);}
+}
+</style>
+<body>
+<div class="preloader">
+	<div class="loader">
+		<div class="l l-even ea"></div>
+		<div class="l l-odd oa"></div>
+		<div class="l l-even eb"></div>
+		<div class="l l-odd ob"></div>
+	</div>
+	<h5> loading data... </h5>
+</div>
+<div class="container">
+	DEVICE DETAILS<hr><br>
+	<p id="D-A"></p><br>
+	
+	Browser / Platform<hr>
+	<p id="D-B"></p><br>
+	
+	Product Name<hr>
+	<p id="D-C"></p><br>
+	
+	Height / Width<hr>
+	<p id="D-D"></p>
+</div>
+<button class="btn" onclick="window.print()">Print</button>
+
+<script>
+	document.getElementById("D-A").innerText+=navigator.userAgent;
+	document.getElementById("D-B").innerText+=navigator.appCodeName+" / ";
+	document.getElementById("D-B").innerText+=navigator.platform;
+	document.getElementById("D-C").innerText+=navigator.product;
+	document.getElementById("D-D").innerText+=window.outerHeight+"px / ";
+	document.getElementById("D-D").innerText+=window.outerWidth+"px";
+	
+$(window).on("load", function() {
+	var preload = $('.preloader');
+		preload.fadeOut();
+	});
+</script>
+
+</body>
+</html> 

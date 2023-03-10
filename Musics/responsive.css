@@ -1,0 +1,38 @@
+@media  screen and (min-width:600px) {
+    .h1 {
+        margin-left: 40vw;
+        margin-right: auto;
+        margin-top: -2.5rem;
+        font-size: 2rem;
+    }
+    .folder {
+        height: 93vh;
+        margin: 2rem auto;
+    }
+    .blocks {
+        height: 35vh;
+        width: 40vw;
+        margin-bottom: 3vh;
+        color: white;
+    }
+        .blocks img {
+            width: 100%;
+            height: 35vh;
+        }
+    .blocks .controls{
+        margin-top:-7.5rem;
+        width:40vw;
+        height: 5rem;
+    }
+    .blocks .controls p{
+        font-size:1.2rem;
+    }
+    .preloader{
+        top:1%;
+    }
+    .loader{
+        height:30%;
+        width:20%;
+        margin: 5rem auto;
+    }
+}

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap');
+*{
+    margin:0;
+    --webkit-user-select:none;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    align-items:center;
+    text-align:center;
+    font-family: 'Source Code Pro', monospace;
+    background: #090a09;
+}
+h1{
+    letter-spacing:7px;
+    font-weight:900;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 2px red;
+    color:transparent;
+}
+a{
+    text-decoration:none;
+    color:white;
+    letter-spacing:0.8rem;
+    line-height:3rem;
+    transition:0.4s;
+}
+a:hover{
+    background-color:none;
+    text-shadow:0 0 4rem silver;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 2px red;
+    color:transparent;
+}
+.container{
+   display:block;
+   justify-content:center;
+   align-items:center;
+   text-align:center;
+   border:1px solid lightblue;
+   color:black;
+   background: #090a09;
+   border-radius:2rem;
+   margin:0.5rem;
+   padding:1rem;
+   font-size:1.8rem;
+   font-weight:900;
+}
+.cpic{
+  height:10rem;
+  width:10rem;
+  margin:auto;
+}
+.footer {
+  position:relative;
+  top:5%;
+  height:200%;
+  width:100%;
+  padding-top:5%;
+  overflow:hidden;
+  color:black;
+}
+	.footer .social {
+		  text-align:center;
+	}
+	.footer .social > a {
+		  font-size:20px;
+		  width:38px;
+		  height:40px;
+		  display:inline-block;
+		  text-align:center;
+		  margin:0 -1px;
+		  color:white;
+		  padding:1%;
+		  transition:0.5s;
+	}
+		.footer .social > a:hover {
+			  text-decoration:none;
+			  outline:none;
+			  border:none;
+			  transform:scale(1.2);
+			  text-shadow:0 0px 25px black;
+			  -webkit-text-stroke: 1px white;
+			  text-stroke: 2px red;
+			  color:transparent;
+		}
+	.footer .copyright {
+		  font-size:13px;
+		  color:#fff;
+		  text-align:center;
+		  font-family:helvetica;
+		  font-weight:300;
+		  letter-spacing:2px;
+		  margin-top:10%;
+	}
+
+@media screen and (min-width:500px) and (max-width:1500px){
+    .container{
+        position:absolute;
+        left:5rem; right:5rem;
+        overflow:hidden;
+    }
+    .cpic{
+        float:center;
+        height:20rem;
+        width:20rem;
+        margin-top:1rem;
+        margin-left:1rem;
+    }
+    h1{
+        margin-top:10rem;
+        float:left;
+    }
+    a{
+        line-height:3rem;
+    }
+}
+
+
+.particles{
+	display:block;
+	position:absolute;
+	height:15px; width:15px;
+	background:orange;
+	border-radius:5px;
+	animation:mv eval('rand')s ease-in infinite alternate-reverse;
+}
+@element '#animation' {
+  .particles {
+    animation-duration: eval('rand')s;
+  }
+ }
+@keyframes mv {
+	to{transform:rotate(360deg) translate(0%,60%);}
+}

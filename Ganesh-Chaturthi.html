@@ -1,0 +1,261 @@
+<!-- REACH ME:-
+            Github - https://github.com/naman77s
+            LinkedIn - https://Linkedin.com/in/programmerxd
+            INSTAGRAM - https://instagram.com/programmerxd
+            TWITTER - https://twitter.com/PXD_OFFICIALS
+            
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ganesh Chaturthi</title>
+<!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<!-- Data Aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<!-- icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- X-icon -->
+<link rel="icon" href="./assets/img/icon.png" type="image/x-icon">
+<!-- Meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="keywords" content="Ganesh Chaturthi, Ganesh , 31st august, parv, गणेश चतुर्थी, Naman, Saini, NamanSaini, Naman Saini, ProgrammerXD, programmerxd, programmarxd, Programmer XD, resume, personal, card, cards, portfolio" />
+<meta name="author" content="ProgrammerXD / Naman Saini" />
+<meta name="title" content="Happy Ganesh Chaturthi" />
+<meta name="description" content="गणेश चतुर्थी, जिसे विनायक चतुर्थी भी कहा जाता है, एक प्रमुख हिंदू त्यौहार है, जो देश भर में महान भक्ति के साथ मनाया जाता है। यह दिन भगवान गणेश के जन्म को चिह्नित करता है, जो ज्ञान, समृद्धि और अच्छे भाग्य का प्रतीक है।" />
+<meta property="og:image" content="https://telegra.ph/file/4f7e189daaea58593e5fe.jpg" />
+<meta property="og:title" content="Happy Ganesh Chaturthi" />
+<meta property="og:url" content="https://www.programmerxd.in/Ganesh-Chaturthi.html" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Ganesh Chaturthi" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="ProgrammerXD.in/Ganesh-Chaturthi.html" />
+<meta name="twitter:title" content="Ganesh Chaturthi" />
+<meta name="twitter:description" content="गणेश चतुर्थी, जिसे विनायक चतुर्थी भी कहा जाता है, एक प्रमुख हिंदू त्यौहार है, जो देश भर में महान भक्ति के साथ मनाया जाता है। यह दिन भगवान गणेश के जन्म को चिह्नित करता है, जो ज्ञान, समृद्धि और अच्छे भाग्य का प्रतीक है।" />
+<meta name="twitter:url" content="https://www.programmerxd.in/Ganesh-Chaturthi.html" />
+<meta name="twitter:image" content="https://telegra.ph/file/4f7e189daaea58593e5fe.jpg" />
+<meta name="theme-color" content="#000" />
+<meta name = "revised" content = "ProgrammerXD, 31/8/2022" />
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{  
+    margin:0;
+    scroll-behavior:smooth;
+	font-family: 'PT Sans', sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+body{
+    background-image:url('./assets/img/G-two.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+body:after {
+    content: "";
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    background: rgba(0,0,0,0.6);
+    pointer-events: none;
+}
+.container{
+    height:100vh;
+    position:relative;
+    padding:2.5rem;
+    z-index:3;
+}
+.container .img1{
+	display:block;
+    height:20rem;  width:15rem;
+    text-align:center;
+    margin:0 auto;
+}
+.container .img2{
+    position:absolute;
+    height:55rem;  width:25rem;
+    top:0; left:0;
+    animation:shower 10s ease-in 1s infinite;
+}
+.container h1 ,.container p{
+    text-align:center;  color:white;
+}
+.container p{
+    margin:0.5rem;
+}
+.name,.submit{
+    background:none;
+    border:2px solid white;
+    outline:none;  color:white;
+    height:3rem;  width:20rem;
+    text-align:center;
+    backdrop-filter:brightness(0.9);
+    margin-top:3rem;  padding:0.5rem;
+    border-radius:1rem;
+    font-weight:800;
+}
+.name::placeholder{
+    color:silver;
+}
+.submit{
+    height:4rem;  width:10rem;
+    margin-top:10px;
+}
+.container-b{
+    backdrop-filter:brightness(0.8);
+    box-shadow:0 0 50px black;
+    padding:1rem;
+    border-radius:0.5rem;
+}
+.container-b h1,#yourName{
+    color:white;
+    margin:5px;
+}
+#yourName{
+    letter-spacing:1px;
+}
+.container-b .wish{
+    color:white;
+    margin:1rem;
+    word-spacing:1.2px;
+    letter-spacing:0.3px;
+}
+.container .box {
+  position:relative;
+  top:5%;
+  height:15rem;  width:100%;
+  padding-top:5%;
+  overflow:hidden;
+}
+.container-b .btns{
+	display:block;
+	position:relative;
+}
+.container-b .share-btn{
+	display:inline-block;
+	font-size:1.2rem;
+	outline:none;
+	background: linear-gradient(145deg, #f0f0f0, #cacaca);
+	box-shadow:  10px q0px 40px #bebebe,
+	-10px -10px 40px #ffffff;
+	border-radius:5rem; border:none;
+	margin:1rem;  padding:0.5rem;
+	padding-left:3rem;
+	text-align:center;
+}
+.share-btn:hover{
+	background: #e0e0e0;
+	box-shadow: inset 20px 20px 60px #bebebe,
+	inset -20px -20px 60px #ffffff;
+}
+.fa-whatsapp{
+	display:inline-block;
+	position:absolute;
+	color:white; background:linear-gradient(to right, green ,silver);
+	font-size:1.5rem;
+	top:0; left:0;
+	padding:0.5rem; margin:1rem;
+	border-radius:5rem;
+}
+.box .footer{
+  text-align:center;
+}
+.footer .social > a {
+  display:inline-block;
+  font-size:1.8rem;  color:white;
+  width:1rem; height:1rem;
+  text-align:center;
+  margin:0.1rem;  padding:0.6rem;
+  transition:0.2s;
+}
+.footer .copyright {
+  font-size:1rem;
+  color:#aaa;
+  text-align:center;
+  font-weight:300;
+  letter-spacing:2px;
+}
+.footer .social > a:hover {
+  color:red;
+}
+#train{
+  font-size:1.7rem;
+  animation:train 5s ease-in 1s infinite;
+}
+@keyframes shower{
+    from{
+        transform:translateY(-35rem);
+        filter:opacity(0.4);
+    }
+    to{
+       transform:translateY(13rem);
+        filter:opacity(1);
+    }
+}
+@keyframes train {
+  from{margin-left:75%;}
+  to{margin-left:0;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<img class="img1" src="./assets/img/G-one.png">
+    <img class="img2" src="./assets/img/confetti.png">
+    <h1> गणेश चतुर्थी की हार्दिक सुभकामनाए! </h1><br>
+    <p>गणेश चतुर्थी, जिसे विनायक चतुर्थी भी कहा जाता है, एक प्रमुख हिंदू त्यौहार है, जो देश भर में महान भक्ति के साथ मनाया जाता है। यह दिन भगवान गणेश के जन्म को चिह्नित करता है, जो ज्ञान, समृद्धि और अच्छे भाग्य का प्रतीक है।</p>
+	<form action="javascript:void(0);" onsubmit="show()">
+    	<input id="name" class="name" placeholder="Type Your Name" type="text" required><br>
+     	<input class="submit" value="Continue" type="submit">
+	</form>
+<br><br><br>
+	<div class="container-b" data-aos="zoom-in">
+		<hr style="border:none;border-top:1px solid silver;"><br><br>
+		 <div>
+		  <h1 id="yourName" class="yourName">Dear </h1>
+			<p class="wish">
+	            I wish u Happy Ganesh Chaturthi and I pray to God for your prosperous life.
+	            May you find all the delights of life,
+	            May your all dreams come true.
+	            Happy Ganesh Chaturthi
+	        </p>
+		 </div>
+		 <div class="btns" onclick="share()">
+			 <button class="share-btn">Share to your friends</button>
+			 <i class="fa fa-whatsapp"></i>
+		 </div>
+	</div>
+<br>
+<div class="box">
+	<font id="train">&#128642;_&#128643;</font>
+	  <div class="footer"><hr><br>
+	      <footer>
+	          <div class="social">
+	            <a target="_blank" rel="noopener noreferrer" href="https://in.linkedin.com/programmerxd"><i class="fa fa-linkedin"></i></a>
+	            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/channel/UCTlEvNf_UWq2aoq8-XFIYIQ"><i class="fa fa-youtube"></i></a>
+	            <a target="_blank" rel="noopener noreferrer" href="mailto:Thisispxd@gmail.com"><i class="fa fa-google"></i></a>
+	            <a target="_blank" rel="noopener noreferrer" href="https://t.me/DevelopersAndProgrammers"><i class="fa fa-telegram"></i></a>
+	            <a target="_blank" rel="noopener noreferrer" href="https://github.com/realpxd"><i class="fa fa-github"></i></a>
+	            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/PXD_Officials"><i class="fa fa-twitter"></i></a>      
+	          </div>
+              <p id="copyright">ProgrammerXD © 2021</p>
+	      </footer>
+	  </div> 
+	</div>
+</div>
+<script>
+AOS.init();
+$("title").ready(function(){$(".container-b").hide();});
+function show(){
+  var name = document.getElementById("name").value;
+  var paste =   document.getElementById("yourName");
+  paste.innerHTML += name;
+      $(".container-b").show();
+};
+function share(){
+	var link = window.location.href;
+	window.open("https://wa.me/?text=आप%20सभी%20को%20गणेश%20चतुर्थी%20की%20हार्दिक%20शुभकामनाएं|%20नीचे%20दिए%20गये%20ब्लू%20लाइन%20पर%20उंगली%20लगाएं%20और%20मेरी%20तरह%20ऐसा%20मैसेज%20create%20करें%20|%20धन्यवाद%20\n"
+	+ link);
+}
+</script>
+</body>
+</html>
