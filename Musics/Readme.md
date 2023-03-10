@@ -1,16 +1,15 @@
-# Instagram-Clone-Beta
+# Music Playlist 
 
 
-<a href="https://youtu.be/56SLjMm2zBQ" ><img src="https://raw.githubusercontent.com/naman77s/Instagram-Clone-Beta/main/thumbnail.png" alt="Youtube thumbnail" ></a>
+<a href="https://realpxd.github.io/ProgrammerXD/Music" ><img src="./thumbnail.jpg" alt="thumbnail" ></a>
 
-<h2> I am glad to introduce my new Project </h2><br>
+<h2> Introducing the Music Player </h2><br>
 
-<h3> Developed in JS and chatting backend was possible because of FIREBASE❤️</h3>
-<spam>It may wouldn't been possible if there was no firebase :). As a student i learned 
-and earned more skills in my javascript journey. Loved exploring and doing this. <3</span><br><br>
+<h3> Current Playlist - XXXTENTATION ️</h3>
+<spam> Learned the Audio interaction with HTML5 and many stuff. this was helpful in building a great skillset in web development. This is the Music player from which i would listen songs to <3 </span><br><br>
 
 <h4> Some usefull links </h4>
-<a href="https://realpxd.github.io/ProgrammerXD/Money-Game"> <img src="https://img.shields.io/badge/Play-Squid_game-orange" ></a><br>
+<a href="https://realpxd.github.io/Instagram-Clone-Beta"> <img src="https://img.shields.io/badge/INSTAGRAM-CLONE-brown" ></a> <br>
 <a href="https://realpxd.github.io/ProgrammerXD"> <img src="https://img.shields.io/badge/Website-ProgrammerXD.in-orange" ></a> <br>
 <a href="https://realpxd.github.io/ProgrammerXD/Certificates.html"> <img src="https://img.shields.io/badge/Certificates-PXD-blue" ></a>
 <a href="https://www.linkedin.com/in/programmerxd"> <img src="https://img.shields.io/badge/LinkedIN-Resume-brown" ></a>
