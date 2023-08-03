@@ -176,6 +176,7 @@ a:hover{
 		font-size:25pt;
 		width:100%;
 		z-index:5;
+		letter-spacing: 0.1rem;
 	}
 	.blocks .data p{
 		color:silver;
@@ -221,18 +222,18 @@ a:hover{
 		background-size: contain;
 		overflow:hidden;
 		z-index: 5;
-		height:70%;
-		width:70%;
+		height:60%;
+		width:60%;
 	}
 		.imgA{
 			background-image:url('./assets/img/1.webp');
-			transform:translateX(50%) translateY(20%) scale(1.1);
+			transform:translateX(80%) translateY(15%) scale(1);
 			
 			/* background-size: 10%; */
 		}
 		.imgB{
 			background-image:url('./assets/img/2.webp');
-			transform:translateX(-10%) translateY(10%) scale(1.2);
+			transform:translateX(-10%) translateY(30%) scale(1.1);
 			background-size: 125%;
 		}
 		.imgC{
@@ -251,7 +252,7 @@ a:hover{
 	z-index:8;
 }
 .projects{
-	padding-top: 5rem;
+	padding-top: 10rem;
 }
 .projects .blockC .data .list{
 	display:flex;
@@ -338,6 +339,13 @@ a:hover{
 	width:100%;
 	margin-top:-10vh; 
 }
+
+.hdng{
+	display: block;
+	position: relative;
+	margin:0 7rem;
+}   
+
 .iffi{
 	transform:translate(-20%,0);
 }
