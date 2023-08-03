@@ -68,7 +68,8 @@
             margin-top: -3rem;
         }
         .c-left{
-            margin-left: 15rem;
+            margin-left: 17rem;
+            margin-top: 8rem;
         }
         .c-right{
             margin-right: 15rem;
@@ -81,10 +82,17 @@
             place-items: center;
             text-align: center;
             width: max-content;
+            margin-left: 17rem;
         }
-        .blockS h1{
+        .blockS .data h1{
             margin: auto;
             margin-left: -3rem;
+            text-align: center;
+        }
+        
+        .blockD{
+            gap: 2rem;
+            width: fit-content;
         }
         .stacks-list{
             grid-template-columns:  minmax(auto, auto) 1fr 1fr 1fr ;
@@ -118,7 +126,7 @@
         }
                 .imgA {
                     background-image: url('./assets/img/1.webp');
-                    transform: translateX(50%) translateY(0%) scale(1);
+                    transform: translateX(60%) translateY(0%) scale(1);
                     /* background-size:50% 140%; */
                 }
         
@@ -153,7 +161,8 @@
     .hdng{
         display: block;
         position: relative;
-        margin:5rem auto;
+        margin:5rem 10rem;
+        text-align: center;
     }   
     .sections-clob{
         height:13rem;
