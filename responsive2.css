@@ -82,7 +82,7 @@
             place-items: center;
             text-align: center;
             width: max-content;
-            margin-left: 17rem;
+            margin-left: auto;
         }
         .blockS .data h1{
             margin: auto;
