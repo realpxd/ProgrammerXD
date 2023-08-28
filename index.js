@@ -46,6 +46,10 @@ function sendmail(){
 
 console.log("//Loaded .... 75%");
 
+
+AOS.init();
+
+
 // Canvas Short Game
 canvas = document.getElementById('canvas');
 context = canvas.getContext("2d");

@@ -1,4 +1,4 @@
-@media screen and (min-width:700px){
+@media screen and (min-width:750px){
     .MenuBar{
         height:9vh;
     }
@@ -12,10 +12,10 @@
         }
                 .MenuBar .Logo {
                     position: absolute;
-                    top: 0.5rem;
-                    left: 0.5rem;
-                    height: 6vh;
-                    width: 5vw;
+                    top: 0.2rem;
+                    left: 0.2rem;
+                    height: 8vh;
+                    width: 8vw;
                     margin: 0;
                     padding: 0;
                 }
@@ -68,7 +68,8 @@
             margin-top: -3rem;
         }
         .c-left{
-            margin-left: 15rem;
+            margin-left: 17rem;
+            margin-top: 8rem;
         }
         .c-right{
             margin-right: 15rem;
@@ -81,10 +82,17 @@
             place-items: center;
             text-align: center;
             width: max-content;
+            margin-left: auto;
         }
-        .blockS h1{
+        .blockS .data h1{
             margin: auto;
             margin-left: -3rem;
+            text-align: center;
+        }
+        
+        .blockD{
+            gap: 2rem;
+            width: fit-content;
         }
         .stacks-list{
             grid-template-columns:  minmax(auto, auto) 1fr 1fr 1fr ;
@@ -105,15 +113,26 @@
             padding:1.5% 4% 1.5% 4%;
             font-weight: bolder;
         }
+        .blocks .img{
+            display:inline-block;
+            position:absolute;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size: contain;
+            overflow:hidden;
+            z-index: 5;
+            height:100%;
+            width:70%;
+        }
                 .imgA {
                     background-image: url('./assets/img/1.webp');
-                    transform: translateX(50%) translateY(-5%);
+                    transform: translateX(60%) translateY(0%) scale(1);
                     /* background-size:50% 140%; */
                 }
         
                 .imgB {
                     background-image: url('./assets/img/2.webp');
-                    transform: translateX(-20%) translateY(-15%);
+                    transform: translateX(-20%) translateY(0%);
                     /* background-size: 60% 145%; */
                 }
         
@@ -143,6 +162,7 @@
         display: block;
         position: relative;
         margin:5rem 10rem;
+        text-align: center;
     }   
     .sections-clob{
         height:13rem;
@@ -168,6 +188,8 @@
     }
     .stats-lang img{
         height:30vh;
+        
+	margin-top:auto; 
     }
     .font-sts{
         margin-bottom: 6rem;
