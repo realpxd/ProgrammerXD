@@ -1,5 +1,6 @@
 # ProgrammerXD
-<img src="./assets/img/DALL-E/assistant.webp">
+<!-- <img src="./assets/img/DALL-E/assistant.webp"> -->
+![Assistant Image](https://raw.githubusercontent.com/realpxd/ProgrammerXD/main/assets/img/DALL-E/assistant.webp)
 <br>
 <span> I am Elsa , Assistant of #PXD .  And 'll give you all the information about this repo. </span>
 <br><hr><br>
@@ -11,16 +12,19 @@
 <span> LinkedIn Profile :- </span> <a href="https://www.linkedin.com/in/programmerxd"> <img src="https://img.shields.io/badge/LinkedIN-Resume-blue" ></a><br>
 
 <h3> Projects </h3>
-<h4> Games </h4> 
-<a href="https://realpxd.github.io/ProgrammerXD/Money-Game"> <img src="https://img.shields.io/badge/Play-Squid_game-orange" ></a><br>
-<a href="https://realpxd.github.io/ProgrammerXD/RoadToInfinity"> <img src="https://img.shields.io/badge/Play-Road_to_Infinity-orange" ></a><br>
-
-<h4> Song Playlist </h4>
-<a href="https://realpxd.github.io/ProgrammerXD/Musics"> <img src="https://img.shields.io/badge/Music-Play_now-blur" ></a> <br>
+<h4> Mini Games </h4> 
+<a href="https://realpxd.github.io/Money-Game"> <img src="https://img.shields.io/badge/Play-Squid_game-orange" ></a><br>
+<a href="https://realpxd.github.io/RoadToInfinity"> <img src="https://img.shields.io/badge/Play-Road_to_Infinity-orange" ></a><br>
 
 <h4> Clones </h4>
 <a href="https://realpxd.github.io/ProgrammerXD/Instagram-Clone"> <img src="https://img.shields.io/badge/Instagram-Visit-orange" ></a> <br>
 <a href="https://realpxd.github.io/ProgrammerXD/TelegramUi"> <img src="https://img.shields.io/badge/Telegram-Visit-orange" ></a> <br>
+<a href="https://spotify-clone-phi-puce.vercel.app/"> <img src="https://img.shields.io/badge/Spotify-Listen-orange" ></a> <br>
+
+<h4> Clients Projects </h4>
+<a href="https://ufolinux.tk"> <img src="https://img.shields.io/badge/UFOLINUX-Go-blur" ></a> <br>
+<a href="https://realpxd.github.io/s-ecom-project/"> <img src="https://img.shields.io/badge/Ecommerce-Store-blur" ></a> <br>
+<a href="https://realpxd.github.io/Hn24/"> <img src="https://img.shields.io/badge/HN24-Go-blur" ></a> <br>
 
 <h3> Contact PXD </h3>
 <span> LinkedIn Profile :- </span> <a href="https://www.linkedin.com/in/programmerxd"> <img src="https://img.shields.io/badge/LinkedIN-Go-blue" ></a><br>
