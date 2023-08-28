@@ -14,12 +14,11 @@
 	<!-- no use rn :--    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>  -->
 <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<!-- Data Aos -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<!-- Infinite Scroll -->
+<script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
 <!-- icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/d162984a47.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- X-icon -->
 <link rel="icon" href="./assets/img/x-icon.png" type="image/x-icon">
 <!-- Meta tags -->
@@ -52,23 +51,35 @@
 	</div>
 	<h5> loading data... </h5>
 </div>
-<div class="topBar">
-	<h1 onclick="window.location.reload()">Instagram</h1>
-	<span class="directIcon">
-		<a href="#direct-container">
-			<i class="fab fa-facebook-messenger"></i>
-		</a>
-	</span>
-	<div class="direct"></div>
-</div>
 </header>
 <body>
+	<div class="vp-alert">
+		<h1>Please Switch to a Mobile Device to view this Project</h1>
+	</div>
+<main>
 <div class="section-A"><br>
-	<div class="feed-container" id="feed-container"></div>
+	<div class="feed-container" id="feed-container" >
+
+		<div class="topBar" id="topBar">
+			<h1 onclick="window.location.reload()">Instagram</h1>
+			<span class="directIcon">
+				<a href="#direct-container">
+					<i class="fab fa-facebook-messenger"></i>
+				</a>
+			</span>
+		</div>
+
+	</div>
 	<div class="direct-container" id="direct-container">
 		<div class="d-tb">
-			<a href="#feed-container"><i class="fa fa-times"  aria-hidden="true"></i></a>
-			<p class="c-name">You can chat here🥷🏻</p>
+			<div>
+				<a href="#feed-container"><i class="fa fa-arrow-left"  aria-hidden="true"></i></a>
+				<p class="c-name">user.clone</p>
+			</div>
+			<div>
+				<i class="fa fa-video"  aria-hidden="true"></i>
+				<i class="fa fa-pencil"  aria-hidden="true"></i>
+			</div>
 		</div>
 		<div class="search-bar"> 
 			<input type="text" placeholder="Search" name="" onkeyup="search_thread()">  
@@ -106,6 +117,17 @@
 	<div class="c-area" id="c-area">
 		<p id="self-msgs" class="self-msgs"></p><br>
 		<p id="others-msgs" class="others-msgs"></p><br>
+
+		<div class='c-tb-clm-a-om' style='display:flex; justify-content:space-between; align-items:center; width:60vw;'>
+			<img src='https://source.unsplash.com/random/?person?sig=KEY' alt='Whyyyyy'>
+			<div style='background:rgba(128,128,128,0.6);' id='others-msgs' class='others-msgs'>
+				<!-- Insert your dynamic content here -->
+			</div>
+		</div>
+		<div style='background:rgba(255,0,0,0.5);' id='self-msgs' class='self-msgs'>
+			<!-- Insert your dynamic content here -->
+		</div>
+				
 	</div>
 	<div class="c-bb">
 			<i class="fa fa-search" aria-hidden="true"></i>
@@ -126,6 +148,8 @@
 	<i class="far fa-heart" aria-hidden="true"></i>
 	<img class="" src="https://source.unsplash.com/random/?auto=webp&q=10" alt="Your Profile image">
 </div>
+</main>
+
 <script src="./assets/js/basic.js"></script>
 <script src="./assets/js/chat.js" type="module"></script>
 </body>

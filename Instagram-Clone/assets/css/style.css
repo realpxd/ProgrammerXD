@@ -14,10 +14,20 @@ body{
 	color:black;
 	overflow-y:hidden;
 }
+
+main{
+	display:block;
+	position:relative;
+	width: 100vw;
+	margin:auto;
+	overflow: hidden;
+
+}
+
 /*TOP BAR STYLING*/
 .topBar{
 	display:flex;
-	position:fixed;
+	position:sticky;
 	justify-content:space-between;
 	align-items:center;
 	top:0; left:0;
@@ -25,17 +35,14 @@ body{
 	background: black;
 	color:white; fill:white;
 	padding:0.2rem;
+	padding: 0 0.8rem;
 	z-index:99;
 }
-.topBar h1{
+#topBar h1{
 	font-family: 'DynaPuff', cursive;
 	font-size:1.5rem;
 }
 .directIcon {
-	display:grid;
-	place-items:center;
-	position:absolute;
-	right:0.4rem;
 	padding:0.1rem 0;
 	font-size:1.7rem;
 }
@@ -45,8 +52,9 @@ body{
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	overflow-x:hidden;
-	margin:3rem 0;
+	overflow-x:scroll;
+	width: 100vw; height:100vh;
+	margin:0 0 3rem 0;
 	scroll-snap-type: x mandatory;
 	-webkit-overflow-scrolling: touch;
 	background: black;
@@ -55,7 +63,7 @@ body{
 /*FEEDS STYLING*/
 .feed-container{
 	display:block;
-	flex-shrink: 0;
+	position:relative;
 	/*display:flex;
 	justify-content:center;
 	align-items:center;
@@ -64,16 +72,15 @@ body{
 	margin:0;
 	background: black;
 	scroll-snap-align: start;
+	padding-top: 0;
 }
 .feed-container h1 {
 	font-size:3rem;
 }
 .feed-container .posts{
-	display:;
 	background: black;
 	color:white;
 	margin-top:1rem;
-	padding:;
 	border-radius:0.1rem;
 	box-shadow: 0px 2px 10px black;
 }
@@ -85,6 +92,7 @@ body{
 	background:black;
 	color:white;
 	padding-right:1rem;
+	padding-left:0.1rem;
 }
 .post-nav .post-head{
 	display:flex;
@@ -103,13 +111,11 @@ body{
 }
 
 .post-nav .post-menu {
-	display:;
 	top:0; right:0;
 	fill:white;
 	color:white;
 	font-size:17pt;
 }
-
 .title {
 	margin:0.5rem auto;
 	text-transform:capitalize;
@@ -132,9 +138,9 @@ body{
 }
 .post-like-count{
 	background: black;
-	color:red;
-	font-size:0.7rem;
-	margin:-0.5rem 0 0 0.2rem;
+	color:white;
+	font-size:0.9rem;
+	margin:0.2rem 0 0 0.2rem;
 }
 .post-caption{
 	background: black;
@@ -147,6 +153,22 @@ body{
 	font-size:0.8rem; margin-top:0.1rem;
 	color:silver; background: black;
 }
+
+
+
+.post-footer{
+	padding: 0 0.6rem;
+}
+
+
+
+
+
+
+
+
+
+
 /*DIRECT STYLING*/
 .direct-container{
 	display:block;
@@ -167,20 +189,35 @@ body{
 }
 .d-tb{
 	display:flex;
-	justify-content:space-around;
+	position:sticky;
+	top: 0;
+	left: 0;
+	justify-content:space-between;
 	align-items:center;
 	background:black;
 	width:100vw ; padding:0.5rem;
 	font-size:1.5rem;
+	z-index: 999;
 	
 }
+.d-tb i {
+	font-weight: 100;
+}
+.d-tb div{
+	display:flex;
+	justify-content:space-between;
+	width: 38vw;
+}
+.d-tb div:last-of-type{
+	width: 20vw;
+}
 /* Assign full width inputs*/  
-.search-bar input[type=text],  .search-bar input[type=password] {  
+.search-bar input[type=text] {  
 	width: 90vw;  
-	padding: 1rem 4rem;
+	padding: 0.5rem 4rem;
 	margin: 0.4rem 1rem;  
 	display: inline-block; 
-	border:none; border-radius:2rem;
+	border:none; border-radius:0.4rem;
 	background:#1c1c1c; color:white;
 } 
 .search-bar { 
@@ -190,8 +227,8 @@ body{
 	position: absolute; 
 	left: 2.5rem; 
 	top: 1rem; 
-	color: white;
-	font-size:1.5rem;
+	color: gray;
+	font-size:1rem;
 }
 .m-boxes{
 	display:flex;
@@ -214,9 +251,9 @@ body{
 .m-clm-a .m-user{
 	font-weight:900;
 }
-.m-clm-a .m-text-box{
+/* .m-clm-a .m-text-box{
 	
-}
+} */
 .m-boxes .m-clm-b{
 	font-size:1.3rem;
 }
@@ -224,11 +261,9 @@ body{
 	font-size:3rem;
 }
 .feed-container .posts{
-	display:;
 	background: black;
 	color:white;
 	margin-top:1rem;
-	padding:;
 	border-radius:0.1rem;
 	box-shadow: 0px 2px 10px black;
 }
@@ -252,7 +287,7 @@ body{
 	align-items:center;
 	position:fixed;
 	background: black;
-	height:; width:100vw;
+	width:100vw;
 	color:white; fill:white;
 	padding:0.7rem;
 	font-size:1.7rem;
@@ -300,12 +335,21 @@ a{
 	width:60vw;
 	overflow:hidden;
 }
-.c-tb .c-tb-clm-b{
-	width:15vw;
+
+.c-tb-clm-a-om{
+	display: block;
+	place-items: center;
+	margin-left: 0.5rem;
 }
-.c-tb-clm-a img{
+
+.c-tb .c-tb-clm-b{
+	width:17vw;
+}
+.c-tb-clm-a-om img{
 	border-radius:50%;
 	height:2rem; width:2rem;
+	float: left;
+	margin-top: 0.2rem;
 }
 .chat-container i{
 	font-size:1.6rem;
@@ -318,63 +362,72 @@ a{
 	overflow-y:hidden;
 	overflow:scroll;
 	flex-wrap:wrap;
-	height:90vh; width:100vw;
+	height:100vh; width:100vw;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
-	padding-bottom:4rem;
+	padding-bottom: 3rem;
 }
 .c-area .self-msgs{
 	display:block;
 	position:relative;
 	background:rgba(255,0,0,0.8);
 	max-width:60vw; 
-	padding:1.5rem; margin:0.5rem 0rem 0.5rem 10rem;
-	right:0; left:;
-	border-radius:2.5rem;
+	padding:0.5rem 1rem; margin:0.5rem 0rem 0.5rem 10rem;
+	right:0.5rem; 
+	border-radius:1rem;
 	
+}
+.c-area #chat-userName{
+	font-size: 0.7rem;
+	margin-left: 2.8rem;
 }
 .c-area .others-msgs{
 	display:block;
 	position:relative;
 	background:rgba(0,0,0,0.8);
 	width:50vw;
-	padding:1.5rem; margin:0.5rem 0.1rem;
+	padding:0.5rem 1rem; margin:0.5rem auto 1.5rem 2.5rem;
 	left:0; right:40vw;
 	line-height:1.2;
-	border-radius:2.5rem;
+	border-radius:1rem;
 }
 .c-bb{
 	display:flex;
 	position:fixed;
-	background: black;
+	background: rgb(49, 49, 49);
 	justify-content:space-between;
 	align-items:center;
 	overflow:hidden;
-	padding:0.5rem; width:100vw;
-	font-size:1.3rem;
-	bottom:0; left:0;
+	padding:0.5rem 0.7rem; width:auto;
+	font-size:1rem;
+	bottom:0.5rem; left:0.5rem; right: 0.5rem;
 	z-index:101;
+	border-radius: 1rem;
+}
+.c-bb i{
+	font-size:0.9rem;
+	border-radius: 50%;
+	background: fuchsia;
+	padding: 0.4rem;
 }
 .c-bb form{
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
-	width:100vw;
+	width:100%;
 }
 .c-bb .c-ta{
-	background: #1c1c1c; color:white;
+	color:white;
+	background: none;
 	outline:none; border: none;
-	border-radius:5rem;
-	padding:0.5rem;
 	width:70vw; margin:0 0.5rem;
 }
 .c-bb .c-s{
 	background: none;
 	outline:none; border: none;
-	color:red;
-	border-radius:5rem;
-	padding:0.5rem;
-	font-size:1.5rem;
+	color: fuchsia;
+	font-size:1.1rem;
+	font-weight: bolder
 }
 .gotoBottom{
 	display:grid; position:fixed;
@@ -382,16 +435,16 @@ a{
 	height:2.5rem; width:2.5rem;
 	font-size:1rem; color: silver;
 	background: none; border-radius:5rem;
-	top:7rem; right:1rem;
+	top:6rem; right:1rem;
 	font-weight:100;
 	animation:swipe 2s linear infinite ;
 }
 @keyframes swipe {
 	from{opacity:1;}
-	to{top:40rem; opacity:0;}
+	to{top:10rem; opacity:0;}
 }
 .preloader{
-	display:block;
+	display:none;
 	position:fixed;
 	box-sizing:border-box;
 	height:100vh; width:100vw;
@@ -455,4 +508,27 @@ a{
 	25%{transform:translate(0%,-100%);}
 	50%{transform:translate(100%,-100%);}
 	100%{transform:translate(100%,0%);}
+}
+
+
+
+/* Hide the desktop site styles for screens with width greater than a certain value */
+@media (min-width: 768px) {
+    main {
+        display: none;
+    }
+	.vp-alert{
+		display: block;
+	}
+}
+
+/* Show the mobile site styles for screens with width less than the value */
+@media (max-width: 767px) {
+    main {
+        display: block;
+    }
+	.vp-alert{
+		display: none;
+	}
+
 }

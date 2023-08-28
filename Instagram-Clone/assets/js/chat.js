@@ -45,6 +45,8 @@ const chatArea = document.getElementById("c-area");
 //myName.style.background = "red";
  //myName.setAttribute("class" , "username");
 submit.addEventListener('click', (e) => {
+    
+    // window.scrollTo(0,document.body.scrollHeight);
     var message = document.getElementById('c-ta').value;
     const id = push(child(ref(database), 'messages')).key;
     set(ref(database, 'messages/' + id), {
@@ -57,19 +59,29 @@ submit.addEventListener('click', (e) => {
 
 // listen for incoming messages
    onChildAdded(newMsg, function (snapshot) {
+    
+
+	cchatArea.scrollTop = chatArea.scrollHeight;
+    // window.scrollTo(0,document.body.scrollHeight);
+    
        var html = "";
+         var html2 = "";
        // give each message a unique ID
-       html += "<p id='message-" + snapshot.key + "'>";
-       html += snapshot.val().name + ": " + snapshot.val().message;
+       html += "<p id='chat-userName'>";
+       html += snapshot.val().name;
        html += "</p>";
+       html2 += "<p id='chat-userMessage'>";
+       html2 += snapshot.val().message;
+       html2 += "</p>";
 		if (snapshot.val().name != name) {
     /*html += "<button data-id='" + snapshot.key + "' onclick='deleteMessage(this);'>";
         html += "Delete";
     html += "</button>";*/
 			var oM = "";
-			oM += "<div class='c-tb-clm-a' style='display:flex; justify-content:space-between; align-items:center; width:60vw;'> <img src='https://source.unsplash.com/random/?person?sig=" + snapshot.key + "' alt='Whyyyyy'>";
-			oM += "<div style='background:rgba(128,128,128,0.6);' id='others-msgs' class='others-msgs' >";
+			oM += "<div class=' c-tb-clm-a-om'> <img src='https://source.unsplash.com/random/100x100?person?sig=" + snapshot.key + "' alt='Whyyyyy'>";
 			oM += html;
+            oM += "<div style='background:rgba(128,128,128,0.6);' id='others-msgs' class='others-msgs' >";
+			oM += html2;
 			oM += "</div></div>";
 			othersMsgs.style.background = "blue";
 			chatArea.insertAdjacentHTML("beforeend" , oM);
@@ -78,10 +90,11 @@ submit.addEventListener('click', (e) => {
 		else{
 			var sM = "";
 			sM += "<div style='background:rgba(255,0,0,0.5);' id='self-msgs' class='self-msgs' >";
-			sM += html;
+			sM += html2;
 			sM += "</div>";
 			selfMsgs.style.background = "red";
 			chatArea.insertAdjacentHTML("beforeend" , sM);
 			selfMsgs.setAttribute("data-aos" , "zoom-in");
+            window.scrollTo(0,document.body.scrollHeight);
 		}
    });

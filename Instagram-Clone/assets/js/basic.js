@@ -1,9 +1,61 @@
-AOS.init();
 const containerF = document.querySelector(".feed-container");
 const containerD = document.querySelector(".direct-container");
 let limit = 4;
 let pageCount = 1;
 let postCount = 1;
+
+let infScroll; // Declare infScroll outside of any function
+
+// Function to initialize Infinite Scroll and load more posts
+const initAndLoadPosts = () => {
+  const feedContainer = document.querySelector(".feed-container");
+
+  // Initialize Infinite Scroll if it hasn't been initialized yet
+  if (!infScroll) {
+    infScroll = new InfiniteScroll(feedContainer, {
+      path: function () {
+        return `https://realpxd.github.io/Igc/db.json?page=${this.pageIndex}`;
+      },
+      responseType: "text",
+      append: ".posts",
+    });
+  }
+
+  // Load the initial page
+  infScroll.loadNextPage();
+};
+
+// Initialize Infinite Scroll and load more posts
+initAndLoadPosts();
+
+// Flag to prevent rapid loading
+let loadingNextPage = false;
+
+// Attach a scroll event listener to load more posts as the user scrolls
+window.addEventListener("scroll", () => {
+  const scrollHeight = document.documentElement.scrollHeight;
+  const scrollTop = document.documentElement.scrollTop;
+  const clientHeight = document.documentElement.clientHeight;
+
+  if (scrollTop + clientHeight >= scrollHeight && !loadingNextPage) {
+    loadingNextPage = true;
+
+    // Introduce a 1-second delay
+    setTimeout(() => {
+      infScroll.loadNextPage();
+      loadingNextPage = false;
+    }, 1000);
+  }
+});
+
+
+  
+
+
+
+
+
+
 
 
 const getPost = async () => {
@@ -12,12 +64,14 @@ const getPost = async () => {
 	const data = await response.json();
 	//console.log(data);
 	
+
+	
 data.map((curElm) => {
 	const feedData = `
 		<div class="posts">
 			<div class="post-nav">
 				<span class="post-head">
-					<img class="post-pfp" src="https://source.unsplash.com/random/?person?sig=${curElm.likes}&auto=webp&q=10" alt="${curElm.id}'s profile picture">
+					<img class="post-pfp" src="https://source.unsplash.com/random/100x100?person?sig=${curElm.likes}&auto=webp&q=10" alt="${curElm.id}'s profile picture">
 					${curElm.id}
 				</span>
 				<span class="post-menu">
@@ -25,22 +79,24 @@ data.map((curElm) => {
 				</span>
 			</div>
 			<img class="post-main" src="https://source.unsplash.com/random/${screen.width}x${screen.height/2}?sig=${curElm.likes}&auto=webp&q=10" alt="${curElm.id}'s post";">
-			<div class="post-info">
-				<div class="post-reacts">
-					<i class="far fa-heart" aria-hidden="true" onclick="likeme()"></i>
-					<i class="far fa-comment" aria-hidden="true"></i>
-				<i class="far fa-paper-plane"></i>
+			<div class="post-footer" id="post-footer">
+				<div class="post-info">
+					<div class="post-reacts">
+						<i class="far fa-heart" aria-hidden="true" onclick="likeme()"></i>
+						<i class="far fa-comment" aria-hidden="true"></i>
+					<i class="far fa-paper-plane"></i>
+					</div>
+					<i class="far fa-bookmark" aria-hidden="true" onclick="saveme()"></i>
+				</div>		
+				<p class="post-like-count">${curElm.likes}</p>
+				<div class="post-caption">
+					<span>${curElm.id}</span> ${curElm.caption}
 				</div>
-				<i class="far fa-bookmark" aria-hidden="true" onclick="saveme()"></i>
-			</div>		
-			<p class="post-like-count">${curElm.likes}</p>
-			<div class="post-caption">
-				<span>${curElm.id}</span> ${curElm.caption}
+				<div class="post-comments">
+					View all ${curElm.commentsCount} comments
+				</div>
+				<p class="post-time"> ${curElm.postTime} hours ago </p>
 			</div>
-			<div class="post-comments">
-				View all ${curElm.commentsCount} comments
-			</div>
-			<p class="post-time"> ${curElm.postTime} hours ago </p>
 		</div>
 	`;
 
@@ -49,7 +105,7 @@ data.map((curElm) => {
 	const directData = `
 		<div class="m-boxes" onclick="boxes()">
 			<div class="m-clm-a">
-				<img class="m-pfp" src="https://source.unsplash.com/random/?person?sig=${curElm.likes}&auto=webp&q=10" alt="${curElm.id}'s profile picture";">
+				<img class="m-pfp" src="https://source.unsplash.com/random/100x100?person?sig=${curElm.likes}&auto=webp&q=10" alt="${curElm.id}'s profile picture";">
 				<div>
 					<p class="m-user">${curElm.id}</p>
 					<p  class="m-text-box">last online : ${curElm.postTime}h ago</p>
@@ -111,10 +167,14 @@ for (i = 0; i < lb.length; i++){
 	}
 }
 
+const cchatArea = document.getElementById("c-area");
+const directContainer = document.querySelector("direct-container");
 
 function boxes(){
 	chatContainer.style.display = "block";
 	chatContainer.style.marginLeft = "0";
+	
+	cchatArea.scrollTop = chatArea.scrollHeight;
 }
 $(".fa-arrow-left").click(function(){
 	chatContainer.style.display = "none";
@@ -122,7 +182,7 @@ $(".fa-arrow-left").click(function(){
 });
 const chatArea = document.getElementById("c-area");
 $(".gotoBottom").click(function(){
-	chatArea.scrollTo(0,20000);
+	cchatArea.scrollTop = chatArea.scrollHeight;
 });
 setTimeout(function(){
 	var preload = $('.preloader');
