@@ -1,0 +1,192 @@
+.head-img {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 5rem 1rem 3rem 1rem;
+    padding: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 10rem;
+    width: auto;
+    border-radius: 2rem;
+}
+
+.head-img p {
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    margin-top: 2rem;
+}
+
+.container-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin: 1rem;
+    height: 29rem;
+    width: 95vw;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    margin: auto;
+    background: rgba(35, 35, 35, 0.3);
+    border-radius: 2rem;
+    /* flex-shrink: 0;
+    flex-basis: 0;
+    flex-grow: 0; */
+
+}
+.container-links a{
+    
+    text-decoration: none;
+}
+.container-links::-webkit-scrollbar {
+    display: none;
+}
+.container-links .card{
+    margin: auto 2rem;
+    position: relative;
+    height: 25rem;
+    padding: 1rem;
+    flex-shrink: 0;
+    flex-basis: 52vw;
+    scroll-snap-align: center;
+    background: rgba(0, 0, 0, 0.267);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+.container-links .card:is(:hover, :focus){
+    background: rgba(35, 35, 35, 0.54);
+    transition: 0.1s linear;
+    filter: drop-shadow(0 0 5px rgba(39, 39, 39, 0.548));
+}
+
+.container-links .card .card-project-img{
+    height: 25%;
+    width: 100%;
+    position: relative;
+    filter: blur(0.5px) brightness(0.7) saturate(0.5) drop-shadow(0 0 4px #ff00ff2f);
+    border-radius: 1rem;
+}
+.container-links .card:is(:hover, :focus) .card-project-img {
+    filter: blur(0) brightness(0.7) saturate(1) drop-shadow(0 0 5px rgba(0, 0, 0, 0.644));
+    transform: scale(1.02) translate(0, -2px);
+    transition: 0.1s linear;
+}
+.container-links .card:is(:hover, :focus) .card-btn{
+    background: #ff00ff;
+    border: 1px solid #ff00ff;
+    color: #dedede;
+    transition: 0.2s linear;
+}
+
+
+
+/* .container-links .card img::before{
+    content: "ddsssssd";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 20px solid red;
+    border-top: 20px solid red;
+} */
+.card .card-stacks{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    margin-bottom: 1rem;
+}
+.card .card-stacks img{
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 0.2rem;
+    margin: 0.6rem auto 0.4rem auto;
+    position: relative;
+    object-fit: contain;
+}
+
+
+.container-links .card h3{
+    text-align: justify;
+    margin: 1rem auto;
+    font-size: 1rem;
+    height: 2.2rem;
+}
+.container-links .card p{
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin: 1.2rem auto;
+    text-align: justify;
+    color: #dedede;
+    height: 5rem;
+}
+.container-links .card .card-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    background: none;
+    border: 1px solid #ff00ff;
+    border-radius: 1rem;
+    outline: none;
+    padding: 0.4rem;
+    font-weight: 600;
+}
+
+
+/* .games-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 30.5)), url('../assets/img/DALL-E/game-m.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.music-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 30.5)), url('../assets/img/DALL-E/music.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.clcli-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 50.5)), url('../assets/img/DALL-E/confused.webp');
+    background-position: center;
+    background-size: cover;
+} */
+
+
+
+/* .gcimg {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 30.5)), url('./assets/img/DALL-E/game-m.webp');
+} */
+
+.gcimg p {
+    color: fuchsia;
+    text-shadow: 0 0 20px purple;
+}
+
+.glink .btn {
+    border: 1px solid fuchsia;
+    background: purple;
+}
+
+/* .clclicimg {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 30.5)), url('./assets/img/DALL-E/confused.webp');
+} */
+
+.clclicimg p {
+    color: lime;
+    text-shadow: 0 0 20px purple;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.clclilink .btn {
+    border: 1px solid fuchsia;
+    background: purple;
+    font-weight: 900;
+}

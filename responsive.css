@@ -52,14 +52,6 @@
         .Snav .footer{
             display: none;
         }
-        .container{
-            overflow:hidden;
-            height:80vh;
-            padding:1rem auto;
-            margin:5rem 10rem 15rem 10rem;
-            z-index:6;
-            height: auto;
-        }
         .blocks .btn{
             font-size: 1.2rem;
         }
@@ -68,7 +60,7 @@
             margin-top: -3rem;
         }
         .c-left{
-            margin-left: 17rem;
+            margin-left: 15rem;
             margin-top: 8rem;
         }
         .c-right{
@@ -158,26 +150,6 @@
         outline:none;
         z-index:8;
     }
-    .hdng{
-        display: block;
-        position: relative;
-        margin:5rem 10rem;
-        text-align: center;
-    }   
-    .sections-clob{
-        height:13rem;
-        width: 23rem;
-        margin-bottom:1.5rem;
-        text-align: center;
-    }
-    #games p , #musicz p , #clcli p{
-        font-size:1.5rem;
-        width: auto;
-    }
-    #games button , #musicz button , #clcli button{
-        padding:0.8rem 0.5rem;
-        width:50%;
-    }
 	.blockD{
 		display: grid;
 		grid-template-columns: auto auto;
@@ -224,7 +196,6 @@
     .footer {
         height:10rem;
         padding-top: 0;
-        margin-top: -15rem;
     }
         .footer .social > a {
                 font-size:2rem;
@@ -234,21 +205,29 @@
                 margin-top: 3rem;
         }
 
-    .container-links{
-        display:grid; place-items:center;
-        margin:1rem; padding:auto 1rem;
-        grid-template-columns:auto auto auto;
-        margin-bottom: 25rem;
+    
+    .projects .blocks .data{
+        margin: auto;
     }
-    .container-links button{
-        max-width:14rem; 
-        width:14rem; height:6rem;
-        outline:none;
-        margin:1rem; padding:0 0.5rem;
-        border-radius:1rem;
-        color:white; font-size:1rem;
-        font-weight:500;
-        text-shadow:0 5px 5px black;
-        transition:0.2s ease;
+    .hdng{
+        display: block;
+        position: relative;
+        margin:5rem 10rem;
+        text-align: center;
+    }   
+
+    .sections-clob{
+        height:13rem;
+        width: 23rem;
+        margin-bottom:1.5rem;
+        text-align: center;
+    }
+    #games p , #musicz p , #clcli p{
+        font-size:1.5rem;
+        width: auto;
+    }
+    #games button , #musicz button , #clcli button{
+        padding:0.8rem 0.5rem;
+        width:50%;
     }
 }

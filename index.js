@@ -50,6 +50,17 @@ console.log("//Loaded .... 75%");
 AOS.init();
 
 
+
+
+
+
+
+
+
+
+
+
+/*
 // Canvas Short Game
 canvas = document.getElementById('canvas');
 context = canvas.getContext("2d");
@@ -144,6 +155,6 @@ draw();
          //setInterval(draw,160);
      },1000)}
 
-
+*/
 console.log("//Loaded 100%");
 console.log("Owner - @ProgrammerXD");
