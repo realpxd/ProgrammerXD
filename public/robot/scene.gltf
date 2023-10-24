@@ -1,0 +1,220 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        -14.422069549560547,
+        49.421669006347656,
+        21.393779754638672
+      ],
+      "min": [
+        -44.94820022583008,
+        -5.796831130981445,
+        -23.949169158935547
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 786384,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.9999449253082275,
+        0.9999573230743408,
+        0.9999756217002869
+      ],
+      "min": [
+        -0.9999244213104248,
+        -0.9999113082885742,
+        -0.9999756217002869
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 360960,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1572768,
+      "componentType": 5126,
+      "count": 30957,
+      "max": [
+        -18.55467987060547,
+        49.41407012939453,
+        23.949180603027344
+      ],
+      "min": [
+        -45.060630798339844,
+        -9.29538345336914,
+        -23.949169158935547
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1944252,
+      "componentType": 5126,
+      "count": 30957,
+      "max": [
+        0.9998705387115479,
+        0.9999231696128845,
+        0.9999856352806091
+      ],
+      "min": [
+        -0.9998722076416016,
+        -0.9999113082885742,
+        -0.9999856352806091
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1443840,
+      "componentType": 5125,
+      "count": 130092,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Chaitanya Krishnan (https://sketchfab.com/chaitanyak)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/robot-a23df8893c2d426b8b28fbfc531c7785",
+      "title": "Robot"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 1964208,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2315736,
+      "byteOffset": 1964208,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 4279944,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_clearcoat"
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 1.0,
+          "clearcoatRoughnessFactor": 0.1298060533477039
+        }
+      },
+      "name": "material_0",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3896780303030303,
+          0.3896780303030303,
+          0.3896780303030303,
+          1.0
+        ],
+        "roughnessFactor": 0.20785984848484848
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        3.68761648130711e-05,
+        0.0,
+        0.0,
+        -3.68761648130711e-05,
+        -1.0,
+        0.0,
+        0.0,
+        20.063213348388675,
+        -20.063880920410153,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        3
+      ],
+      "name": "robot.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_2"
+    },
+    {
+      "mesh": 1,
+      "name": "Object_3"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

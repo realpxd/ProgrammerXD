@@ -1,0 +1,11 @@
+Model Information:
+* title:	Drone
+* source:	https://sketchfab.com/3d-models/drone-ce248709dea64ec1844e8dd9b614f7c0
+* author:	Renafox (https://sketchfab.com/kryik1023)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Drone" (https://sketchfab.com/3d-models/drone-ce248709dea64ec1844e8dd9b614f7c0) by Renafox (https://sketchfab.com/kryik1023) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
