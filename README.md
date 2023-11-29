@@ -1,36 +1,34 @@
-# ProgrammerXD
-<!-- <img src="./assets/img/DALL-E/assistant.webp"> -->
-![Assistant Image](https://raw.githubusercontent.com/realpxd/ProgrammerXD/main/assets/img/DALL-E/assistant.webp)
-<br>
-<span> I am Elsa , Assistant of #PXD .  And I'll give you all the information about this repo. </span>
-<br><hr><br>
-<h2>Main repository of PXD</h2>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-<h3> General  </h3>
-<span> Website Link :- </span> <a href="https://realpxd.github.io/ProgrammerXD/"> <img src="https://img.shields.io/badge/Official_Website-ProgrammerXD-orange" ></a> <br>
-<!-- <span> Certificates :- </span> <a href="https://realpxd.github.io/ProgrammerXD/Certificates.html"> <img src="https://img.shields.io/badge/Certificates-ProgrammerXD-blue" ></a><br> -->
-<span> LinkedIn Profile :- </span> <a href="https://www.linkedin.com/in/programmerxd"> <img src="https://img.shields.io/badge/LinkedIN-Resume-blue" ></a><br>
+## Getting Started
 
-<h3> Projects </h3>
-<h4> Mini Games </h4> 
-<a href="https://realpxd.github.io/Squid-Game"> <img src="https://img.shields.io/badge/Play-Squid_game-orange" ></a><br>
-<a href="https://realpxd.github.io/RoadToInfinity"> <img src="https://img.shields.io/badge/Play-Road_to_Infinity-orange" ></a><br>
-<a href="https://realpxd.github.io/Rocket-Doge"> <img src="https://img.shields.io/badge/Play-Rocket_Doge-orange" ></a><br>
+First, run the development server:
 
-<h4> Clones </h4>
-<a href="https://realpxd.github.io/Instagram-Clone-Beta"> <img src="https://img.shields.io/badge/Instagram-Visit-orange" ></a> <br>
-<a href="https://realpxd.github.io/ProgrammerXD/TelegramUi"> <img src="https://img.shields.io/badge/Telegram-Visit-orange" ></a> <br>
-<a href="https://spotify-clone-phi-puce.vercel.app/"> <img src="https://img.shields.io/badge/Spotify-Listen-orange" ></a> <br>
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-<h4> Clients Projects </h4>
-<a href="https://ufolinux.tk"> <img src="https://img.shields.io/badge/UFOLINUX-Go-blur" ></a> <br>
-<a href="https://realpxd.github.io/s-ecom-project/"> <img src="https://img.shields.io/badge/Ecommerce-Store-blur" ></a> <br>
-<!-- <a href="https://realpxd.github.io/Hn24/"> <img src="https://img.shields.io/badge/HN24-Go-blur" ></a> <br> -->
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<h3> Contact PXD </h3>
-<span> LinkedIn Profile :- </span> <a href="https://www.linkedin.com/in/programmerxd"> <img src="https://img.shields.io/badge/LinkedIN-Go-blue" ></a><br>
-<span> Instagram Profile :- </span> <a href="https://www.instagram.com/programmerxd"> <img src="https://img.shields.io/badge/Instagram-Go-blue" ></a><br>
-<br>
-<hr>
-<br>
-<span> x__ END __x </span> 
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

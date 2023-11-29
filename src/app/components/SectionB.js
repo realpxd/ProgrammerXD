@@ -1,71 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from '../page.module.css'
+import Model from './ModelObj.js'
 import Image from 'next/image';
 
-const SectionB = () => {
-
-
-    const imgData = ["squid.png", "rocketDoge.png", "spotifyClone.png", "igClone.png"];
-    const content = [
-        {
-            "Title": "Squid Game",
-            "Description": "I am a self-taught developer, Constantly working on my Skills while Gaining a Solid Knowledge & Understanding in Development & Communication.",
-            "Image": "squid.png"
-        },
-        {
-            "Title": "Rocket Doge",
-            "Description": "I am a self-taught developer, Constantly working on my Skills while Gaining a Solid Knowledge & Understanding in Development & Communication.",
-            "Image": "rocketDoge.png"
-        },
-        {
-            "Title": "Spotify Clone",
-            "Description": "I am a self-taught developer, Constantly working on my Skills while Gaining a Solid Knowledge & Understanding in Development & Communication.",
-            "Image": "spotifyClone.png"
-        },
-        {
-            "Title": "Instagram Clone",
-            "Description": "I am a self-taught developer, Constantly working on my Skills while Gaining a Solid Knowledge & Understanding in Development & Communication.",
-            "Image": "igClone.png"
-        }
-    ];
-
-    const [selectedImage, setSelectedImage] = useState(null);
-
-    const handleImageClick = (index) => {
-        setSelectedImage(index);
-    };
+const SectionA = () => {
     return (
         <>
             <div className={`${styles.container} ${styles.cB}`}>
-                <Image className={styles.wave} src={"/wave.svg"} width={1} height={1}></Image>
+                <Image className={styles.pfp} src={"/me_hd.png"} width={250} height={300}></Image>
                 <div className={`${styles.block} ${styles.bB}`}>
-
-
-                    <div className={styles.asideData}>
-                        <div>
-                            <h2>{selectedImage !== null ? content[selectedImage].Title : 'My Projects'}</h2>
-                            <p>{selectedImage !== null ? content[selectedImage].Description : 'Check the projects I have worked on by selecting them from the list below'}</p>
-                        </div>
-                    </div>
-                    <div className={styles.aside}>
-                        {imgData.map((img, index) => (
-                            <>
-                                <div>
-                                    <Image
-                                        key={index}
-                                        src={`/ai/${img}`}
-                                        width={1000}
-                                        height={800}
-                                        onClick={() => handleImageClick(index)}
-                                        className={selectedImage === index ? styles.selectedImage : 'image'}
-                                        alt={`${img}`}
-                                    />
-                                    <p className={styles.imgTitle}> {content[index].Title} </p>
-                                </div>
-                            </>
-                        ))}
-                    </div>
-
+                    <h2>About Me</h2>
+                    <p>I am 19 years old Developer, Codding is the thing in which I was always interested in 
+                        and I am always ready to grab new skills. I am a self-taught developer, 
+                        Constantly working on my abilities while 
+                        Gaining a Solid Knowledge & Understanding in 
+                        Development & Communication.</p>
                 </div>
 
             </div>
@@ -73,4 +22,4 @@ const SectionB = () => {
     )
 }
 
-export default SectionB
+export default SectionA

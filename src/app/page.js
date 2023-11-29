@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import SectionA from './components/SectionA';
 import SectionB from './components/SectionB';
 import SectionC from './components/SectionC';
+import Footer from './components/Footer';
 
 export default function Home() {
 
@@ -15,15 +16,16 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      
+
       <Head>
         {/* X-icon */}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="shortcut icon" href="/logo.png" />
         <link rel="icon" href="/logo.png" sizes="any" type="image/png" />
         <link rel="icon" href="/logo.png" type="image/x-icon" />
         <link rel="shortcut icon" href="/logo.png" />
 
-        
+
         {/* Meta tags */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="keywords" content="PXD , pxd , Programmer , developer , designer , web developer, Naman, Saini, NamanSaini, Naman Saini, ProgrammerXD, programmerxd, Programmer XD, software engineer , engineer , freelancer" />
@@ -46,8 +48,9 @@ export default function Home() {
       </Head>
       <NavBar />
       <SectionA />
-        {/* <SectionC />
-        <SectionB /> */}
+      <SectionB />
+      <SectionC />
+      <Footer />
     </main>
   )
 }
