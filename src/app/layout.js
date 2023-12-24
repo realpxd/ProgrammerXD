@@ -4,6 +4,10 @@ import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] })
 
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
 export const metadata = {
   title: 'Naman Saini / ProgrammerXD',
   description: "Discover how Naman Saini's ProgrammerXD is shaping the future of coding and development.",
@@ -19,12 +23,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       
       <Head>
-        {/* Title */}
-        <title>PROGRAMMERXD</title>
-
-
+        <title>{metadata.title}</title>
         <link rel="shortcut icon" href="/logo.png" />
-        {/* STYLESHEETS */}
+        
+        <script src="https://kit.fontawesome.com/e20sdfsd9.js" crossOrigin="anonymous"></script>
         {/* X-icon */}
         <link rel="icon" href="/logo.png" sizes="any" type="image/png" />
         <link rel="icon" href="/logo.png" type="image/x-icon" />

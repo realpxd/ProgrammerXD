@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from '../page.module.css';
 import Image from 'next/image';
+import  Link from 'next/link'
 
 const NavBar = () => {
   // Initialize the state to track whether the navbar should have the 'navBarScrolled' class
@@ -37,17 +38,17 @@ const NavBar = () => {
       <Image src={'/pxd.png'} width={120} height={60} alt='LOGO' />
       <p className={styles.hamburger}>&#9776;</p>
       <div>
-        <a href="#">
+        <Link href="#home">
           <p>Home</p>
-        </a>
+        </Link>
 
-        <a href="#">
-          <p>About</p>
-        </a>
+        <Link href="#projects">
+          <p>Projects</p>
+        </Link>
 
-        <a href="#">
+        <Link href="#contact">
           <p>Contact</p>
-        </a>
+        </Link>
       </div>
     </div>
   );
