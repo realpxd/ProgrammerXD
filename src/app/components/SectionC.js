@@ -17,7 +17,7 @@ const SectionC = () => {
                                 <p>WOD - Whispers of Deception , is a Android Mobile App Project that comes with a unique idea of Voice communication among peoples from world .</p>
                                 <div>
                                     <Link href="https://github.com/realpxd/WOD" className={styles.projectBtns}><button>Github</button></Link>
-                                    <Link href="https://github.com/realpxd/WOD/blob/master/app/release/app-release.apk" className={styles.projectBtns}><button>Use</button></Link>
+                                    <Link href="https://github.com/realpxd/WOD/blob/master/app/release/app-release.apk" className={styles.projectBtns}><button>Live</button></Link>
                                 </div>
                             </div>
                         </div>

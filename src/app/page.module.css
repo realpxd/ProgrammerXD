@@ -22,7 +22,7 @@
   filter: invert(1);
 }
 
-.navBar .hamburger{
+.navBar .hamburger {
   display: none;
 }
 
@@ -70,14 +70,16 @@
 .navBarScrolled div a {
   color: #fff;
 }
-.hr{
-  border:none;
-  border-top:0.5rem solid #000;
+
+.hr {
+  border: none;
+  border-top: 0.5rem solid #000;
   width: 30%;
   margin: auto;
   border-radius: 4rem;
 
 }
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -106,15 +108,18 @@
   line-height: 1.5;
   letter-spacing: 1px;
 }
+
 .bB {
   width: 50vw;
 }
+
 .bB h2 {
   font-size: 5rem;
   font-weight: 900;
   color: #000;
   margin-bottom: 1rem;
 }
+
 .bB p {
   font-size: 1.3rem;
   font-weight: 700;
@@ -122,6 +127,7 @@
   line-height: 1.5;
   letter-spacing: 1px;
 }
+
 .cC {
   display: flex;
   justify-content: space-around;
@@ -129,25 +135,29 @@
   height: 130vh;
   width: 100vw;
 }
-.bC{
+
+.bC {
   width: 100vw;
   height: auto;
   margin: auto;
 }
+
 .bC h2 {
   font-size: 5rem;
   font-weight: 900;
   color: #000;
   text-align: center;
 }
-.bC .projectsWrapper{
+
+.bC .projectsWrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100vw;
   margin-top: 5rem;
 }
-.projectsWrapper .projectsContainer{
+
+.projectsWrapper .projectsContainer {
   display: flex;
   justify-content: flex-start;
   width: 14rem;
@@ -158,26 +168,31 @@
   border-radius: 2rem;
   padding: 1rem;
 }
-.projectsContainer img{
+
+.projectsContainer img {
   border-radius: 0.5rem;
   filter: drop-shadow(2px 2px 5px #9f0000);
 }
-.projectsContainer .imgDesk{
+
+.projectsContainer .imgDesk {
   height: 100px;
   margin-top: 3.1rem;
   margin-bottom: 3.1rem;
 }
-.projectsContainer .projectData{
+
+.projectsContainer .projectData {
   color: #fff;
   text-decoration: none;
-  
+
 }
-.projectData h3{
+
+.projectData h3 {
   font-size: 1.5rem;
   font-weight: 900;
   color: #fff;
 }
-.projectData p{
+
+.projectData p {
   font-size: 0.9rem;
   width: 100%;
   height: 5rem;
@@ -190,23 +205,27 @@
 
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* Number of lines to show */
+  -webkit-line-clamp: 4;
+  /* Number of lines to show */
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 
 }
-.projectData div{
+
+.projectData div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #d30000;
   border-radius: 2rem;
-  padding:0.4rem 0.5rem;
+  padding: 0.4rem 0.5rem;
 }
-.projectData div .projectBtns{
+
+.projectData div .projectBtns {
   width: 40%;
 }
-.projectData div .projectBtns button{
+
+.projectData div .projectBtns button {
   color: #000;
   background: #fff;
   border: none;
@@ -218,12 +237,14 @@
   cursor: pointer;
   transition: all 0.1s linear;
 }
-.projectData div .projectBtns:nth-last-child(1) button{
+
+.projectData div .projectBtns:nth-last-child(1) button {
   background: none;
-  color:#fff;
+  color: #fff;
   border: 2px solid #fff;
 }
-.projectData div .projectBtns button:is(:hover , :focus){
+
+.projectData div .projectBtns button:is(:hover, :focus) {
   /* border:2px solid white; */
   border: 1px solid #ff0000;
   box-shadow: inset 0 0 2px black;
@@ -231,7 +252,8 @@
   color: #fff;
   padding-right: 4.5rem;
 }
-.projectData div .projectBtns:nth-last-child(1) button:is(:hover , :focus){
+
+.projectData div .projectBtns:nth-last-child(1) button:is(:hover, :focus) {
   background: #ff0000;
   color: #fff;
   border: 2px solid #ff0000;
@@ -246,6 +268,7 @@
   width: 60vw;
 
 }
+
 .modelA {
   transform: translateY(-0.5rem);
   animation: float 1s ease-in-out infinite alternate-reverse;
@@ -257,23 +280,28 @@
   text-align: center;
   margin-top: 10rem;
 }
-.footer .contactForm{
+
+.footer .contactForm {
   padding: 1rem;
 }
-.contactForm h2{
+
+.contactForm h2 {
   font-size: 3rem;
   font-weight: 900;
   color: #000;
   margin-bottom: 2rem;
   text-align: center;
 }
-.contactForm form{
+
+.contactForm form {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
-.contactForm form input , .contactForm form textarea{
+
+.contactForm form input,
+.contactForm form textarea {
   width: 50vw;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
@@ -281,11 +309,13 @@
   font-size: 1.2rem;
   font-weight: 600;
 }
-.contactForm form textarea{
+
+.contactForm form textarea {
   border-radius: 1rem;
   height: 20vh;
 }
-.contactForm form button{
+
+.contactForm form button {
   color: #fff;
   background: #000;
   border: none;
@@ -296,7 +326,7 @@
   width: 52%;
 }
 
-.footer .bottomFooter{
+.footer .bottomFooter {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -306,19 +336,22 @@
   padding: 2rem;
   margin-top: 3rem;
 }
-.bottomFooter .socialMedia{
+
+.bottomFooter .socialMedia {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 30vw;
 }
-.socialMedia h3{
+
+.socialMedia h3 {
   font-size: 2rem;
   font-weight: 900;
   color: #fff;
   margin-bottom: 1rem;
 }
-.socialMedia .socialMediaWrapper{
+
+.socialMedia .socialMediaWrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -326,37 +359,42 @@
   width: 50%;
   font-size: 2rem;
 }
-.socialMedia .socialMediaWrapper a{
+
+.socialMedia .socialMediaWrapper a {
   color: #fff;
   text-decoration: none;
   transition: 0.2s;
 }
-.socialMedia .socialMediaWrapper a:hover{
+
+.socialMedia .socialMediaWrapper a:hover {
   transform: scale(1.2);
   color: #ff0000;
 }
+
 @keyframes float {
-  0%{
+  0% {
     transform: translateY(-0.5rem);
   }
-  100%{
+
+  100% {
     transform: translateY(0.5rem);
   }
 }
+
 .cA {
   overflow: hidden;
 }
 
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:780px) {
   .main {
     min-height: 100vh;
     overflow-x: hidden;
   }
-  
-  
-  
+
+
+
   .navBar {
     display: flex;
     position: fixed;
@@ -370,28 +408,35 @@
     box-sizing: border-box;
     transition: all 0.6s ease;
   }
-  
+
   .navBar img {
     cursor: pointer;
     filter: invert(1);
     transform: translateX(-1.6rem);
   }
-  
-  .navBar .hamburger{
+
+  .navBar .hamburger {
     display: block;
     font-size: 2rem;
     z-index: 100;
     transition: 0.3s;
+    width: 2rem;
+    border: none;
+    background: transparent;
+    outline: none;
   }
-  .navBar .hamburger:is(:hover , :focus) ~ div {
+
+  .navBar .hamburger:is(:hover, :focus)~div {
     display: flex;
     opacity: 1;
     visibility: visible;
   }
-  .navBar .hamburger:is(:hover , :focus){
-    transform: rotate(90deg) ;
+
+  .navBar .hamburger:is(:hover, :focus) {
+    transform: rotate(90deg);
   }
-  .navBar div:nth-child() {
+
+  .navBar div {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -402,14 +447,15 @@
     font-weight: 600;
     width: 100vw;
     height: 100vh;
-    top: 4rem; left: 0;
+    top: 4rem;
+    left: 0;
     background: #000000b9;
     z-index: 5;
     transition: 0.3s;
     opacity: 0;
     visibility: hidden;
   }
-  
+
   .navBar div a {
     color: #fff;
     text-decoration: none;
@@ -419,38 +465,40 @@
     justify-content: space-between;
     margin: 2rem auto;
   }
-  
+
   .navBar div a::after {
     content: "";
     display: block;
+    text-align: center;
+    margin: auto;
     width: 0;
     height: 2px;
     background: #fff;
     transition: width 0.3s;
   }
-  
+
   .navBar div a:hover::after {
-    width: 40%;
+    width: 70%;
     transition: width 0.3s;
   }
-  
+
   .navBarScrolled {
     background-color: #000000ce;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-  
+
   .navBarScrolled img {
     filter: invert(0);
   }
-  
-  .navBarScrolled .hamburger{
+
+  .navBarScrolled .hamburger {
     color: #fff;
   }
 
   .navBarScrolled div a {
     color: #fff;
   }
-  
+
   .container {
     display: flex;
     justify-content: space-around;
@@ -458,15 +506,17 @@
     height: 100vh;
     width: 100vw;
   }
-  
+
   .block {
     width: 100vw;
     margin-top: 0;
     margin-left: 1rem;
   }
-  .bA{
+
+  .bA {
     margin: 0 2rem;
   }
+
   .bA h1 {
     font-size: 3.3rem;
     font-weight: 900;
@@ -474,40 +524,166 @@
     margin: 0 2rem;
     margin-bottom: 0.6rem;
   }
-  
+
   .bA p {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
     margin: 0 2rem;
     line-height: 1.5;
     letter-spacing: 1px;
-    text-align: justify;
+    text-align: left;
   }
-  
+
   .model {
     display: grid;
     place-items: center;
     height: 45vh;
     width: 100vw;
-  
+
   }
+
   .modelA {
     transform: translateY(-0.5rem);
     animation: float 1s ease-in-out infinite alternate-reverse;
   }
+
   @keyframes float {
-    0%{
+    0% {
       transform: translateY(-0.5rem);
     }
-    100%{
+
+    100% {
       transform: translateY(0.5rem);
     }
   }
+
   .cA {
     overflow: hidden;
     flex-direction: column-reverse;
     justify-content: flex-end;
+    padding-top: 4rem;
   }
-  
+
+  .cB {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .cB img {
+    width: 55vw;
+    height: 30vh;
+
+  }
+
+  .bB {
+    width: 80vw;
+  }
+
+  .bB h2 {
+    font-size: 2rem;
+  }
+
+  .bB p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    text-align: justify;
+
+  }
+
+  .cC {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .bC {
+    margin: auto;
+  }
+
+  .bC h2 {
+    font-size: 2rem;
+  }
+
+  .bC .projectsWrapper {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+
+  .footer {
+    width: 100vw;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .footer .contactForm {
+    padding: 1rem;
+  }
+
+  .contactForm h2 {
+    font-size: 2rem;
+  }
+
+  .contactForm form input,
+  .contactForm form textarea {
+    width: 70vw;
+  }
+
+
+  .contactForm form button {
+    position: relative;
+    width: 80vw;
+    transition: all 0.1s linear;
+  }
+
+  .contactForm form button:is(:hover, :focus) {
+    background: transparent;
+    border: 1px solid #000;
+  }
+
+  .contactForm form button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff0000;
+    border-radius: 2rem;
+    transition: all 0.2s linear;
+    opacity: 1;
+    z-index: -1;
+  }
+
+  .contactForm form button:is(:hover, :focus)::before {
+    width: 100%;
+    transition: all 0.3s linear;
+
+  }
+  .footer .bottomFooter {
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  .bottomFooter .socialMedia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .socialMedia h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .socialMedia .socialMediaWrapper {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    width: 60%;
+    font-size: 2rem;
+  }
+
 }

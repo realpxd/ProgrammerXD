@@ -36,7 +36,7 @@ const NavBar = () => {
   return (
     <div className={navBarClasses}>
       <Image src={'/pxd.png'} width={120} height={60} alt='LOGO' />
-      <p className={styles.hamburger}>&#9776;</p>
+      <input  placeholder='&#9776;' className={styles.hamburger} readOnly/>
       <div>
         <Link href="#home">
           <p>Home</p>

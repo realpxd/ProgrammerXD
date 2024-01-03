@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../page.module.css'
+import Email from '../smtp.js'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -8,14 +9,37 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        var name = e.target.name.value;
+        var email = e.target.email.value;
+        var message = e.target.message.value;
+        var data = {
+            name,
+            email,
+            message
+        }
+        Email.send({
+            SecureToken : "0aed8a21-c001-4cea-8d0c-7a4466a353fc",
+            To : 'thisispxd@gmail.com',
+            From : "thisispxd@gmail.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
+
+
     return (
         <div className={styles.footer}>
             <div className={styles.contactForm} id='contact'>
                 <h2>Contact Me</h2>
-                <form>
-                    <input type="text" placeholder="Name" required />
-                    <input type="email" placeholder="Email" required />
-                    <textarea placeholder="Message" required></textarea>
+                <form onSubmit={handleSubmit}>
+                    <input type="text" placeholder="Name" id='name' required />
+                    <input type="email" placeholder="Email" id='email' required />
+                    <textarea placeholder="Message" id='message' required></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>
