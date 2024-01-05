@@ -10,27 +10,32 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         var name = e.target.name.value;
         var email = e.target.email.value;
         var message = e.target.message.value;
-        var data = {
+        var formdata = {
             name,
             email,
             message
         }
-        Email.send({
-            SecureToken : "0aed8a21-c001-4cea-8d0c-7a4466a353fc",
-            To : 'thisispxd@gmail.com',
-            From : "thisispxd@gmail.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-          message => alert(message)
-        );
-    }
 
+        const res = await fetch('https://nodemailer-server-nyy2.onrender.com/sendMail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                email: email,
+                message: message
+            })
+        })
+
+        const data = await res.json();
+        console.log(data);
+    }
 
     return (
         <div className={styles.footer}>
@@ -53,23 +58,23 @@ const Footer = () => {
                         <a href='https://in.linkedin.com/in/programmerxd' >
                             <FontAwesomeIcon
                                 icon={faLinkedin}
-                                style={{ color: "red"}}
+                                style={{ color: "red" }}
                             /></a>
                         <a href='https://github.com/realpxd' >
                             <FontAwesomeIcon
                                 icon={faGithub}
-                                style={{ color: "red"}}
+                                style={{ color: "red" }}
                             /></a>
                         <a href='https://instagram.com/programmerxd' >
                             <FontAwesomeIcon
                                 icon={faInstagram}
-                                style={{ color: "red"}}
+                                style={{ color: "red" }}
                             /></a>
-                            <a href='https://twitter.com/PXD_Officials' >
-                        <FontAwesomeIcon
-                            icon={faTwitter}
-                            style={{ color: "red"}}
-                        /></a>
+                        <a href='https://twitter.com/PXD_Officials' >
+                            <FontAwesomeIcon
+                                icon={faTwitter}
+                                style={{ color: "red" }}
+                            /></a>
 
                     </div>
                 </div>

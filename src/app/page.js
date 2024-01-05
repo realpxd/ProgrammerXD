@@ -20,6 +20,8 @@ export default function Home() {
 
   // }
   // test();
+
+
   return (
     <main className={styles.main}>
       <NavBar />
