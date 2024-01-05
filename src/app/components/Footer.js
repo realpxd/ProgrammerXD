@@ -35,6 +35,7 @@ const Footer = () => {
 
         const data = await res.json();
         console.log(data);
+        alert('Message Sent Successfully');
     }
 
     return (
