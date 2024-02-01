@@ -15,6 +15,7 @@
     "@pmndrs/assets": "^1.6.0",
     "@react-three/drei": "^9.88.5",
     "@react-three/fiber": "^8.14.2",
+    "@vercel/speed-insights": "^1.0.9",
     "dotenv": "^16.3.1",
     "next": "^14.0.4",
     "nodemailer": "^6.9.7",
