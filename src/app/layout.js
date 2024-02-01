@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+
 // import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,8 +19,9 @@ export const metadata = {
 
   instagram: 'https://www.instagram.com/ProgrammerXD',
   linkedin: 'https://www.linkedin.com/in/ProgrammerXD',
-  github: 'https://github.com/realpxd'
+  github: 'https://github.com/realpxd',
 
+  googleSiteVerification: "K2TfwH5xHppC47C6GbkJhJVQuQG130gn8y8X3gTncwo" 
 
 }
 
