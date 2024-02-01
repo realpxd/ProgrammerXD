@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
         <meta id="themeH" name="theme-color" content="#000" />
         <meta name="revised" content="ProgrammerXD, 24/10/2023" /> */}
       {/* </Head> */}
-
+      <SpeedInsights />
       <body className={inter.className}>{children}</body>
     </html>
   )
