@@ -21,9 +21,9 @@ export const metadata = {
   instagram: 'https://www.instagram.com/ProgrammerXD',
   linkedin: 'https://www.linkedin.com/in/ProgrammerXD',
   github: 'https://github.com/realpxd',
-
-  googleSiteVerification: "K2TfwH5xHppC47C6GbkJhJVQuQG130gn8y8X3gTncwo" 
-
+  verification: {
+    google: "K2TfwH5xHppC47C6GbkJhJVQuQG130gn8y8X3gTncwo"
+  }
 }
 
 export default function RootLayout({ children }) {
