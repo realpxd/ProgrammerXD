@@ -21,7 +21,7 @@ const Footer = () => {
             message
         }
 
-        const res = await fetch('https://nodemailer-server-nyy2.onrender.com/sendMail', {
+        const res = await fetch('https://nodemailer-server-pxd.vercel.app/sendMail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
