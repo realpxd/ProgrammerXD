@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 
 // import Head from 'next/head';
 
@@ -60,7 +61,10 @@ export default function RootLayout({ children }) {
         <meta name="revised" content="ProgrammerXD, 24/10/2023" /> */}
       {/* </Head> */}
       <SpeedInsights />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
