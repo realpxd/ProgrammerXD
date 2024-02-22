@@ -1,6 +1,5 @@
 import React from 'react'
-import styles from '../page.module.css'
-import Email from '../smtp.js'
+import styles from '@/app/page.module.css'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
