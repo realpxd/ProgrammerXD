@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
+import { ReactQueryClientProvider } from './components/ReactQueryClientProvider';
 
 // import Head from 'next/head';
 
@@ -29,19 +30,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      {/*       
+    <ReactQueryClientProvider>
+      <html lang="en">
+        {/*       
       <Head>
         <title>{metadata.title}</title>
         <link rel="shortcut icon" href="/logo.png" />
         
         <script src="https://kit.fontawesome.com/e20sdfsd9.js" crossOrigin="anonymous"></script>
         {/* X-icon */}
-      {/* <link rel="icon" href="/logo.png" sizes="any" type="image/png" />
+        {/* <link rel="icon" href="/logo.png" sizes="any" type="image/png" />
         <link rel="icon" href="/logo.png" type="image/x-icon" /> */}
 
-      {/* Meta tags */}
-      {/* <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        {/* Meta tags */}
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <meta name="keywords" content="PXD , pxd , Programmer , developer , designer , web developer, Naman, Saini, NamanSaini, Naman Saini, ProgrammerXD, programmerxd, Programmer XD, software engineer , engineer , freelancer" />
         <meta name="author" content="ProgrammerXD / Naman Saini" />
         <meta name="title" content="Naman Saini: Revolutionizing Programming with PXD" />
@@ -59,12 +61,13 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="./assets/img/logo.png" />
         <meta id="themeH" name="theme-color" content="#000" />
         <meta name="revised" content="ProgrammerXD, 24/10/2023" /> */}
-      {/* </Head> */}
-      <SpeedInsights />
-      <body className={inter.className}>
-        {children}
-        <Analytics />
-      </body>
-    </html>
+        {/* </Head> */}
+        <SpeedInsights />
+        <body className={inter.className}>
+          {children}
+          <Analytics />
+        </body>
+      </html>
+    </ReactQueryClientProvider>
   )
 }

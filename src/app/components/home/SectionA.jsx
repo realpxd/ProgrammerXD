@@ -4,7 +4,7 @@ import Model from '@/app/components/ModelObj';
 
 const SectionA = () => {
   const [text, setText] = useState('');
-  const arr = ['Website', 'Bedroom', 'Balcony' , 'Kitchen' , 'Teddy' , 'Shoes' , 'Potato' , 'Fridge' , 'Computer' , 'Wardrobe'];
+  const arr = ['Website', 'Bedroom', 'Balcony', 'Kitchen', 'Teddy', 'Shoes', 'Potato', 'Fridge', 'Computer', 'Wardrobe'];
   const [counter, setCounter] = useState(0);
   var isTextEmpty = false;
 
@@ -22,7 +22,7 @@ const SectionA = () => {
     let intervalId;
     const clearText = () => {
       let index = 0;
-     intervalId = setInterval(() => {
+      intervalId = setInterval(() => {
         if (text.length > 0) {
           setText(prevText => prevText.slice(0, -1)); // Remove one character at a time
         } else {
@@ -36,27 +36,27 @@ const SectionA = () => {
 
     clearText();
 
-    return() => {
-        if(isTextEmpty){
-            clearInterval(intervalId);
-            setText(arr[counter])
-            let charArr = [];
-            let charStr;
+    return () => {
+      if (isTextEmpty) {
+        clearInterval(intervalId);
+        setText(arr[counter])
+        let charArr = [];
+        let charStr;
 
-            arr[counter].split("").forEach((char , index) => {
-                charArr.push(...char)
-                charStr = charArr.join("")
-                
-                setText(charStr)
-                console.log(charStr)
-            })
+        arr[counter].split("").forEach((char, index) => {
+          charArr.push(...char)
+          charStr = charArr.join("")
 
-            console.log(charArr)
-            console.log(charStr)
-        }else{
-            clearInterval(intervalId);
+          setText(charStr)
+          console.log(charStr)
+        })
 
-        }
+        console.log(charArr)
+        console.log(charStr)
+      } else {
+        clearInterval(intervalId);
+
+      }
     }
   }, [counter, arr]);
 

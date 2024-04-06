@@ -65,14 +65,14 @@ const Footer = () => {
                                 icon={faGithub}
                                 style={{ color: "red" }}
                             /></a>
+                        <a href='https://twitter.com/dotpxd' >
+                            <FontAwesomeIcon
+                                icon={faTwitter}
+                                style={{ color: "red" }}
+                            /></a>
                         <a href='https://instagram.com/programmerxd' >
                             <FontAwesomeIcon
                                 icon={faInstagram}
-                                style={{ color: "red" }}
-                            /></a>
-                        <a href='https://twitter.com/PXD_Officials' >
-                            <FontAwesomeIcon
-                                icon={faTwitter}
                                 style={{ color: "red" }}
                             /></a>
 

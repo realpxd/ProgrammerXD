@@ -1,21 +1,21 @@
-"use client";
+"use client"
+import { useRouter, usePathname } from 'next/navigation';
+import { ReactQueryDevtools, ReactQueryDevtoolsPanel } from 'react-query/devtools'
+
+
+import HomePage from './components/home/Home';
+import NavBar from './components/NavBar';
 import Image from 'next/image'
 import styles from './page.module.css'
-import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 
 
-
 export default function Home() {
-  const router = useRouter();
-
-  useEffect(() => {
-      router.push('/home');
-  });
 
   return (
-    <main className={styles.main}>
-
-    </main>
+    <>
+      <NavBar />
+      <HomePage />
+    </>
   )
 }
