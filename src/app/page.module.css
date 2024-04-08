@@ -431,6 +431,64 @@
   overflow: hidden;
 }
 
+.projectPage{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.projectPageContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.projectPageContainer h1{
+  font-size: 3rem;
+}
+.projectPageData{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #ededed;
+  border-radius: 4rem 4rem 0 0;
+  padding: 2rem 1.5rem;
+  margin-top: 1rem;
+  height: 100%;
+  text-align: justify;
+}
+.projectPageData p:first-child{
+  font-size: 1.1rem;
+}
+.projectPageStack{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+
+}
+.projectPageStack p{
+  background: salmon;
+  width: max-content;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.7rem;
+  color: #fff;
+}
+.projectPageBtns{
+  display: flex;
+  background: transparent;
+  justify-content: space-around;
+}
+.projectPageBtns button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  background: tomato;
+  font-size: 1.2rem;
+  padding: 0.8rem 2.7rem;
+  color: #fff;
+
+}
 
 
 @media screen and (max-width:780px) {
