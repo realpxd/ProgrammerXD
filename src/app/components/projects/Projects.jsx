@@ -1,21 +1,21 @@
 import React from 'react'
-import { useQueryClient } from 'react-query'
+import { useQuery } from 'react-query'
 import styles from '@/app/page.module.css'
 import ProjectsData from './ProjectsData';
-
+import { DNA } from "react-loader-spinner"
 
 const Projects = () => {
-    const queryClient = useQueryClient()
+
+
+    const { data: projectsData, isLoading, isError, error } = useQuery('projects', fetchProjectsData);
 
     async function fetchProjectsData() {
-        const response = await fetch('/projects/projectsData.json');
+        const response = await fetch('../../projects/projectsData.json');
         if (!response.ok) {
             throw new Error('Failed to fetch projects');
         }
         return response.json();
     }
-    queryClient.prefetchQuery(['projects'], fetchProjectsData)
-    const projectsData = queryClient.getQueryData(['projects'])
     // console.log(projectsData);
 
     return (
@@ -23,6 +23,17 @@ const Projects = () => {
             <div className={`${styles.container} ${styles.cC}`} style={{ height: '160vh' }}>
                 <div className={`${styles.block} ${styles.bC}`} id='projects'>
                     <h2>Projects</h2>
+                    {
+                        isLoading &&
+                        <DNA
+                            visible={true}
+                            height="80"
+                            width="80"
+                            ariaLabel="dna-loading"
+                            wrapperStyle={{}}
+                            wrapperClass="dna-wrapper"
+                        />
+                    }
                     <div className={styles.projectsWrapper} style={{ width: '80vw' }}>
                         {projectsData &&
                             projectsData.map((item, index) => {

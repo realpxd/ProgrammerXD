@@ -38,7 +38,7 @@ const NavBar = () => {
       <Image src={'/pxd.png'} width={120} height={60} alt='LOGO' />
       <input  placeholder='&#9776;' className={styles.hamburger} readOnly/>
       <div>
-        <Link href="/home#home">
+        <Link href="/">
           <p>Home</p>
         </Link>
 
@@ -46,7 +46,7 @@ const NavBar = () => {
           <p>Projects</p>
         </Link>
 
-        <Link href="/home#contact">
+        <Link href="/#contact">
           <p>Contact</p>
         </Link>
       </div>
