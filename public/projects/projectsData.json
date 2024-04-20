@@ -1,0 +1,75 @@
+[
+    {
+        "imgSrc": "/projects/session.png",
+        "imgw": 220,
+        "imgh": 200,
+        "title": "Session",
+        "description": "Session is a social media app that allows users to share their thoughts with the world. It is a platform where users can chat with others, share their experiences, and discover new things. Session is designed to be simple, intuitive, and fun to use.",
+        "live": "https://github.com/realpxd/Session",
+        "github": "https://github.com/realpxd/Session",
+        "stacks": ["React Native", "Node Js", "Mongo DB", "Express Js"] 
+    },
+    {
+        "imgSrc": "/projects/gph_tp.png",
+        "imgw": 220,
+        "imgh": 200,
+        "title": "GPHisar",
+        "description": "GPHisar is an Official Government Institute Educational App. This app helps students and staff to quickly access Study Materials and News & Anouncements from the Institute.",
+        "live": "https://gphisar.ac.in/",
+        "stacks": ["Java", "XML", "Wordpress"]
+    },
+    {
+        "imgSrc": "/projects/wod_tp.png",
+        "imgw": 220,
+        "imgh": 200,
+        "title": "WOD",
+        "description": "WOD - Whispers of Deception , is a Android Mobile App Project that comes with a unique idea of Voice communication among peoples from world .",
+        "live": "https://github.com/realpxd/WOD/blob/master/app/release/app-release.apk",
+        "github": "https://github.com/realpxd/WOD",
+        "stacks": ["Java", "XML", "Firebase", "Agora SDK"] 
+    },
+    {
+        "imgSrc": "/projects/ngl-user.png",
+        "imgw": 220,
+        "imgh": 200,
+        "title": "NGL - Clone",
+        "description": "NGL is a anonymous-message sharing website that allow users to share their thoughts and messages without revealing their name or identity.",
+        "live": "https://ngl-clone-frontend.vercel.app/",
+        "github": "https://github.com/realpxd/Ngl-Clone",
+        "isDesk": true,
+        "stacks": ["Next Js", "Node Js", "Mongo DB", "Express Js"]
+    },
+    {
+        "imgSrc": "/projects/ecom.png",
+        "imgw": 220,
+        "imgh": 200,
+        "title": "E-Commerce",
+        "description": "It is a E-Commerce Website template that includes admin panel for products listing , product deleting etc.",
+        "live": "https://realpxd.github.io/s-ecom-project/",
+        "github": "https://github.com/realpxd/s-ecom-project",
+        "isDesk": true,
+        "stacks": ["HTML", "CSS", "JavaScript", "Firebase"]
+    },
+    {
+        "imgSrc": "/projects/spotify-clone.png",
+        "imgw": 220,
+        "imgh": 200,
+        "title": "Spotify Clone",
+        "description": "Spotify is a website where the users can listen to songs and interact with the playlists, and control the songs volume, current time, play/pause etc.",
+        "live": "https://spotify-clone-phi-puce.vercel.app/",
+        "github": "https://github.com/realpxd/Spotify-Clone",
+        "isDesk": true,
+        "stacks": ["Next Js", "CSS"]
+    },
+    {
+        "imgSrc": "/projects/xclone-home.png",
+        "imgw": 220,
+        "imgh": 200,
+        "title": "X - Clone",
+        "description": "X (formerly twitter) is a social media app used to share our thoughts and communicate with the world in a very effecient way.",
+        "live": "https://x-clone-pxd.vercel.app/",
+        "github": "https://github.com/realpxd/X-Clone",
+        "isDesk": true,
+        "stacks": ["Next Js", "Tailwind CSS", "Node Js", "Mongo DB", "Express Js"]
+    }
+]

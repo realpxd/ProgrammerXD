@@ -1,0 +1,31 @@
+{
+  "name": "pxd",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@pmndrs/assets": "^1.6.0",
+    "@react-three/drei": "^9.88.5",
+    "@react-three/fiber": "^8.14.2",
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.9",
+    "dotenv": "^16.3.1",
+    "next": "^14.0.4",
+    "nodemailer": "^6.9.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-loader-spinner": "^6.1.6",
+    "react-query": "^3.39.3",
+    "react-scroll": "^1.8.9",
+    "three": "^0.156.1"
+  }
+}
