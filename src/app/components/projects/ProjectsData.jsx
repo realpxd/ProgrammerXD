@@ -6,10 +6,10 @@ import { FaGithub } from 'react-icons/fa';
 import { FaLink } from "react-icons/fa";
 
 const ProjectsData = (props) => {
-    const { id, imgSrc, imgw, imgh, title, description, live, github, isDesk } = props
+    const { id, imgSrc, imgw, imgh, title, description, live, github, isDesk, lastIndex } = props
     console.log(props)
     return (
-        <Link href={`/projects/id/${id}`}>
+        <Link href={`/projects/id/${lastIndex ? lastIndex : id}`}>
             <div className={styles.projectsContainer} key={id}>
                 <Image src={imgSrc} width={imgw} height={imgh} className={isDesk && styles.imgDesk} alt={title}></Image>
                 <div className={styles.projectData}>

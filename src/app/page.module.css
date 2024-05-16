@@ -431,63 +431,120 @@
   overflow: hidden;
 }
 
-.projectPage{
+.projectPage {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
-.projectPageContainer{
+
+.projectPageContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  width: 100vw;
+}
+
+.projectPageContainer img {
+  border-radius: 1rem;
+  filter: drop-shadow(2px 2px 5px #9f0000);
+}
+
+.projectPageContainer .imgDesk {
+  height: 300px;
+  margin-top: 3.1rem;
+  margin-bottom: 3.1rem;
+}
+
+.projectPageLeft {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
+  width: 40vw;
 }
-.projectPageContainer h1{
+
+.projectPageContainer h1 {
   font-size: 3rem;
 }
-.projectPageData{
+
+.projectPageData {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  background: #ededed;
-  border-radius: 4rem 4rem 0 0;
-  padding: 2rem 1.5rem;
-  margin-top: 1rem;
+  gap: 1rem;
+  background: #ff0000;
+  border-radius: 4rem 0 0 4rem;
+  padding: 5rem 1.5rem;
   height: 100%;
+  width: 60vw;
   text-align: justify;
+  color: white;
 }
-.projectPageData p:first-child{
+
+.projectPageData h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: 900;
+}
+
+.projectDescription {
+  font-size: 1.2rem;
+  padding: 1rem;
+  text-justify: justify;
+  background: #ff5f5f;
+  border-radius: 1rem;
+}
+
+.projectPageData p:first-child {
   font-size: 1.1rem;
 }
-.projectPageStack{
+
+.projectPageStack {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: 2rem;
+  align-items: center;
 
 }
-.projectPageStack p{
-  background: salmon;
+
+.projectPageStack p {
+  background: rgb(0, 0, 0);
   width: max-content;
   border-radius: 0.5rem;
   padding: 0.2rem 0.7rem;
   color: #fff;
 }
-.projectPageBtns{
+
+.projectPageBtns {
   display: flex;
   background: transparent;
   justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
 }
-.projectPageBtns button{
+
+.projectPageBtns button {
+  color: #000;
+  background: #ffffff;
+  box-shadow: 0 0 2px black;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.1s linear;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
-  border-radius: 2rem;
-  background: tomato;
-  font-size: 1.2rem;
-  padding: 0.8rem 2.7rem;
-  color: #fff;
+}
 
+.projectPageBtns button:is(:hover, :focus) {
+  box-shadow: 0 0 3px black;
+  background: #f3f3f3;
 }
 
 
@@ -521,6 +578,7 @@
 
   .navBar .hamburger {
     display: block;
+    color:white;
     font-size: 2rem;
     z-index: 100;
     transition: 0.3s;
@@ -726,7 +784,7 @@
     box-shadow: 0 0 5px black;
     top: auto;
   }
-  
+
   .footer {
     width: 100vw;
     letter-spacing: 1px;
@@ -802,6 +860,71 @@
     margin-bottom: 2rem;
     width: 60%;
     font-size: 2rem;
+  }
+
+
+  .projectPage {
+    height: 100%;
+  }
+
+  .projectPageContainer {
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    gap: 2rem;
+  }
+
+  .projectPageContainer img {
+    border-radius: 1rem;
+    width: 100vw;
+    height: 57vh;
+  }
+
+  .projectPageContainer .imgDesk {
+    height: 30vh;
+    width: 85vw;
+    margin-top: 3.1rem auto;
+  }
+
+  .projectPageLeft {
+    width: 100vw;
+  }
+
+  .projectPageContainer h1 {
+    font-size: 3rem;
+  }
+
+  .projectPageData {
+    gap: 1rem;
+    border-radius: 2rem 2rem 0 0;
+    padding: 2rem 1rem;
+    height: 100%;
+    width: 92vw;
+  }
+
+  .projectPageData p:first-child {
+    font-size: 1.1rem;
+  }
+
+  .projectPageStack {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .projectPageStack p {
+    height: 1.5rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .projectPageBtns{
+    margin-top: 1rem;
+  }
+  .projectPageBtns h3 {
+    display: none;
+  }
+
+  .projectPageBtns button {
+    border-radius: 2rem;
   }
 
 }

@@ -35,6 +35,7 @@ const SectionC = ({ projectsData, isLoading, isError, error }) => {
                                     return (
                                         <ProjectsData
                                             id={index}
+                                            lastIndex={index == 2 && 3}
                                             imgSrc={item.imgSrc}
                                             imgw={item.imgw}
                                             imgh={item.imgh}

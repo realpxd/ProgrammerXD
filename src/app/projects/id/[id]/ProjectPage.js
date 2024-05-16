@@ -44,10 +44,14 @@ const ProjectPage = (props) => {
                     .map((item, index) => {
                         return (
                             <div className={styles.projectPageContainer} key={item?.id}>
-                                <Image src={item?.imgSrc} width={item?.imgw + 50} height={item?.imgh + 50} className={item?.isDesk && styles.imgDesk} alt={item?.title} />
-                                <h1>{item?.title}</h1>
+                                <div className={styles.projectPageLeft}>
+                                    <Image src={item?.imgSrc} width={item?.imgw + 250} height={item?.imgh + 250} className={item?.isDesk && styles.imgDesk} alt={item?.title} />
+                                    <h1>{item?.title}</h1>
+                                </div>
                                 <div className={styles.projectPageData}>
-                                    <p>{item?.description}</p>
+                                    <h3>About Project : </h3>
+                                    <p className={styles.projectDescription}>{item?.description}</p>
+                                    <h3>Tech Stacks : </h3>
                                     <div className={styles.projectPageStack}>
                                         {item?.stacks.map((st) => {
                                             return (
@@ -56,6 +60,7 @@ const ProjectPage = (props) => {
                                         })}
                                     </div>
                                     <div className={styles.projectPageBtns}>
+                                        <h3>Links : </h3>
                                         {item?.github && <Link href={item.github}><button><FaGithub /> Github</button></Link>}
                                         {item?.live && <Link href={item.live}><button><FaLink /> Live</button></Link>}
                                     </div>
