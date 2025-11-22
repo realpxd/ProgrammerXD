@@ -1,0 +1,302 @@
+.experienceSection {
+  min-height: 100vh;
+  padding: 8rem 2rem 5rem;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-family: var(--font-playfair), serif;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.skillCard {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.skillCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff0000 0%, #d30000 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.skillCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  border-color: rgba(255, 0, 0, 0.3);
+}
+
+.skillCard:hover::before {
+  transform: scaleX(1);
+}
+
+.skillCategory {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-playfair), serif;
+}
+
+.skillItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skillTag {
+  background: linear-gradient(135deg, #ff0000 0%, #d30000 100%);
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(255, 0, 0, 0.25);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.skillTag::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.skillTag:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+}
+
+.skillTag:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.workExperienceSection {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.workTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: var(--font-playfair), serif;
+}
+
+.experienceTimeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.experienceTimeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #ff0000 0%, #d30000 100%);
+  border-radius: 2px;
+}
+
+.experienceCard {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  margin-left: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.experienceCard::before {
+  content: '';
+  position: absolute;
+  left: -2.75rem;
+  top: 2.5rem;
+  width: 16px;
+  height: 16px;
+  background: #ff0000;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #ff0000;
+}
+
+.experienceCard:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 0, 0, 0.3);
+}
+
+.experienceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.companyName {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-playfair), serif;
+}
+
+.role {
+  font-size: 1.2rem;
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.period {
+  background: linear-gradient(135deg, #ff0000 0%, #d30000 100%);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #454545;
+  margin-bottom: 1.5rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.techTag {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff0000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.experienceText {
+  margin-top: 4rem;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experienceText p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #454545;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 968px) {
+  .experienceSection {
+    padding: 6rem 1.5rem 4rem;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .experienceTimeline {
+    padding-left: 1.5rem;
+  }
+
+  .experienceCard {
+    margin-left: 1.5rem;
+  }
+
+  .experienceCard::before {
+    left: -2.25rem;
+  }
+
+  .experienceHeader {
+    flex-direction: column;
+  }
+
+  .period {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .experienceSection {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .skillCard {
+    padding: 1.5rem;
+  }
+
+  .experienceCard {
+    padding: 1.5rem;
+  }
+
+  .companyName {
+    font-size: 1.5rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+

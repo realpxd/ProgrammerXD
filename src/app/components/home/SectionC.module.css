@@ -1,0 +1,128 @@
+.projectsSection {
+  min-height: 100vh;
+  padding: 8rem 2rem;
+  background: #fff;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #000 0%, #666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.loaderContainer,
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.errorContainer {
+  color: #f44336;
+  font-size: 1.2rem;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.viewAllContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.viewAllButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #ff0000 0%, #d30000 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.viewAllButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(255, 0, 0, 0.4);
+}
+
+.arrowIcon {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.viewAllButton:hover .arrowIcon {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .projectsSection {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .title {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+  }
+
+  .subtitle {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    padding: 0 0.5rem;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .viewAllContainer {
+    margin-top: 2rem;
+  }
+
+  .viewAllButton {
+    padding: 0.875rem 1.75rem;
+    font-size: clamp(0.95rem, 3vw, 1rem);
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+

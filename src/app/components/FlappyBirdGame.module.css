@@ -1,0 +1,97 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  backdrop-filter: blur(5px);
+  cursor: auto;
+}
+
+.modalContent {
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  cursor: auto;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.closeButton:hover {
+  background: #d30000;
+  transform: scale(1.1);
+}
+
+.gameTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.scoreDisplay {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.gameCanvas {
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  background: #87CEEB;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.gameInstructions {
+  text-align: center;
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .modalContent {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .gameTitle {
+    font-size: 1.5rem;
+  }
+
+  .scoreDisplay {
+    font-size: 1.2rem;
+  }
+}
+

@@ -67,7 +67,7 @@ const SectionA = () => {
           <h1>Debugging My House</h1>
           <p>Found Some Glitches in {text}</p>
         </div>
-        <Model />
+        {/* <Model /> */}
       </div>
     </>
   );

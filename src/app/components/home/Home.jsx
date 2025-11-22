@@ -3,6 +3,8 @@ import { useQuery } from 'react-query'
 import SectionA from './SectionA';
 import SectionB from './SectionB';
 import SectionC from './SectionC';
+import SkillsAndAchievements from './SkillsAndAchievements';
+import EducationAndWork from './EducationAndWork';
 import Footer from '../Footer'
 import styles from '@/app/page.module.css'
 const Home = () => {
@@ -23,13 +25,16 @@ const Home = () => {
             <hr className={styles.hr} />
             <SectionB />
             <hr className={styles.hr} />
+            <SkillsAndAchievements />
+            <hr className={styles.hr} />
+            <EducationAndWork />
+            <hr className={styles.hr} />
             <SectionC
                 projectsData={projectsData}
                 isLoading={isLoading}
                 isError={isError}
                 error={error}
             />
-            <hr className={styles.hr} />
             <Footer />
         </>
     )

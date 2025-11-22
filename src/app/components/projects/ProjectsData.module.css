@@ -1,0 +1,207 @@
+.projectCard {
+  background: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.desktopImage {
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.9) 0%, rgba(211, 0, 0, 0.9) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .imageOverlay {
+  opacity: 1;
+}
+
+.overlayContent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.arrowIcon {
+  font-size: 1.5rem;
+  animation: slideRight 1s ease-in-out infinite;
+}
+
+@keyframes slideRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.cardContent {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
+
+.projectDescription {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.techTag {
+  padding: 0.4rem 0.9rem;
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff0000;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.linkButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.linkButton:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #ff0000 0%, #d30000 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.primaryButton:hover {
+  background: linear-gradient(135deg, #d30000 0%, #b30000 100%);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 200px;
+  }
+
+  .cardContent {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .projectTitle {
+    font-size: clamp(1.2rem, 4vw, 1.3rem);
+    margin-bottom: 0.6rem;
+  }
+
+  .projectDescription {
+    font-size: clamp(0.9rem, 3vw, 0.95rem);
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    -webkit-line-clamp: 4;
+  }
+
+  .techStack {
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .techTag {
+    font-size: clamp(0.75rem, 2.5vw, 0.85rem);
+    padding: 0.35rem 0.75rem;
+  }
+
+  .projectLinks {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .linkButton {
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    font-size: clamp(0.9rem, 3vw, 0.95rem);
+    width: 100%;
+  }
+}
+

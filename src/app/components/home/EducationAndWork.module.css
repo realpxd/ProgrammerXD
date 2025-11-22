@@ -1,0 +1,99 @@
+.combinedSection {
+  min-height: 100vh;
+  padding: 8rem 2rem 5rem;
+  background: linear-gradient(to bottom, #fff 0%, #f8f9fa 100%);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-family: var(--font-playfair), serif;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.educationWrapper {
+  flex: 1;
+  padding: 2rem;
+}
+
+.educationWrapper :global(.educationSection) {
+  padding: 0;
+  min-height: auto;
+  background: transparent;
+}
+
+.educationWrapper :global(.educationSection) {
+  padding: 0;
+  min-height: auto;
+  background: transparent;
+}
+
+.educationWrapper :global(.container) {
+  max-width: 100%;
+}
+
+.educationWrapper :global(.titleWrapper) {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.educationWrapper :global(.sectionTitle) {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin: 0;
+  font-family: var(--font-playfair), serif;
+}
+
+@media (max-width: 1200px) {
+  .contentGrid {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .combinedSection {
+    padding: 6rem 1.5rem 4rem;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .educationWrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .combinedSection {
+    padding: 5rem 0.5rem 3rem;
+  }
+
+  .mainTitle {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    margin-bottom: 3rem;
+  }
+
+  .contentGrid {
+    gap: 3rem;
+  }
+
+  .educationWrapper {
+    padding: 0;
+  }
+}
+

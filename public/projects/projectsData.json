@@ -1,75 +1,116 @@
 [
     {
-        "imgSrc": "/projects/session.png",
+        "id": 1,
+        "imgSrc": "/projects/xclone-home.png",
         "imgw": 220,
         "imgh": 200,
-        "title": "Session",
-        "description": "Session is a social media app that allows users to share their thoughts with the world. It is a platform where users can chat with others, share their experiences, and discover new things. Session is designed to be simple, intuitive, and fun to use.",
-        "live": "https://github.com/realpxd/Session",
-        "github": "https://github.com/realpxd/Session",
-        "stacks": ["React Native", "Node Js", "Mongo DB", "Express Js"] 
+        "title": "X - Clone",
+        "description": "A feature-rich social media clone (similar to Twitter/X) built with modern web technologies. Includes real-time updates, user authentication, and interactive features.",
+        "live": "https://x-clone-pxd.vercel.app/",
+        "github": "https://github.com/realpxd/X-Clone",
+        "isDesk": true,
+        "stacks": ["Next.js", "Tailwind CSS", "Node.js", "MongoDB", "Express.js"]
     },
     {
-        "imgSrc": "/projects/gph_tp.png",
+        "id": 2,
+        "imgSrc": "/projects/deskryptow.png",
         "imgw": 220,
         "imgh": 200,
-        "title": "GPHisar",
-        "description": "GPHisar is an Official Government Institute Educational App. This app helps students and staff to quickly access Study Materials and News & Anouncements from the Institute.",
-        "live": "https://gphisar.ac.in/",
-        "stacks": ["Java", "XML", "Wordpress"]
+        "title": "Deskryptow",
+        "description": "A decentralized freelance escrow platform built for hackCBS 8.0 Hackathon. Features smart contract-based escrow, IPFS storage, real-time chat, and secure payment processing on Polygon blockchain.",
+        "github": "https://github.com/AKhilRaghav0/Deskryptow",
+        "isDesk": true,
+        "stacks": ["React", "TypeScript", "Python", "FastAPI", "Solidity", "Polygon", "IPFS", "PostgreSQL"]
     },
     {
+        "id": 3,
         "imgSrc": "/projects/wod_tp.png",
         "imgw": 220,
         "imgh": 200,
-        "title": "WOD",
-        "description": "WOD - Whispers of Deception , is a Android Mobile App Project that comes with a unique idea of Voice communication among peoples from world .",
+        "title": "WOD - Whispers of Deception",
+        "description": "An Android mobile app with a unique voice communication feature. Enables real-time voice interactions among users from around the world.",
         "live": "https://github.com/realpxd/WOD/blob/master/app/release/app-release.apk",
         "github": "https://github.com/realpxd/WOD",
-        "stacks": ["Java", "XML", "Firebase", "Agora SDK"] 
+        "stacks": ["Java", "XML", "Firebase", "Agora SDK"]
     },
     {
+        "id": 4,
         "imgSrc": "/projects/ngl-user.png",
         "imgw": 220,
         "imgh": 200,
-        "title": "NGL - Clone",
-        "description": "NGL is a anonymous-message sharing website that allow users to share their thoughts and messages without revealing their name or identity.",
+        "title": "NGL Clone",
+        "description": "An anonymous messaging web app built using the MERN stack. Allows users to share their thoughts and messages without revealing their identity.",
         "live": "https://ngl-clone-frontend.vercel.app/",
         "github": "https://github.com/realpxd/Ngl-Clone",
         "isDesk": true,
-        "stacks": ["Next Js", "Node Js", "Mongo DB", "Express Js"]
+        "stacks": ["Next.js", "Node.js", "MongoDB", "Express.js"]
     },
     {
+        "id": 5,
+        "imgSrc": "/projects/spotify-clone.png",
+        "imgw": 220,
+        "imgh": 200,
+        "title": "Spotify Clone",
+        "description": "A music-streaming app clone built with Next.js. Features playlist management, song controls, volume adjustment, and a modern UI design.",
+        "live": "https://spotify-clone-phi-puce.vercel.app/",
+        "github": "https://github.com/realpxd/Spotify-Clone",
+        "isDesk": true,
+        "stacks": ["Next.js", "CSS"]
+    },
+    {
+        "id": 6,
+        "imgSrc": "/projects/batchmate.png",
+        "imgw": 220,
+        "imgh": 200,
+        "title": "Batchmate",
+        "description": "A teacher review and rating webapp aimed at helping students find the best faculty stimulating their admission process. Enhanced the admission process for new students by providing valuable insights into faculty quality.",
+        "github": "https://github.com/its-haniish/Batchmate",
+        "isDesk": true,
+        "stacks": ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS", "Redux"]
+    },
+    {
+        "id": 7,
+        "imgSrc": "/projects/abssd.png",
+        "imgw": 220,
+        "imgh": 200,
+        "title": "ABSSD",
+        "description": "A modern NGO website with authentication and payment integration",
+        "live": "https://abssd.vercel.app/",
+        "github": "https://github.com/realpxd/abssd",
+        "isDesk": true,
+        "stacks": ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS"]
+    },
+    {
+        "id": 8,
         "imgSrc": "/projects/ecom.png",
         "imgw": 220,
         "imgh": 200,
         "title": "E-Commerce",
-        "description": "It is a E-Commerce Website template that includes admin panel for products listing , product deleting etc.",
+        "description": "A full-featured e-commerce website template with an admin panel for product management, inventory control, and order processing.",
         "live": "https://realpxd.github.io/s-ecom-project/",
         "github": "https://github.com/realpxd/s-ecom-project",
         "isDesk": true,
         "stacks": ["HTML", "CSS", "JavaScript", "Firebase"]
     },
     {
-        "imgSrc": "/projects/spotify-clone.png",
+        "id": 9,
+        "imgSrc": "/projects/gph_tp.png",
         "imgw": 220,
         "imgh": 200,
-        "title": "Spotify Clone",
-        "description": "Spotify is a website where the users can listen to songs and interact with the playlists, and control the songs volume, current time, play/pause etc.",
-        "live": "https://spotify-clone-phi-puce.vercel.app/",
-        "github": "https://github.com/realpxd/Spotify-Clone",
-        "isDesk": true,
-        "stacks": ["Next Js", "CSS"]
+        "title": "GPHisar",
+        "description": "An official government institute educational app. Helps students and staff quickly access study materials, news, and announcements from the institute.",
+        "live": "https://gphisar.ac.in/",
+        "stacks": ["Java", "XML", "WordPress"]
     },
     {
-        "imgSrc": "/projects/xclone-home.png",
+        "id": 10,
+        "imgSrc": "/projects/session.png",
         "imgw": 220,
         "imgh": 200,
-        "title": "X - Clone",
-        "description": "X (formerly twitter) is a social media app used to share our thoughts and communicate with the world in a very effecient way.",
-        "live": "https://x-clone-pxd.vercel.app/",
-        "github": "https://github.com/realpxd/X-Clone",
-        "isDesk": true,
-        "stacks": ["Next Js", "Tailwind CSS", "Node Js", "Mongo DB", "Express Js"]
+        "title": "Session",
+        "description": "A social media app that allows users to share their thoughts with the world. Features chat functionality, user interactions, and content discovery.",
+        "live": "https://github.com/realpxd/Session",
+        "github": "https://github.com/realpxd/Session",
+        "stacks": ["React Native", "Node.js", "MongoDB", "Express.js"]
     }
 ]

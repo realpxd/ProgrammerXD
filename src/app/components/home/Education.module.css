@@ -1,0 +1,311 @@
+.educationSection {
+  min-height: auto;
+  padding: 0;
+  background: transparent;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+}
+
+.titleWrapper {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 900;
+  color: #000;
+  margin: 0;
+  font-family: var(--font-playfair), serif;
+}
+
+.educationTimeline {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.educationTimeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #ff0000 0%, #d30000 100%);
+  border-radius: 2px;
+}
+
+.educationCard {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  margin-left: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.educationCard::before {
+  content: '';
+  position: absolute;
+  left: -2.75rem;
+  top: 2.5rem;
+  width: 16px;
+  height: 16px;
+  background: #ff0000;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #ff0000;
+}
+
+.educationCard:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 0, 0, 0.3);
+}
+
+.educationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.educationMain {
+  flex: 1;
+}
+
+.qualification {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-playfair), serif;
+}
+
+.institution {
+  font-size: 1.3rem;
+  color: #ff0000;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.field {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+}
+
+.cgpa {
+  font-size: 0.95rem;
+  color: #ff0000;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.percentage {
+  font-size: 0.95rem;
+  color: #ff0000;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+}
+
+.period {
+  background: linear-gradient(135deg, #ff0000 0%, #d30000 100%);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: fit-content;
+}
+
+.pointsList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.pointItem {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #454545;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.pointItem::before {
+  content: '▪';
+  position: absolute;
+  left: 0;
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #454545;
+  margin-bottom: 1.5rem;
+}
+
+.achievements {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.achievementsTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+  font-family: var(--font-playfair), serif;
+}
+
+.achievementsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievementItem {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #454545;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.achievementItem::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 968px) {
+  .educationSection {
+    padding: 6rem 1.5rem 4rem;
+  }
+
+  .educationTimeline {
+    padding-left: 1.5rem;
+  }
+
+  .educationCard {
+    margin-left: 1.5rem;
+  }
+
+  .educationCard::before {
+    left: -2.25rem;
+  }
+
+  .educationHeader {
+    flex-direction: column;
+  }
+
+  .period {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .educationSection {
+    padding: 1rem 0.5rem;
+  }
+
+  .titleWrapper {
+    margin-bottom: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+  }
+
+  .educationTimeline {
+    padding-left: 1rem;
+    gap: 2rem;
+  }
+
+  .educationCard {
+    padding: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .educationCard::before {
+    left: -1.5rem;
+    width: 12px;
+    height: 12px;
+  }
+
+  .educationHeader {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .qualification {
+    font-size: clamp(1.3rem, 4vw, 1.5rem);
+  }
+
+  .institution {
+    font-size: clamp(1rem, 3vw, 1.1rem);
+  }
+
+  .field {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+  }
+
+  .cgpa,
+  .percentage {
+    font-size: clamp(0.85rem, 3vw, 0.95rem);
+  }
+
+  .location {
+    font-size: clamp(0.85rem, 3vw, 0.9rem);
+  }
+
+  .period {
+    font-size: clamp(0.8rem, 3vw, 0.9rem);
+    padding: 0.4rem 0.8rem;
+    align-self: flex-start;
+  }
+
+  .pointItem {
+    font-size: clamp(0.95rem, 3vw, 1.1rem);
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+  }
+
+  .description {
+    font-size: clamp(0.95rem, 3vw, 1rem);
+  }
+}
+

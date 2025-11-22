@@ -1,0 +1,234 @@
+.projectPage {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loaderContainer,
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  gap: 2rem;
+}
+
+.errorContainer h2 {
+  font-size: 2rem;
+  color: #f44336;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  background: #d30000;
+  transform: translateY(-2px);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: #ff0000;
+}
+
+.heroSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  align-items: center;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  background: #f5f5f5;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.desktopImage {
+  padding: 2rem;
+  background: #fff;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.projectTitle {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 900;
+  color: #000;
+  line-height: 1.2;
+}
+
+.projectSubtitle {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.actionButton:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.primaryButton {
+  background: linear-gradient(135deg, #ff0000 0%, #d30000 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.primaryButton:hover {
+  background: linear-gradient(135deg, #d30000 0%, #b30000 100%);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+}
+
+.detailsSection {
+  margin-top: 4rem;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.detailCard {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.detailTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #ff0000;
+}
+
+.detailText {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.techTag {
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.1) 0%, rgba(211, 0, 0, 0.1) 100%);
+  color: #ff0000;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.techTag:hover {
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.2) 0%, rgba(211, 0, 0, 0.2) 100%);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 968px) {
+  .heroSection {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .imageWrapper {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectPage {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .heroContent {
+    gap: 1rem;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+  }
+
+  .actionButton {
+    justify-content: center;
+  }
+
+  .detailsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .detailCard {
+    padding: 2rem;
+  }
+}
+

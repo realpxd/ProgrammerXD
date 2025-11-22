@@ -1,0 +1,120 @@
+.combinedSection {
+  min-height: 100vh;
+  padding: 8rem 2rem 5rem;
+  background: #fff;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-family: var(--font-playfair), serif;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contentGrid > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievementsWrapper {
+  flex: 1;
+  padding: 2rem;
+}
+
+.achievementsWrapper :global(.achievementsSection) {
+  padding: 0;
+  min-height: auto;
+  background: transparent;
+}
+
+.achievementsWrapper :global(.achievementsSection::before) {
+  display: none;
+}
+
+.achievementsWrapper :global(.header) {
+  margin-bottom: 3rem;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.achievementsWrapper :global(.title) {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 0.8rem;
+  font-family: var(--font-playfair), serif;
+}
+
+.achievementsWrapper :global(.subtitle) {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.achievementsWrapper :global(.achievementItem) {
+  margin-bottom: 1.5rem;
+}
+
+.achievementsWrapper :global(.achievementContent) {
+  padding: 2rem;
+}
+
+.achievementsWrapper :global(.achievementTitle) {
+  font-size: 1.5rem;
+}
+
+.achievementsWrapper :global(.achievementDescription) {
+  font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .contentGrid {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 968px) {
+  .combinedSection {
+    padding: 6rem 1.5rem 4rem;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .achievementsWrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .combinedSection {
+    padding: 5rem 0.5rem 3rem;
+  }
+
+  .mainTitle {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    margin-bottom: 3rem;
+  }
+
+  .contentGrid {
+    gap: 3rem;
+  }
+
+  .achievementsWrapper {
+    padding: 0;
+  }
+}
+

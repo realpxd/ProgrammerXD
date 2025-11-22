@@ -1,86 +1,177 @@
-import React from 'react'
-import styles from '@/app/page.module.css'
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+"use client"
+import React, { useState } from 'react'
+import styles from './Footer.module.css'
+import { 
+    FaLinkedin, 
+    FaGithub, 
+    FaInstagram, 
+    FaTwitter,
+    FaEnvelope,
+    FaMapMarkerAlt
+} from 'react-icons/fa';
 
 const Footer = () => {
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState(null);
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.id]: e.target.value
+        });
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        var name = e.target.name.value;
-        var email = e.target.email.value;
-        var message = e.target.message.value;
-        var formdata = {
-            name,
-            email,
-            message
+        setIsSubmitting(true);
+        setSubmitStatus(null);
+
+        try {
+            const res = await fetch('https://nodemailer-server-pxd.vercel.app/sendMail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await res.json();
+            if (res.ok) {
+                setSubmitStatus('success');
+                setFormData({ name: '', email: '', message: '' });
+            } else {
+                setSubmitStatus('error');
+            }
+        } catch (error) {
+            setSubmitStatus('error');
+        } finally {
+            setIsSubmitting(false);
+            setTimeout(() => setSubmitStatus(null), 5000);
         }
+    };
 
-        const res = await fetch('https://nodemailer-server-pxd.vercel.app/sendMail', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                name: name,
-                email: email,
-                message: message
-            })
-        })
-
-        const data = await res.json();
-        console.log(data);
-        alert('Message Sent Successfully');
-    }
+    const socialLinks = [
+        { Icon: FaLinkedin, url: 'https://linkedin.com/in/programmerxd', label: 'LinkedIn', color: '#0077b5' },
+        { Icon: FaGithub, url: 'https://github.com/realpxd', label: 'GitHub', color: '#333' },
+        { Icon: FaTwitter, url: 'https://twitter.com/dotpxd', label: 'Twitter', color: '#1da1f2' },
+        { Icon: FaInstagram, url: 'https://instagram.com/programmerxd', label: 'Instagram', color: '#e4405f' }
+    ];
 
     return (
-        <div className={styles.footer}>
-            <div className={styles.contactForm} id='contact'>
-                <h2>Contact Me</h2>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Name" id='name' required />
-                    <input type="email" placeholder="Email" id='email' required />
-                    <textarea placeholder="Message" id='message' required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-            <div className={styles.bottomFooter}>
-                <div className={styles.socialMedia}>
-                    <h3>Social Media</h3>
-                    <div className={styles.socialMediaWrapper}>
-                        {/* <a href='https://github.com/realpxd' ><i className="fab fa-github"></i></a>
-                        <a href='https://in.linkedin.com/in/programmerxd' ><i className="fab fa-linkedin-in"></i></a>
-                        <a href='https://instagram.com/programmerxd' ><i className="fab fa-instagram"></i></a> */}
-                        <a href='https://in.linkedin.com/in/programmerxd' >
-                            <FontAwesomeIcon
-                                icon={faLinkedin}
-                                style={{ color: "red" }}
-                            /></a>
-                        <a href='https://github.com/realpxd' >
-                            <FontAwesomeIcon
-                                icon={faGithub}
-                                style={{ color: "red" }}
-                            /></a>
-                        <a href='https://twitter.com/dotpxd' >
-                            <FontAwesomeIcon
-                                icon={faTwitter}
-                                style={{ color: "red" }}
-                            /></a>
-                        <a href='https://instagram.com/programmerxd' >
-                            <FontAwesomeIcon
-                                icon={faInstagram}
-                                style={{ color: "red" }}
-                            /></a>
+        <footer className={styles.footer} id='contact'>
+            <div className={styles.container}>
+                <div className={styles.contactSection}>
+                    <div className={styles.header}>
+                        <h2 className={styles.title}>Get In Touch</h2>
+                        <p className={styles.subtitle}>
+                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                        </p>
+                    </div>
 
+                    <div className={styles.contentGrid}>
+                        <div className={styles.contactInfo}>
+                            <div className={styles.infoCard}>
+                                <div className={styles.infoIcon}>
+                                    <FaEnvelope />
+                                </div>
+                                <div>
+                                    <h3>Email</h3>
+                                    <a href="mailto:thisisnamansaini@gmail.com">thisisnamansaini@gmail.com</a>
+                                </div>
+                            </div>
+                            <div className={styles.infoCard}>
+                                <div className={styles.infoIcon}>
+                                    <FaMapMarkerAlt />
+                                </div>
+                                <div>
+                                    <h3>Location</h3>
+                                    <p>Gurugram, Haryana, India</p>
+                                </div>
+                            </div>
+                            <div className={styles.socialLinks}>
+                                <h3>Connect With Me</h3>
+                                <div className={styles.socialIcons}>
+                                    {socialLinks.map((social, index) => {
+                                        const IconComponent = social.Icon;
+                                        return (
+                                            <a
+                                                key={index}
+                                                href={social.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={social.label}
+                                                className={styles.socialIcon}
+                                                style={{ '--hover-color': social.color }}
+                                            >
+                                                <IconComponent />
+                                            </a>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        </div>
+
+                        <form className={styles.contactForm} onSubmit={handleSubmit}>
+                            <div className={styles.formGroup}>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Your Name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
+                            <div className={styles.formGroup}>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="Your Email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
+                            <div className={styles.formGroup}>
+                                <textarea
+                                    id="message"
+                                    placeholder="Your Message"
+                                    rows="6"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    required
+                                ></textarea>
+                            </div>
+                            <button 
+                                type="submit" 
+                                className={styles.submitButton}
+                                disabled={isSubmitting}
+                            >
+                                {isSubmitting ? 'Sending...' : 'Send Message'}
+                            </button>
+                            {submitStatus === 'success' && (
+                                <p className={styles.successMessage}>Message sent successfully! 🎉</p>
+                            )}
+                            {submitStatus === 'error' && (
+                                <p className={styles.errorMessage}>Failed to send message. Please try again.</p>
+                            )}
+                        </form>
                     </div>
                 </div>
-                <p>Copyright &copy; ProgrammerXD 2023</p>
+
+                <div className={styles.bottomFooter}>
+                    <div className={styles.footerContent}>
+                        <p className={styles.copyright}>
+                            &copy; {new Date().getFullYear()} ProgrammerXD / Naman Saini. All rights reserved.
+                        </p>
+                        <p className={styles.tagline}>
+                            Building the future, one line of code at a time.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

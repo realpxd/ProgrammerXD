@@ -1,16 +1,23 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
 import { ReactQueryClientProvider } from './components/ReactQueryClientProvider';
+import GameButton from './components/GameButton';
 
 // import Head from 'next/head';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
+const playfair = Playfair_Display({ 
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Naman Saini / ProgrammerXD',
@@ -63,8 +70,9 @@ export default function RootLayout({ children }) {
         <meta name="revised" content="ProgrammerXD, 24/10/2023" /> */}
         {/* </Head> */}
         <SpeedInsights />
-        <body className={inter.className}>
+        <body className={`${inter.variable} ${playfair.variable}`}>
           {children}
+          {/* <GameButton /> */}
           <Analytics />
         </body>
       </html>
